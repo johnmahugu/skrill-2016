@@ -1,0 +1,30 @@
+.viewport-flex { // Element as tall as the viewport with auto-height children and one vertically-aligned child taking up all available vertical space
+	
+	 min-height: 100vh; // To do: min-height would make flex work again in Safari
+	 display: flex; 
+	 flex-direction: column;
+	 
+}
+
+.viewport-flex > * {
+	
+	flex-grow: none; 
+	flex-shrink: 0;
+
+}
+
+.viewport-flex > .grow-align {
+
+	flex: 1 1 auto; 
+	display: flex;
+
+}
+
+.viewport-flex > .grow-align > * {
+
+	align-self: center;
+    text-align: center;
+	margin: 0 auto;
+	width: 100%;
+
+}
