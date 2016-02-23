@@ -192,3 +192,29 @@ main .row.transparent > * > .circle {
 	text-align: center;
 	
 }
+
+/* From the BIO site */
+
+.full-background-container {
+
+	overflow: hidden; 
+	width: 100%; 
+	height: 100%; 
+	position: absolute; 
+	z-index: -1; 
+	clip: auto; 
+	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+	mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+	
+}
+
+.full-background-container .full-background-image {
+	
+	position: fixed; 
+	top: 0; 
+	left: 0; 
+	width: 100%; 
+	height: 100%; 
+	background-size: cover;
+	
+}
