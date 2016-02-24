@@ -205,9 +205,19 @@ main .row.transparent > * > .circle {
 	z-index: -1; 
 	clip: auto; 
 	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
-	mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
 	
 }
+
+	@-moz-document url-prefix() {
+
+		.full-background-container {
+		
+			clip: rect(auto,auto,auto,auto);
+			
+		}
+
+	}
+
 
 .full-background-container .full-background-image {
 	
