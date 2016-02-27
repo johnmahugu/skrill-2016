@@ -196,21 +196,23 @@ main .row.transparent > * > .circle {
 
 /* From the BIO site */
 
-.full-background-container {
+.fixed-background {
 
-	overflow: hidden; 
-	width: 100%; 
-	height: 100%; 
-	position: absolute; 
-	z-index: -1; 
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; 
 	clip: auto; 
 	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+	background-size: 0;
 	
 }
 
 	@-moz-document url-prefix() {
 
-		.full-background-container {
+		.fixed-background {
 		
 			clip: rect(auto,auto,auto,auto);
 			
@@ -219,13 +221,16 @@ main .row.transparent > * > .circle {
 	}
 
 
-.full-background-container .full-background-image {
+.fixed-background:before {
 	
+	content: '';
+	z-index: -1; 
 	position: fixed; 
 	top: 0; 
 	left: 0; 
 	width: 100%; 
 	height: 100%; 
 	background-size: cover;
+	background-image: inherit;
 	
 }

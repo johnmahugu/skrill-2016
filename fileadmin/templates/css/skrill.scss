@@ -258,7 +258,16 @@ header a[href] {
 #content h3 {
 	
 	font-size: 2.5rem;
-	color: #009CBF;
+
+}
+
+#content {
+	
+	h2, h3, h4 {
+	
+		color: #4f2556;
+	
+	}
 
 }
 
@@ -620,6 +629,16 @@ b.tick:before {
 .dark {
 	
 	color: #fff;
+
+}
+
+#content .dark {
+	
+	h2, h3, h4 {
+	
+		color: #fff;
+	
+	}
 
 }
 

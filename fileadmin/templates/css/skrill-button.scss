@@ -103,7 +103,7 @@
 
 .btn:after { /* Arrow */
 	
-	content: '›';
+	content: '\e258';
 	display: inline-block;
 	position: absolute;
 	right: .8em;
@@ -111,12 +111,13 @@
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	border: 1px solid;
-	font-size: 1.5em;
-	height: 1em;
-	width: 1em;
-	text-align: center;
-	line-height: .7em;
+	height: 1.5em;
+	width: 1.5em;
+	text-align: right;
+	line-height: 1.3em;
 	border-radius: 50%;
+	font-family: 'Glyphicons Halflings';
+	padding-right: .1em;
 
 }
 
