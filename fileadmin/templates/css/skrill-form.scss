@@ -207,17 +207,28 @@ label {
     text-align: initial;
 }
 
-.checkbox input[type=checkbox], .radio input[type=radio] {
+.radio label, .checkbox label {
 	
-	-webkit-appearance: checkbox;
-    position: static;
-    margin: 0;
+	padding: 0;
 
 }
 
-.radio input[type=radio] {
+.checkbox input[type=checkbox] ~ .glyphicon, .radio input[type=radio] ~ .glyphicon {
 	
-	-webkit-appearance: radio;
+	border: 1px solid #eaeaea;
+	color: transparent;
+
+}
+
+.radio input[type=radio] ~ .glyphicon {
+	
+	border-radius: 50%;
+
+}
+
+.checkbox input[type=checkbox]:checked ~ .glyphicon, .radio input[type=radio]:checked ~ .glyphicon {
+	
+	color: $purple;
 
 }
 
