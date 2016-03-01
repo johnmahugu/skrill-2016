@@ -1,11 +1,13 @@
 @charset 'utf-8';
 
 @import 'bootstrap.min';
+@import 'skrill-variables';
 @import 'skrill-bootstrap';
 @import 'skrill-transparency';
 @import 'skrill-button';
 @import 'skrill-viewport-hero';
 @import 'skrill-nav';
+@import 'skrill-form';
 
 @font-face {
     font-family: robotolight;
@@ -53,7 +55,7 @@ html, body {
 	
 	font-family:robotolight,Helvetica,Arial,sans-serif;
 	margin: 0;
-	font-size: 16px;
+	font-size: 14px;
 
 }
 

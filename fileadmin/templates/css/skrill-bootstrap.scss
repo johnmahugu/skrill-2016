@@ -288,3 +288,17 @@ body {
 	padding: 1em;
 	
 }
+
+/* Form de-style */
+
+.btn-default:hover {
+
+	background: none;
+
+}
+
+.form-control {
+	
+	box-shadow: none;
+	background: none;
+}

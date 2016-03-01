@@ -1,0 +1,66 @@
+// Breakpoints
+$extraSmallScreen: 320px;
+$smallScreen: 480px;
+$mediumScreen: 768px;
+$largeScreen: 1024px;
+$wideScreen: 1200px;
+
+
+// Bootstrap
+$grid-columns: 12;
+$grid-gutter-width: 20px;
+
+$screen-sm-min: $smallScreen;
+$screen-md-min: $mediumScreen;
+$screen-lg-min: $largeScreen;
+
+$container-sm: $smallScreen + $grid-gutter-width;
+$container-md: $mediumScreen + $grid-gutter-width;
+$container-lg: $largeScreen + $grid-gutter-width;
+
+
+// Colours
+$black: #000;
+$grey-light: #fbfbfc;
+$grey-light-alt: #f8f8f9;
+$grey: #a09da9;
+$grey-dark: #333;
+$purple: #811e68;
+$purple-dark: #544c64;
+$purple-verydark: #4f2556;
+$white: #fff;
+$grey-text: #d1d3d4;
+$grey-text-2: #646466;
+$purple-copy: #586073;
+$purple-copy-2: #534d64;
+$teal: #41aeb5;
+$purple-offers:#4f506e;
+$purple-timeline: #645b77;
+$warm-grey: #5d566d;
+$heroDarkText: #656073;
+
+$light-bg: #ededef;
+$dark-bg: #544c64;
+
+$footerBackground: #f4f4f4;
+$footerCopy: #5c6478;
+
+$form-border: #eaeaea;
+
+
+// Fonts
+/** BEBAS **/
+$BebasBold: "bebas_neuebold", Helvetica, Arial, sans-serif;
+$BebasBook: "bebas_neuebook", Helvetica, Arial, sans-serif;
+$BebasLight: "bebas_neuelight", Helvetica, Arial, sans-serif;
+$Bebas: "bebas_neueregular", Helvetica, Arial, sans-serif;
+/** ROBOTO **/
+$RobotoBlack: "robotoblack", Helvetica, Arial, sans-serif;
+$RobotoBlackItalic: "robotoblack_italic", Helvetica, Arial, sans-serif;
+$RobotoBold: "robotobold", Helvetica, Arial, sans-serif;
+$RobotoBoldItalic: "robotobold_italic", Helvetica, Arial, sans-serif;
+$RobotoItalic: "robotoitalic", Helvetica, Arial, sans-serif;
+$RobotoLight: "robotolight", Helvetica, Arial, sans-serif;
+$RobotoLightItalic: "robotolight_italic", Helvetica, Arial, sans-serif;
+$Roboto: "robotoregular", Helvetica, Arial, sans-serif;
+
