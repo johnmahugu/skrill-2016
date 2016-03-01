@@ -207,6 +207,7 @@ main .row.transparent > * > .circle {
 	clip: auto; 
 	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
 	background-size: 0;
+	z-index: -1; 
 	
 }
 
@@ -224,7 +225,6 @@ main .row.transparent > * > .circle {
 .fixed-background:before {
 	
 	content: '';
-	z-index: -1; 
 	position: fixed; 
 	top: 0; 
 	left: 0; 

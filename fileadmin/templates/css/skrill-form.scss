@@ -110,11 +110,11 @@ input, select, textarea, .form-control {
     }
 }
 
-select {
+select, select.form-control {
     background-color: $white;
-    background-image: url('/fileadmin/templates/images/icons/form-select-arrow.png');
+    background-image: url('../images/icons/form-select-arrow.png');
     background-repeat: no-repeat;
-    background-position: 96% 50%;
+    background-position: calc(100% - 1em) 50%;
     color: $purple;
     padding: 1.207rem 1.4rem !important;
 
@@ -203,59 +203,27 @@ label {
     display: block;
     margin-bottom:0.5em;
     line-height:1.8;
+    font-weight: normal;
+    text-align: initial;
 }
 
-.check-radio-label {
-    color:$purple-copy-2;
-    //line-height: 2.5;
-    font-size: 1em;
+.checkbox input[type=checkbox], .radio input[type=radio] {
+	
+	-webkit-appearance: checkbox;
+    position: static;
+    margin: 0;
+
 }
 
-[type="radio"] + span, [type="checkbox"] + span {
-    display: block;
-}
+.radio input[type=radio] {
+	
+	-webkit-appearance: radio;
 
-/* the basic, unchecked style */
-[type="radio"] + span:before {
-    content: '';
-    display: inline-block;
-    width: 0.5em;
-    height: 0.5em;
-    vertical-align: -0.1em;
-    border-radius: 50%;
-    border: 0.25em solid #fff;
-    box-shadow: 0 0 0 0.1em #dadada;
-    margin-right: 0.75em;
-    cursor: pointer;
-}
-
-/* the checked style using the :checked pseudo class */
-[type="radio"]:checked + span:before {
-    background: $purple;
-}
-
-// checkbox
-
-/* the basic, unchecked style */
-[type="checkbox"] + span:before {
-    content: '\2713';
-    margin-right: 0.75em;
-    font-size:1em;
-    color:$white;
-    padding:0 3px;
-    border: 1px solid #dadada;
-    background: $white;
-    cursor: pointer;
-}
-
-/* the checked style using the :checked pseudo class */
-[type="checkbox"]:checked + span:before {
-    color: $purple;
 }
 
 // datepicker
 .datepicker {
-    background: url('/fileadmin/templates/images/icons/form-calendar.png') no-repeat;
+    background: url('../images/icons/form-calendar.png') no-repeat;
     background-position: 96% 50%;
 }
 
@@ -268,7 +236,7 @@ input[type="submit"] {
     text-align: left;
     text-transform: uppercase;
     position:relative;
-    background-image: url('/fileadmin/templates/images/icons/form-submit.png');
+    background-image: url('../images/icons/form-submit.png');
     background-repeat: no-repeat;
     background-position: 94% 50%;
     background-size: 24px;
@@ -307,11 +275,3 @@ ul.parsley-errors-list {
 .radio-group-error {
     padding-top:0.75em;
 }
-
-html.ua-ie-9 & {
-    select {
-        background-image: none;
-    }
-}
-
-
