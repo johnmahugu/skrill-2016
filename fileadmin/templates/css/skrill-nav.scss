@@ -125,8 +125,26 @@ label[for=nav-trigger] {
 
 .head .nav .btn {
 	
-    margin: 1.2em;
+    margin: 2em 1.2em;
 
+}
+
+.head .nav form {
+
+	text-align: center;
+	text-transform: uppercase;
+
+}
+
+.head .nav select.form-control {
+	
+	display: inline-block;
+    width: auto;
+	-webkit-appearance: none !important;
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    
 }
 
 .head .nav a[href].btn {
