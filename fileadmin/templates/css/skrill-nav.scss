@@ -1,3 +1,5 @@
+@import 'skrill-variables';
+
 input.trigger ~ * {
 	
 	overflow: hidden;
@@ -45,7 +47,7 @@ label[for=nav-trigger] {
 
 .head nav ul {
 	
-	padding: 1em;
+	padding: 0;
 	margin: 0;
 
 }
@@ -54,6 +56,29 @@ label[for=nav-trigger] {
 	
 	padding: 0;
 
+}
+
+.head li a[href] {
+	
+	padding: .5em 1em;
+	display: block;
+	color: #5c6478;
+	font-size: 1.1em;
+	display: block;
+
+}
+
+.head li.merchant-link a[href] {
+	
+	color: $purple;
+	font-style: italic;
+
+}
+
+.head li a.active {
+	
+	background: #fff;
+	
 }
 
 .head > .nav {
@@ -81,12 +106,12 @@ label[for=nav-trigger] {
 
 .head .nav nav div {
 	
-	background: #fff;
+	background: #f4f4f4;
 	color: #333;
 	height: 100vh;
 	width: 30em;
 	overflow: auto;
-	padding-right: 1em;
+    padding: 1.5em;
 
 }
 
@@ -98,9 +123,22 @@ label[for=nav-trigger] {
 	
 }
 
-.head .nav > div {
+.head .nav .btn {
 	
-// 	white-space: nowrap;
+    margin: 1.2em;
+
+}
+
+.head .nav a[href].btn {
+	
+    color: #fff;
+   	display: block;
+
+}
+
+.head .nav a[href].btn:hover {
+	
+    color: $purple;
 
 }
 
