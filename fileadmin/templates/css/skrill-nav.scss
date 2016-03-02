@@ -20,10 +20,9 @@ label[for=nav-trigger] {
 	
 	cursor: pointer;
 	padding: 1em;
-	width: 5em;
+	width: 6em;
 	text-align: center;
-	background: rgba(0,0,0,.5);
-	line-height: 4;
+	line-height: 3.96;
 
 }
 
@@ -104,7 +103,7 @@ label[for=nav-trigger] {
 
 }
 
-.head .nav nav div {
+.head .nav nav div.menu {
 	
 	background: #f4f4f4;
 	color: #333;
@@ -133,6 +132,14 @@ label[for=nav-trigger] {
 
 	text-align: center;
 	text-transform: uppercase;
+	color: #a09da9;
+    font-family: robotoregular, Helvetica, Arial, sans-serif;
+
+}
+
+.head .nav form * {
+	
+	font-size: .9em;
 
 }
 
@@ -144,7 +151,18 @@ label[for=nav-trigger] {
     background: none;
     border: none;
     text-transform: uppercase;
+    text-indent: 0;
+	color: inherit;
+	margin: 0;
+    padding: 0 !important;
+    transform: translateY(-1px);
     
+}
+
+.head .nav form span:after {
+	
+	content: '|';
+	padding: 0 1em;
 }
 
 .head .nav a[href].btn {
@@ -160,10 +178,41 @@ label[for=nav-trigger] {
 
 }
 
+.head .nav a[href].btn:after {
+	
+	border-color: transparent;
+
+}
+
 .links {
 	
 	white-space: nowrap;
 
+}
+
+.head .menu .icon {
+	
+    color: #a09da9;
+    margin: 0 .3em;
+    font-size: 2.5rem;
+    transition: color .2s linear;
+        
+}
+
+.head .icon:hover {
+	
+    color: $purple;
+    
+}
+
+.head .icon.icon-menu:before {
+
+	vertical-align: middle;
+    margin-top: -.2em;
+    display: inline-block;
+	font-size: 2.5rem;
+    line-height: 1;
+        
 }
 
 @media screen and (max-width: 768px) {

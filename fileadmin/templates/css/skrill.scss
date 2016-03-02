@@ -47,6 +47,91 @@
     font-style: normal;
 }
 
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?-uqanb6');
+  src: url('../fonts/icons.eot?#iefix-uqanb6') format('embedded-opentype'), url('../fonts/icons.ttf?-uqanb6') format('truetype'), url('../fonts/icons.woff?-uqanb6') format('woff'), url('../fonts/icons.svg?-uqanb6#icons') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+.icon, .head a.icon[href] {
+  font-family: 'icons';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.2;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-skrill-logo:before {
+  content: "\e601"; }
+
+.icon-menu:before {
+  content: "\e602"; }
+
+.icon-close:before {
+  content: "\e603"; }
+
+.icon-profile:before {
+  content: "\e611"; }
+
+.icon-twitter:before {
+  content: "\e604"; }
+
+.icon-linkedin:before {
+  content: "\e605"; }
+
+.icon-facebook:before {
+  content: "\e606"; }
+
+.icon-arrow-left-thin:before {
+  content: "\e60d"; }
+
+.icon-arrow-right-thin:before {
+  content: "\e60e"; }
+
+.icon-arrow-right:before {
+  content: "\e607"; }
+
+.icon-arrow-right-circle:before {
+  content: "\e608"; }
+
+.icon-arrow-up:before {
+  content: "\e600"; }
+
+.icon-tick:before {
+  content: "\e60c"; }
+
+.icon-arrow-down:before {
+  content: "\e609"; }
+
+.icon-expand-small:before {
+  content: "\e60a"; }
+
+.icon-expand-large:before {
+  content: "\e60b"; }
+
+.icon-minimize-large:before {
+  content: "\e60f"; }
+
+.icon-minimize-small:before {
+  content: "\e610"; }
+
+.icon-phone:before {
+  content: "\e612"; }
+
+.icon-email:before {
+  content: "\e613"; }
+  
+.icon .copy {
+	
+	display: none;
+
+}
+
 html {
 	
 	box-sizing: border-box;
@@ -64,6 +149,7 @@ html, body {
 	font-family:robotolight,Helvetica,Arial,sans-serif;
 	margin: 0;
 	font-size: 14px;
+	letter-spacing: 1px;
 
 }
 
@@ -132,6 +218,7 @@ header h1 {
 .head a.logo img {
 	
 	display: block;
+    height: 6rem;
 
 }
 
@@ -237,7 +324,8 @@ header a[href] {
 
 .head .links a[href], .head .links a[href] b {
 
-	font-family: bebas_neuebook, Helvetica, Arial, sans-serif;
+	font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
+	font-weight: normal;
 	font-size: 1.3rem;
 	letter-spacing: 3px;
 
@@ -656,4 +744,20 @@ b.tick:before {
 	
     background: #544c64;
 
+}
+
+/* Social links with icons */
+
+.head .social-links {
+	
+	text-align: center;
+    margin: 3em 0 1em 0;
+	
+}
+
+.head span.border {
+	
+    border-right: 1px solid #999;
+    padding: 0;
+	    
 }
