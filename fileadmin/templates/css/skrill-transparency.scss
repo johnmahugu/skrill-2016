@@ -234,3 +234,19 @@ main .row.transparent > * > .circle {
 	background-image: inherit;
 	
 }
+
+/* Overlay Icon: Additional smaller icon on at the bottom-left of a hole with icon */
+
+.transparent .circle * ~ * {
+	
+    position: absolute;
+    bottom: 0;
+    width: 11em;
+    height: auto;
+    background: #fff !important;
+    border-radius: 50%;
+    padding: 1em;
+    left: 0;
+    z-index: 1;
+
+}
