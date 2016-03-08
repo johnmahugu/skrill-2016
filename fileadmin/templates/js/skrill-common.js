@@ -161,12 +161,15 @@ if (!isTouchDevice()) {
 	
 }
 
-function reveal () {
+function reveal() {
 	
-// 	console.log($(window).scrollTop() - $(window).height());
-	$('.circle > *').each( function (n) {
-	
-		$(this).css('opacity', parseFloat(Number(((1 - ($(window).height() - $(window).scrollTop() + $(this).height()) / $(this).offset().top)*5)).toFixed(1)));
+	$('.circle > *, .module-stepcircles li .icon').each( function (n) {
+
+		var k = Number((($(this)[0].getBoundingClientRect().bottom - $(window).height())/$(window).height()*-7).toFixed(1));
+		$(this).css('opacity', k);
+		if (k>0) {
+			$(this).css('transform', 'scale(' + ((k<1) ? k : 1) + ')');
+		}
 	
 	});
 
@@ -190,7 +193,7 @@ $(document).ready(function() {
 	
 	/* On scroll, reveal Hero content, Step circles, Icons */
 
-	$('.circle > *').each( function (n) {
+	$('.circle > *, .module-stepcircles li .icon').each( function (n) {
 	
 		$(this).css('opacity', 0);
 	
