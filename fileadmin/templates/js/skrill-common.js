@@ -161,6 +161,17 @@ if (!isTouchDevice()) {
 	
 }
 
+function reveal () {
+	
+// 	console.log($(window).scrollTop() - $(window).height());
+	$('.circle > *').each( function (n) {
+	
+		$(this).css('opacity', parseFloat(Number(((1 - ($(window).height() - $(window).scrollTop() + $(this).height()) / $(this).offset().top)*5)).toFixed(1)));
+	
+	});
+
+}
+
 $(document).ready(function() {
 
     if (typeof time_override == 'number') {
@@ -177,11 +188,28 @@ $(document).ready(function() {
 	
 	}
 	
+	/* On scroll, reveal Hero content, Step circles, Icons */
+
+	$('.circle > *').each( function (n) {
+	
+		$(this).css('opacity', 0);
+	
+	});
+	
+	reveal();
+	
+	$(window).scroll( function (e) {
+		
+		clearTimeout(t);
+		var t = setTimeout(reveal, 100);	
+		
+	});
+	
 });
 
 $(window).load(function() {
 
- // executes when complete page is fully loaded, including all frames, objects and images
+// executes when complete page is fully loaded, including all frames, objects and images
 
 });
 
