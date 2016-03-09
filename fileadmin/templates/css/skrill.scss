@@ -312,6 +312,12 @@ a[href] {
 	
 }
 
+#content a[href]:not(.btn) {
+	
+	color: $purple;
+	
+}
+
 header a[href] {
 	
 	color: inherit;

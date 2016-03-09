@@ -217,7 +217,24 @@ label {
 	
 	border: 1px solid #eaeaea;
 	color: transparent;
+	width: 1em;
+    height: 1em;
+    text-align: center;
 
+}
+
+.radio input[type=radio] ~ .glyphicon:before {
+	
+	content: '';
+	display: inline-block;
+    width: .5em;
+    height: .5em;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+	vertical-align: .25em;
+    background: transparent;
+    
 }
 
 .radio input[type=radio] ~ .glyphicon {
@@ -229,6 +246,12 @@ label {
 .checkbox input[type=checkbox]:checked ~ .glyphicon, .radio input[type=radio]:checked ~ .glyphicon {
 	
 	color: $purple;
+
+}
+
+.radio input[type=radio]:checked ~ .glyphicon:before {
+	
+	background-color: $purple;
 
 }
 
