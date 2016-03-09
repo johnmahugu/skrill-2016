@@ -161,6 +161,7 @@ h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	font-weight: normal;
 	line-height: 1;
+	letter-spacing: .1em;
 
 }
 
@@ -181,9 +182,10 @@ header {
 
 header h1 {
 	
-	font-size: 14em;
-	margin: 0;
-
+	font-size: 12em;
+    margin: 0;
+    letter-spacing: .1em;
+    
 }
 
 @media screen and (max-width: 768px) {
@@ -267,6 +269,8 @@ header h1 {
 header .hero {
 	
 	text-align: center;
+	font-size: 1.3em;
+
 }
 
 .hero.dark-text h1, .hero.dark-text p {
@@ -350,6 +354,12 @@ header a[href] {
 	
 	background-color: #fff;
 	background-size: cover;
+
+}
+
+#content h2 {
+	
+	font-size: 3.4rem;
 
 }
 
@@ -768,9 +778,15 @@ b.tick:before {
 
 .box {
 	
-	background: #fff;
-	padding: 1em;
+	background: rgba(255, 255, 255, .8);
+	padding: 3em;
 	
+}
+
+.box h2 {
+	
+	margin-top: 0;
+
 }
 
 /* Element themes */
