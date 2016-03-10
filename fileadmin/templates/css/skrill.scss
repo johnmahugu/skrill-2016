@@ -233,6 +233,7 @@ header h1 {
 	z-index: 1;
 	color: #fff;
 	display: flex;
+    -webkit-transform: translateZ(0); // Faster refresh
 	
 }
 
