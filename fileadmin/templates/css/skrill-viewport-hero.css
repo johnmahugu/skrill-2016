@@ -1,1 +1,1 @@
-.viewport-flex{min-height:100vh;display:flex;flex-direction:column}.viewport-flex>*{flex-grow:none;flex-shrink:0}.viewport-flex>.grow-align{flex:1 1 auto;display:flex}.viewport-flex>.grow-align>*{align-self:center;text-align:center;margin:0 auto;width:100%}
+.viewport-flex{min-height:100vh;display:flex;flex-direction:column}.viewport-flex>*{flex-grow:none;flex-shrink:0;text-align:center}.viewport-flex>.grow-align{flex:1 1 auto;display:flex}.viewport-flex>.grow-align>*{align-self:center;text-align:center;margin:0 auto;width:100%}
