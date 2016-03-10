@@ -1,6 +1,6 @@
 /* To fix: full-width section with bg images getting white colour from its top neighbour with transparent circles */
 
-.transparency body:before, .viewport-flex:before {
+.transparency body:before {
 	
 	background: #40315a url(../../content/homepage-hero/homepage_consumer.jpg) top center no-repeat;
 	background-size: cover;
@@ -10,10 +10,11 @@
 	height: 100%;
 	content: '';
     z-index: -1;
-    -webkit-transform: translateZ(0); // Faster refresh
+    transform: translateZ(0); // Faster refresh
 	
 }
 
+/*
 .viewport-flex {
 	
 	clip: auto; 
@@ -23,13 +24,14 @@
 
 	@-moz-document url-prefix() {
 	
-		header {
+		.viewport-flex {
 		
 			clip: rect(auto,auto,auto,auto);
 			
 		}
 	
 	}
+*/
 
 .transparency body:before {
 	
@@ -266,7 +268,7 @@ main .row.transparent > * > .circle {
 	background-size: cover;
 	background-image: inherit;
     background-position: center center;
-    -webkit-transform: translateZ(0); // Faster refresh
+    transform: translateZ(0); // Faster refresh
 	
 }
 
