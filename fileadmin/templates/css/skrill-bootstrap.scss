@@ -281,6 +281,7 @@ body {
 .table tbody {
 	
 	border: 1px solid #ddd;
+    border-right: 2px solid #ddd;
 	    
 }
 
@@ -315,4 +316,23 @@ select option:first-child, select.form-control option:first-child {
 	
 	display: block !important;
 	
+}
+
+@media screen and (max-width: 767px) {
+
+	.row > * {
+		
+		width: 100% !important;
+		flex-basis: 100% !important;
+		
+	}
+
+	.masonry, .masonry.col2 {
+		
+	    -moz-column-count: 1;
+	    -webkit-column-count: 1;
+	    column-count: 1;
+	
+	}
+
 }

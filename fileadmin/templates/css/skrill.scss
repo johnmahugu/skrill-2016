@@ -188,35 +188,6 @@ header h1 {
     
 }
 
-@media screen and (max-width: 768px) {
-
-	header h1 {
-		
-		font-size: 3em;
-	
-	}
-	
-	header a.logo img {
-		
-		height: 6em;
-		max-width: none;
-
-	}
-	
-	.head > .logo {
-		
-		width: 0;
-
-	}
-	
-	.row.transparent {
-		
-		margin: 1em;
-		
-	}
-
-}
-
 .head a.logo img {
 	
 	display: block;
@@ -233,7 +204,8 @@ header h1 {
 	z-index: 1;
 	color: #fff;
 	display: flex;
-    transform: translateZ(0); // Faster refresh
+    -webkit-transform: translate3d(0,0,0); // Faster refresh
+    transform: translate3d(0,0,0); // Faster refresh
 	
 }
 
@@ -857,3 +829,39 @@ header .content-arrow {
 	text-align: center;
 	
 }
+
+@media screen and (max-width: 767px) {
+
+	header h1 {
+		
+		font-size: 3em;
+	
+	}
+	
+	header a.logo img {
+		
+		height: 6em;
+		max-width: none;
+
+	}
+	
+	.head > .logo {
+		
+		width: 0;
+
+	}
+	
+	.row.transparent {
+		
+		margin: 1em;
+		
+	}
+	
+	.awards li {
+		
+		padding: 0 1em;
+
+	}
+
+}
+

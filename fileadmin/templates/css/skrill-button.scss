@@ -79,7 +79,7 @@
 	
 	font-family: roboto, Helvetica, Arial, sans-serif;
 	letter-spacing: 1px;
-	letter-spacing: 1.02px; // Chrome bug
+	letter-spacing: 1.03px; // Chrome bug
     border-color: #811e68;
 	-webkit-animation: none;
 	animation: none;
@@ -103,21 +103,22 @@
 
 .btn:after { /* Arrow */
 	
-	content: '\e258';
+	content: '\e608';
 	display: inline-block;
 	position: absolute;
-	right: .8em;
+	right: .5em;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
-	border: 1px solid;
+// 	border: 1px solid;
 	height: 1.5em;
 	width: 1.5em;
 	text-align: right;
-	line-height: 1.3em;
-	border-radius: 50%;
-	font-family: 'Glyphicons Halflings';
-	padding-right: .1em;
+	line-height: 1.45em;
+// 	border-radius: 50%;
+    font-family: icons;
+   	padding-right: .1em;
+   	font-size: 1.45em;
 
 }
 
@@ -140,7 +141,7 @@
 	animation: button-animation 1.5s 1;
 	background: rgba(85, 78, 102, .5);
 	border-color: #fff;
-	letter-spacing: 1.02px; // Chrome bug
+	letter-spacing: 1.03px; // Chrome bug
 
 }
 
