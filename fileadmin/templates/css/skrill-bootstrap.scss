@@ -88,6 +88,20 @@ body {
 
 	}
 
+	.row > .col-lg-2 {
+		
+		width: 16.6667%;
+		flex: 0 1 16.6667%;
+
+	}
+
+	.row > .col-lg-10 {
+		
+		width: 83.333%;
+		flex: 0 1 83.333%;
+
+	}
+
 	.row:before {
 		
 		width: 100%;
@@ -186,21 +200,22 @@ body {
 
 .carousel-indicators {
 	
-	bottom: -3em;
+	bottom: -1em;
 	
 }
 
-.carousel-indicators li, .carousel-indicators li.active {
+#content .carousel-indicators li, #content .carousel-indicators li.active {
 	
 	width: 1em;
 	height: 1em;
 	border: 2px solid #fff;
 	min-height: 0;
     padding: 0;
+    display: inline-block;
 	
 }
 
-.carousel-indicators li:before {
+#content .carousel-indicators li:before {
 	
 	display: none;
 

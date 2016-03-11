@@ -364,11 +364,38 @@ header a[href] {
 	
 }
 
+/* Footer */
+
 footer {
 	
-	background: #fff;
+	background: #f4f4f4;
 	text-align: center;
 	padding: 1em;
+
+}
+
+footer ul li {
+	
+	display: inline-block;
+	
+}
+
+footer ul li a[href] {
+
+	color: #5c6478;
+
+}
+
+footer ul li a.icon[href] {
+
+	color: $purple;
+	font-size: 2.5em;
+
+}
+
+footer nav ul li a[href] {
+
+	text-transform: uppercase;
 
 }
 
@@ -397,30 +424,10 @@ footer {
 	 
 }
 
-/*
-.carousel .item:before, .carousel .item:after {
-	
-	content: '';
-	display: table;
-	
-}
-*/
-
 .hero-bottom-banner .carousel a[href]:not(.btn) {
 	
 	display: block;
 
-}
-
-.hero-bottom-banner .carousel:before {
-	
-/*
-	content: '';
-	padding-bottom: 7%; //  Aspect ratio
-	display: inline-block; 
-	width: 0;
-*/
-	
 }
 
 .hero-bottom-banner .carousel-indicators {
@@ -482,7 +489,7 @@ footer {
 
 	}
 	
-	li {
+	#content li {
 		
 		display: block;
 		margin: .5em 0;
@@ -492,7 +499,7 @@ footer {
 		
 	}
 	
-	li:before {
+	#content li:before {
 			
 		content: '✓';
 	    background: #41aeb5;
@@ -518,7 +525,7 @@ footer {
     
 	}
 
-.awards li {
+#content .awards li {
 	
 	display: inline-block;
 
@@ -622,15 +629,16 @@ footer {
 	
 }
 
-.nav-tabs > li {
+#content .nav-tabs > li {
 	
 	float: none;
 	display: inline-block;
 	padding: 0;
+	margin-bottom: -1px;
 	
 }
 
-.nav-tabs > li > a {
+#content .nav-tabs > li > a {
 
 	font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
 	font-size: 2em;
@@ -639,7 +647,7 @@ footer {
 
 }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li > a:hover, .nav-tabs > li.active > a:hover {
+#content .nav-tabs > li.active > a, #content .nav-tabs > li.active > a:focus, #content .nav-tabs > li > a:hover, #content .nav-tabs > li.active > a:hover {
 
 	text-decoration: none;
 	border-color: transparent;
@@ -647,7 +655,7 @@ footer {
 
 }
 
-.nav-tabs > li.active:after {
+#content .nav-tabs > li.active:after {
 	
 	content: '';
     width: 0;
@@ -683,7 +691,7 @@ b.tick:before {
 
 /* Step Circles */
 
-.module-stepcircles li:before, .global-offices li:before, .awards li:before, .nav li:before {
+#content .module-stepcircles li:before, #content .global-offices li:before, #content .awards li:before, #content .nav li:before {
 	
 	display: none;
 	
