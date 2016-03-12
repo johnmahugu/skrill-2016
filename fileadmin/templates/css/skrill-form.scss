@@ -275,7 +275,7 @@ select.form-control {
 
 
 // submit
-input[type="submit"] {
+input[type="submit"], button {
     max-width:290px;
     background-color: $purple;
     color: $white;
@@ -292,10 +292,15 @@ input[type="submit"] {
     margin-bottom:0;
 }
 
+form button.btn {
+	
+	display: block;
+
+}
+
 .submit-container {
     text-align: center;
 }
-
 
 // validation errors
 
