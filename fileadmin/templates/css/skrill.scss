@@ -691,19 +691,19 @@ b.tick:before {
 
 /* Step Circles */
 
-#content .module-stepcircles li:before, #content .global-offices li:before, #content .awards li:before, #content .nav li:before {
+#content .global-offices li:before, #content .awards li:before, #content .nav li:before {
 	
 	display: none;
 	
 }
 
-.module-stepcircles ol {
+#content .module-stepcircles ol {
 
 	counter-reset: level1;
 
 }
 
-.module-stepcircles li {
+#content .module-stepcircles li {
 	
 	text-align: center;
 	background-size: 0;
@@ -711,7 +711,7 @@ b.tick:before {
 
 }
 
-.module-stepcircles li .icon {
+#content .module-stepcircles li .icon {
 	
     display: block;
     border: 3px solid #41aeb5;
@@ -724,14 +724,15 @@ b.tick:before {
 
 }
 
-.module-stepcircles li:after {
+#content .module-stepcircles li:before {
 
-    content: counter(level1);
-    counter-increment: level1;
-    position: absolute;
     top: .5rem;
     left: 50%;
     transform: translateX(calc(-50% - 3.5rem));
+    font-size: 1.2em;
+    border: 3px solid #544c64;
+    box-sizing: content-box;
+    position: absolute;
     text-align: center;
     background: #41aeb5;
     color: #fff;
@@ -740,9 +741,13 @@ b.tick:before {
     height: 2em;
     line-height: 2;
     font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
-    font-size: 1.2em;
-    border: 3px solid #544c64;
-    box-sizing: content-box;
+    counter-increment: level1;
+
+}
+
+#content .module-stepcircles ol li:before {
+
+    content: counter(level1);
 
 }
 
