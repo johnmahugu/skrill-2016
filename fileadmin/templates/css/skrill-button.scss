@@ -135,7 +135,7 @@
 
 }
 
-.cta-holder .btn {
+.hero-content .btn {
 
 	-webkit-animation: button-animation 1.5s 1;
 	animation: button-animation 1.5s 1;
@@ -145,27 +145,27 @@
 
 }
 
-.cta-holder .btn:before {
+.hero-content .btn:before {
 	
 	top: 100%;
 	background: #fff;
 	
 }
 
-.cta-holder .btn:hover:before {
+.hero-content .btn:hover:before {
 	
 	top: 0;
 	
 }
 
-.cta-holder .btn:hover {
+.hero-content .btn:hover {
 	
 	color: rgba(85, 78, 102, .5);
 	border-color: #fff;
 
 }
 
-.cta-holder .btn:hover:after {
+.hero-content .btn:hover:after {
 	
 	color: rgba(85, 78, 102, .5);
 	border-color: rgba(85, 78, 102, .5);

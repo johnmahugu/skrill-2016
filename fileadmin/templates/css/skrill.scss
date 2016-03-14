@@ -169,7 +169,6 @@ header {
 	
 	overflow: hidden;
 	position: relative;
-	color: #fff;
 
 }
 
@@ -180,7 +179,13 @@ header {
 	
 }
 
-header h1 {
+.hero-content {
+	
+	color: #fff;
+	
+}
+
+.hero-content h1 {
 	
 	font-size: 12em;
     margin: 0;
@@ -255,6 +260,7 @@ header .hero {
 header .hero p {
 	
 	font-size: 1.2em;
+
 }
 
 header p {
@@ -291,7 +297,7 @@ a[href] {
 	
 }
 
-header a[href] {
+.head a[href] {
 	
 	color: inherit;
 	
@@ -480,6 +486,12 @@ footer nav ul li a[href] {
 		list-style: none;
 		padding: 0;
 		text-align: start;
+
+	}
+	
+	.box ul {
+		
+		list-style: initial;
 
 	}
 
