@@ -333,6 +333,14 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
+/* Modal */
+
+.modal-backdrop {
+	
+	display: none; /* z-index mix-up */
+	
+}
+
 @media screen and (max-width: 767px) {
 
 	.row > * {
