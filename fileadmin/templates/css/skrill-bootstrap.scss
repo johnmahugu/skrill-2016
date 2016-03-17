@@ -341,6 +341,26 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
+.modal {
+	
+	padding-top: 4em;
+
+}
+
+.modal-open .modal {
+
+    background: rgba(0,0,0,.5);	
+	left: calc((100vw - 100%)*-1);
+    right: calc((100vw - 100%)*-1);
+	
+}
+
+.modal .btn {
+	
+	letter-spacing: .9px;
+	
+}
+
 @media screen and (max-width: 767px) {
 
 	.row > * {
