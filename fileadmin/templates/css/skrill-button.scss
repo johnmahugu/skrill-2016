@@ -135,6 +135,23 @@
 
 }
 
+.modal-header button.close {
+	
+	margin: 0;
+	background-image: none;
+	border-radius: 50%;
+	width: 2em;
+	height: 2em;
+	text-align: center;
+
+}
+
+.modal-header button.close:after {
+	
+	display: none;
+
+}
+
 .hero-content .btn {
 
 	-webkit-animation: button-animation 1.5s 1;
