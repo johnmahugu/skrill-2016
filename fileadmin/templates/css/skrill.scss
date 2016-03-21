@@ -920,6 +920,33 @@ header .content-arrow {
 	
 }
 
+/* Merchants / Accordion Grid Item */
+
+.accordion-grid-item-trigger {
+	
+	padding: .5em;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 1em 0;
+    	
+}
+
+.accordion-grid-item-trigger:after {
+	
+    content: '+';
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    color: #bbb;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    font-size: 2em;
+    line-height: .85;
+    margin: 0 .2em;
+
+}
+
 @media screen and (max-width: 767px) {
 
 	header h1 {
