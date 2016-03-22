@@ -83,10 +83,14 @@
 	
 }
 
-.masonry .btn, .masonry .btn:focus { /* Chrome translate/masonry bug */
+@media all and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) { 
+	
+	.masonry .btn, .masonry .btn:focus { /* Chrome translate/masonry bug */
 	
 	transform: none;
     background-color: #811e68;
+
+}
 
 }
 
