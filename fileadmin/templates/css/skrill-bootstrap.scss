@@ -130,6 +130,14 @@ body {
 		
 	}
 
+	.masonry.col4 {
+		
+	    -moz-column-count: 4;
+		-webkit-column-count: 4;
+		column-count: 4;
+		
+	}
+
     .masonry > * {
 
         display: inline-block; /* Display inline-block, and absolutely NO FLOATS! */
@@ -376,7 +384,7 @@ select option:first-child, select.form-control option:first-child {
 		
 	}
 
-	.masonry, .masonry.col2 {
+	.masonry, .masonry.col2, .masonry.col4 {
 		
 	    -moz-column-count: 1;
 	    -webkit-column-count: 1;

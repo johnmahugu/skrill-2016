@@ -54,7 +54,7 @@
 
 }	
 
-.btn {
+.btn, .btn:focus {
 
 	-webkit-transition: all .15s linear;
 	transition: all .15s linear;
@@ -63,10 +63,6 @@
 	transform: translate3d(0,0,0);
 	margin: 1em 0;
 	
-}
-
-.btn, .btn:focus {
-
 	padding: 1em 1.7em;
 	border: 1px solid #fff;
 	border-radius: 3px;
@@ -85,6 +81,13 @@
 	animation: none;
 	background: transparent;
 	
+}
+
+.masonry .btn, .masonry .btn:focus { /* Chrome translate/masonry bug */
+	
+	transform: none;
+    background-color: #811e68;
+
 }
 
 .btn:before { /* Background */
