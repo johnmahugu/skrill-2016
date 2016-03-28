@@ -1,0 +1,37 @@
+@import 'skrill-variables';
+
+.panel-title {
+	
+	text-align: center;
+
+}
+
+.panel-title span {
+	
+	font-size: 1rem;
+	text-transform: none;
+	font-family: robotolight, Helvetica, Arial, sans-serif;
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+	margin: 2rem 0 0;
+	text-align: start;
+	display: block;
+	color: #333;
+	
+}
+
+.tx-fees .panel {
+	
+	background: #fff;
+	margin: 2em 0;
+	padding: 1em 0;
+	    
+}
+
+.tx-fees .section.contain {
+	
+	box-shadow: 50vw 0 0 #ededef,-50vw 0 0 #ededef;
+	background-color: #ededef;
+    
+}
