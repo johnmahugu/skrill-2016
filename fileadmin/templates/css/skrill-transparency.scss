@@ -9,7 +9,7 @@
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	content: '';
+// 	content: '';
     z-index: -1;
     -webkit-transform: translate3d(0,0,0); // Faster refresh
     transform: translate3d(0,0,0); // Faster refresh
@@ -197,7 +197,7 @@ main .row.transparent > * > .circle {
 
 /* From the BIO site */
 
-.fixed-background {
+div.fixed-background {
 
 	position: absolute;
     top: 0;
@@ -214,7 +214,7 @@ main .row.transparent > * > .circle {
 
 	@-moz-document url-prefix() {
 
-		.fixed-background {
+		div.fixed-background {
 		
 			clip: rect(auto,auto,auto,auto);
 			
@@ -222,7 +222,7 @@ main .row.transparent > * > .circle {
 
 	}
 
-.fixed-background:before {
+div.fixed-background:before {
 	
 	content: '';
 	position: fixed; 
@@ -238,7 +238,7 @@ main .row.transparent > * > .circle {
 	
 }
 
-.fixed-background.blur {
+div.fixed-background.blur {
 	
 	-webkit-filter: blur(5px);
 	-moz-filter: blur(5px);
