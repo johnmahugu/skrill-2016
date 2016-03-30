@@ -282,6 +282,7 @@ img {
 	max-width: 100%;
 	display: inline-block;
 	border: 0;
+	text-indent: -100%; /* Hide the broken image icon */
 
 }
 
