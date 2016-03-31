@@ -1,0 +1,104 @@
+@import 'skrill-variables';
+
+/* Accordion */
+
+.panel {
+	
+	text-align: left;
+	text-align: start;
+	border-bottom: 1px solid #ddd;
+
+}
+
+.panel-collapse {
+	
+	overflow: hidden;
+	
+}
+
+.panel-collapse.collapse {
+	
+	height: 0;
+
+}
+
+.panel-collapse.collapse.in {
+	
+	height: auto;
+
+}
+
+.panel-group {
+	
+    border: 1px solid #ddd;
+    border-bottom: none;
+    margin: 1em;
+	    
+}
+
+.panel-title {
+	
+	margin: 0;
+	font-size: 1.7em;
+
+}
+
+.panel-title a, .panel-body {
+	
+	padding: 1rem;
+	display: block;
+	color: #544c64;
+	position: relative;
+	
+}
+
+.panel-title a:after {
+	
+	content: '+';
+	display: inline-block;
+	text-align: center;
+	width: 1em;
+	height: 1em;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+	line-height: 1em;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	transform: translateY(-50%);
+	
+}
+
+/* Merchants / Accordion Grid Item */
+
+.accordion-grid-item-trigger {
+	
+	padding: .5em;
+    border-radius: 3px;
+    border: 1px solid #eee;
+    margin: 1em 0;
+    	
+}
+
+.accordion-grid-item-trigger:after {
+	
+    content: '+';
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    color: #bbb;
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    font-size: 2em;
+    line-height: .85;
+    margin: 0 .2em;
+
+}
+
+.accordion-grid-item h4.modal-title {
+	
+	font-size: 2em;
+
+}
+

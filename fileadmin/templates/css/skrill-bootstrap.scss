@@ -1,3 +1,5 @@
+@import 'skrill-variables';
+
 body {
 	
 	 -webkit-font-smoothing: antialiased;
@@ -375,7 +377,7 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mediumScreen) {
 
 	.row > * {
 		

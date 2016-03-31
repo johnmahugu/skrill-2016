@@ -215,7 +215,7 @@ label[for=nav-trigger] {
         
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $mediumScreen) {
 	
 	.head .nav nav div, .head input.trigger:checked ~ * {
 		

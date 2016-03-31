@@ -1,39 +1,33 @@
+@import 'skrill-variables';
+
 /* To fix: full-width section with bg images getting white colour from its top neighbour with transparent circles */
+
+.transparency body {
+
+	background-size: 0; /* Hidden here, used in :before by inherit */
+
+}
 
 .transparency body:before {
 	
-// 	background: #40315a url(../../content/homepage-hero/homepage_consumer.jpg) top center no-repeat;
-	background: #40315a url(../../content/homepage-hero/homepage_consumer-blur.jpg) top center no-repeat;
+	content: '';
+	background-image: inherit;
+	background-color:  #40315a;
+	background-position: top center;
+	background-repeat: no-repeat;
 	background-size: cover;
-// 	background-attachment: fixed; // maybe change to position:fixed for faster redraw
 	position: fixed;
 	width: 100%;
 	height: 100%;
-	content: '';
     z-index: -1;
     -webkit-transform: translate3d(0,0,0); // Faster refresh
     transform: translate3d(0,0,0); // Faster refresh
-/*
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
-	z-index: -1;
-*/
 	
 }
 
 .transparency main {
 	
 	overflow: hidden;		
-
-}
-
-.section {
-	
-    background: #fff;
-    position: relative;
 
 }
 
@@ -48,7 +42,7 @@
 	-webkit-backface-visibility: hidden;
 	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
-	box-shadow: 50vw 0 0 #fff, -50vw 0 0 #fff;
+	box-shadow: 50vw 0 0 #fff, -50vw 0 0 #fff; /* Background colour on the sides */
 	margin-bottom: -1px;
 
 }
@@ -59,23 +53,14 @@
 
 }
 
-/*
-.section.contain:not(.transparent) {
-	
-	background-color: #fff;
-
-}
-*/
-
 .transparency main .row.transparent > * {
 	
 	margin: 0;
 	padding: 0;
-	background: #fff;
 
 }
 
-.section:before, .section:after { // Clear inner margins
+.transparency main .row.transparent > *, .section, .section:before, .section:after {
 	
 	background: #fff;
 
@@ -90,7 +75,7 @@
 
 }
 
-.transparency main .row.transparent .hole > * {
+.section, .transparency main .row.transparent .hole > * {
 
 	position: relative;
 
@@ -131,7 +116,6 @@
 
 }
 
-
 main .row.transparent > * > .circle {
 
 	background: transparent;
@@ -139,7 +123,7 @@ main .row.transparent > * > .circle {
 
 }
 
-.transparent .circle:before { // Make it a square
+.transparent .circle:before { // Make it a square aspect ratio
 	
 	content: '';
 	display: inline-block;
@@ -150,7 +134,7 @@ main .row.transparent > * > .circle {
 
 // Transparent circle box
 
-.transparent .circle:after { // Overlay a circle with big enough border to create a hole
+.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
 
 	content: '';
 	display: block;
@@ -177,17 +161,13 @@ main .row.transparent > * > .circle {
 
 .transparent .circle > * {
 	
-/*
-	width: 70%;
-	height: 70%;
-*/
 	vertical-align: middle;
 	display: inline-block;
 	width: 67%;
 
 }
 
-.content-arrow {
+.content-arrow { /* Hero down arrow */
 	
 	vertical-align: bottom; 
 	padding: 1em; 
@@ -195,76 +175,50 @@ main .row.transparent > * > .circle {
 	
 }
 
-/* From the BIO site */
+/* Full height/width fixed background image */
 
-div.fixed-background {
-
+.full-background-container {
+	
 	position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    overflow: hidden; 
-	clip: auto; 
-	-webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
-	background-size: 0;
-	z-index: -1;
-	
+    overflow: hidden;
+    clip: auto;
+    -webkit-mask-image: -webkit-linear-gradient(top, #fff 0, #fff 100%);
+    background-size: 0;
+    z-index: -1;
+	    
 }
 
-	@-moz-document url-prefix() {
+	@-moz-document url-prefix() { /* mask-image doesn't work in FF */
 
-		div.fixed-background {
-		
-			clip: rect(auto,auto,auto,auto);
+		.full-background-container {
 			
+		    clip: rect(auto, auto, auto, auto);
+
 		}
 
 	}
 
-div.fixed-background:before {
+.full-background-container .full-background-image {
 	
-	content: '';
-	position: fixed; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-	background-size: cover;
-	background-image: inherit;
-    background-position: center center;
-    -webkit-transform: translate3d(0,0,0); // Faster refresh
-    transform: translate3d(0,0,0); // Faster refresh
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover; 
+	background-position: center center;
+	-webkit-transform: translate3d(0,0,0); //Faster refresh     
+	transform: translate3d(0,0,0); //Faster refresh;
 	
 }
 
-div.fixed-background.blur {
+.full-background-container .background-data {
 	
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
-	filter: blur(5px);
-    background-size: cover;
-
-}
-
-picture.fixed-background img { /* background-size: cover recreating by CSS – too slow? */
-	
-    z-index: -1;
-    position: fixed;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: none;
-    max-height: none;
-    display: block;
-    right: 0;
-    bottom: 0;
-    width: auto;
-    height: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+	display: none;
 
 }
 
@@ -284,7 +238,7 @@ picture.fixed-background img { /* background-size: cover recreating by CSS – t
 
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mediumScreen) {
 	
 	.transparency main .row.transparent {
 		
@@ -312,5 +266,11 @@ picture.fixed-background img { /* background-size: cover recreating by CSS – t
 	
 	}
 
+	.row.transparent {
+		
+		margin: 1em;
+		
+	}
+	
 }
 
