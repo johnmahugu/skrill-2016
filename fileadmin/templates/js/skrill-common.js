@@ -163,7 +163,7 @@ if (!isTouchDevice()) {
 
 function reveal() {
 	
-	$('.circle > *, .module-stepcircles li .icon').each( function (n) {
+	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
 
 		var k = Number((($(this)[0].getBoundingClientRect().bottom - $(window).height())/$(window).height()*-7).toFixed(1));
 		$(this).css('opacity', k);
@@ -193,7 +193,7 @@ $(document).ready(function() {
 	
 	/* On scroll, reveal Hero content, Step circles, Icons */
 
-	$('.circle > *, .module-stepcircles li .icon').each( function (n) {
+	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
 	
 		$(this).css('opacity', 0);
 	
