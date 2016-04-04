@@ -57,6 +57,7 @@
 	
 	margin: 0;
 	padding: 0;
+    margin: -1px;
 
 }
 
@@ -85,13 +86,13 @@
 	
 	content: '';
     position: absolute;
-    left: -50%;
+    left: calc(-50% - 3rem);
     right: 0;
-    top: 100%;
-    width: 200%;
+    width: calc(200% + 6rem);
     bottom: auto;
     height: 100vh;
     background: #fff;
+    z-index: -1;
 	
 }
 
@@ -139,10 +140,10 @@ main .row.transparent > * > .circle {
 	content: '';
 	display: block;
 	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+	top: -1px; /* Chrome bug */
+	left: -1px;
 	/* white SVG rectangle with a transparent circle */
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#FFFFFF" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
 	background-size: cover;
