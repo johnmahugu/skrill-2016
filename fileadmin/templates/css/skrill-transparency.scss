@@ -241,12 +241,6 @@ main .row.transparent > * > .circle {
 
 @media screen and (max-width: $mediumScreen) {
 	
-	.transparency main .row.transparent {
-		
-		margin: 0;
-
-	}
-	
 	.transparency main .row.transparent > *:after {
 
 		display: none;
@@ -257,6 +251,7 @@ main .row.transparent > * > .circle {
 		
 		display: block;
 		width: 100%;
+		margin: 0;
 	
 	}
 
