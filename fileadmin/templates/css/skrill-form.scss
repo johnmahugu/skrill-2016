@@ -118,7 +118,7 @@ select, select.form-control {
     background-repeat: no-repeat;
     background-position: calc(100% - 1em) 50%;
     color: $purple;
-    padding: 1.207rem 1.4rem !important;
+    padding: 0 1.4rem !important;
 
     & option:first-child {
         display: none;
