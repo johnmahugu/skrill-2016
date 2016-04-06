@@ -214,11 +214,11 @@ $(document).ready(function() {
 		
 	});
 	
-	$('[data-target=#affiliatesModal]').each ( function (n) {
+	$('[data-target=#affiliatesModal]').each( function (n) {
 		
 		$(this).click ( function (e) {
 			var el = this;
-			$('#affiliatesModal .embedded-code').html('&lt;a href=https://account.skrill.com/signup?locale=en&promo_id=16258371&rid=1223&gt;' + escapeHTML($(el).siblings('img')[0].outerHTML) + '&lt;/a&gt;');
+			$('#affiliatesModal .embedded-code').html('&lt;a href="https://account.skrill.com/signup?locale=' + $('#affiliatesForm select').val() + '&promo_id=16258371&rid=' + $('#customerID').val() + '"&gt;' + escapeHTML($(el).siblings('img')[0].outerHTML) + '&lt;/a&gt;');
 			
 		});
 		

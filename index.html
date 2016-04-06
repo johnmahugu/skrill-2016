@@ -1327,7 +1327,7 @@
 	    <div class="panel panel-default">
 	        <div class="panel-heading" role="tab" id="headingTwo">
 	            <h4 class="panel-title">
-	                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Payment Options By Skrill - Display The Range Of Payment Opt </a>
+	                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Payment Options By Skrill - Display The Range Of Payment Options </a>
 	            </h4>
 	        </div>
 	        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
@@ -1335,7 +1335,7 @@
 
 <h3>Get your embedded HTML</h3>
 
-<form class="row">
+<form class="row" id=affiliatesForm>
 	
 	<div class="form-group">
 		<input type="text" class="form-control" id="customerID" placeholder="Your customer ID">
@@ -1343,17 +1343,17 @@
 	
 	<div>
 		<select class="form-control">
-			<option>US Spanish</option>
-			<option>2</option>
-			<option>3</option>
-			<option>4</option>
-			<option>5</option>
+			<option value="es-us">US Spanish</option>
+			<option value="en">English</option>
+			<option value="fr">French</option>
+			<option value="de">German</option>
+			<option value="es">Spanish</option>
 		</select>
 	</div>
 			  
 </form>
 
-<!-- To do: form with a selection of user ID (=rid in URI) and country (=locale in URI) -->
+<!-- To do: form validation -->
 
 <div class="modal fade" id="affiliatesModal" tabindex="-1" role="dialog" aria-labelledby="affiliatesModalLabel">
   <div class="modal-dialog" role="document">
