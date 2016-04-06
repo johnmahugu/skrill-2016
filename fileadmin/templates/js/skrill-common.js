@@ -175,6 +175,12 @@ function reveal() {
 
 }
 
+function escapeHTML(html) {
+
+    return document.createElement('div').appendChild(document.createTextNode(html)).parentNode.innerHTML;
+
+}
+
 $(document).ready(function() {
 
     if (typeof time_override == 'number') {
@@ -208,11 +214,21 @@ $(document).ready(function() {
 		
 	});
 	
+	$('[data-target=#affiliatesModal]').each ( function (n) {
+		
+		$(this).click ( function (e) {
+			var el = this;
+			$('#affiliatesModal .embedded-code').html('&lt;a href=https://account.skrill.com/signup?locale=en&promo_id=16258371&rid=1223&gt;' + escapeHTML($(el).siblings('img')[0].outerHTML) + '&lt;/a&gt;');
+			
+		});
+		
+	});
+	
 });
 
 $(window).load(function() {
 
-// executes when complete page is fully loaded, including all frames, objects and images
+// executes when complete page is fully loaded, including all frames, objects and images. Responsive images replacement
 
 });
 
