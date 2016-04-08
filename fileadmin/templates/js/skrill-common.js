@@ -224,6 +224,22 @@ $(document).ready(function() {
 		
 	});
 	
+	$('.panel').each( function (n) {
+		
+		$(this).on('shown.bs.modal', function (e) {
+			
+			$('html').addClass('modal-open');
+
+		});
+		
+		$(this).on('hidden.bs.modal', function (e) {
+			
+			$('html').removeClass('modal-open');
+
+		});
+		
+	});
+	
 });
 
 $(window).load(function() {
