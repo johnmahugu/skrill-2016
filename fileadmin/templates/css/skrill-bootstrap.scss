@@ -366,8 +366,6 @@ select option:first-child, select.form-control option:first-child {
 .modal-open .modal {
 
     background: rgba(0,0,0,.5);	
-	left: calc((100vw - 100%)*-1);
-    right: calc((100vw - 100%)*-1);
 	
 }
 
