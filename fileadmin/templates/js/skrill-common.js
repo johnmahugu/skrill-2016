@@ -167,8 +167,21 @@ function reveal() {
 
 		var k = Number((($(this)[0].getBoundingClientRect().bottom - $(window).height())/$(window).height()*-7).toFixed(1));
 		$(this).css('opacity', k);
+		if (k <= 0) {
+			
+			$(this).css({'opacity': 0, 'contain': 'strict'});
+			
+		}
+		if (k >= 1) {
+			
+			$(this).css('opacity', 1);
+			
+		}
+		
 		if (k>0) {
-			$(this).css('transform', 'scale(' + ((k<1) ? k : 1) + ')');
+
+			$(this).css({'transform': ('scale(' + ((k<1) ? k : 1) + ')'), 'contain': 'none'});
+
 		}
 	
 	});

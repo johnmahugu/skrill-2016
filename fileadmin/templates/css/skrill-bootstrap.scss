@@ -254,6 +254,12 @@ body {
 	
 }
 
+.carousel .item:not(.active) {
+	
+	contain: strict;
+
+}
+
 /* Buttons */
 
 .btn {
@@ -360,6 +366,13 @@ select option:first-child, select.form-control option:first-child {
 .modal {
 	
 	padding-top: 4em;
+	contain: strict;
+
+}
+
+.modal.in {
+	
+	contain: none;
 
 }
 

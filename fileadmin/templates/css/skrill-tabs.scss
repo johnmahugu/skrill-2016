@@ -52,3 +52,8 @@
     
 }
 
+.tab-pane:not(.in) {
+	
+	contain: strict;
+
+}

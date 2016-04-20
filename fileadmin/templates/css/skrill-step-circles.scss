@@ -8,9 +8,10 @@
 	
 }
 
-#content .module-stepcircles ol {
+#content .module-stepcircles ol.row {
 
 	counter-reset: level1;
+	justify-content: center;
 
 }
 
@@ -19,6 +20,8 @@
 	text-align: center;
 	background-size: 0;
 	position: relative;
+	flex-basis: 33.33%;
+    flex-grow: 0;
 
 }
 
