@@ -90,8 +90,9 @@ input[type=range].timeline:focus::-ms-fill-upper {
 
 .timeline-slider {
 	
-	overflow: hidden;
+	overflow: auto;
 	white-space: nowrap;
+	margin: 1em 0;
 
 }
 
