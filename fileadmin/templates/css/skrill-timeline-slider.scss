@@ -93,13 +93,14 @@ input[type=range].timeline:focus::-ms-fill-upper {
 	overflow: auto;
 	white-space: nowrap;
 	margin: 1em 0;
+	display: flex;
 
 }
 
 .timeline-slider > div {
 	
 	display: inline-block;
-	width: 15em;
+	min-width: 15em;
 	white-space: normal;
 	padding: 2em;
 	background: #ededef;
