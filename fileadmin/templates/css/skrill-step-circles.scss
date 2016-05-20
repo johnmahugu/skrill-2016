@@ -42,9 +42,9 @@
 
     top: .5rem;
     left: 50%;
-    transform: translateX(calc(-50% - 3.5rem));
+    transform: translateX(calc(-50% - 2.5rem));
     font-size: 1.2em;
-    border: 3px solid #544c64;
+    border: 3px solid #fff;
     box-sizing: content-box;
     position: absolute;
     text-align: center;
@@ -56,6 +56,19 @@
     line-height: 2;
     font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
     counter-increment: level1;
+    z-index: 1;
+
+}
+
+#content .module-stepcircles.light li:before {
+
+    border: 3px solid $grey-light;
+
+}
+
+#content .module-stepcircles.dark li:before {
+
+    border: 3px solid #544c64;
 
 }
 

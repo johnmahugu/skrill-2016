@@ -180,6 +180,18 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
+main#content a[href]:not(.btn) {
+	
+	text-decoration: underline;
+
+}
+
+main#content .dark a[href]:not(.btn) {
+	
+	color: $teal;
+
+}
+
 @media screen and (max-width: $mediumScreen) {
 
 	header h1 {
