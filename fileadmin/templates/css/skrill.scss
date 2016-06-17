@@ -79,7 +79,7 @@ a[href] {
 	
 }
 
-#content a[href]:not(.btn) {
+#content a[href]:not(.btn):not([role=button]) {
 	
 	color: $purple;
 	

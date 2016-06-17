@@ -180,13 +180,13 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
-main#content a[href]:not(.btn) {
+main#content a[href]:not(.btn):not([role=button]) {
 	
 	text-decoration: underline;
 
 }
 
-main#content .dark a[href]:not(.btn) {
+main#content .dark a[href]:not(.btn):not([role=button]) {
 	
 	color: $teal;
 

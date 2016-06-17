@@ -56,12 +56,18 @@
 
 .tx-fees .icon-holder {
 	
-	max-width: 13rem;
     margin: 0 auto;
     border-radius: 50%;
     border: 4px solid #41aeb5;
-    padding: 1rem;
+	width: 13rem;
+	height: 13rem;
 	
+}
+
+.tx-fees .section-icon {
+	
+	padding: 2em 0;
+
 }
 
 .tx-fees .provider-logos {
