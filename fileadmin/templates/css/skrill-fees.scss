@@ -29,6 +29,12 @@
 	    
 }
 
+.tx-fees .panel-title a {
+	
+	padding: 2rem 3rem;
+	
+}
+
 .tx-fees .section.contain {
 	
 	box-shadow: 50vw 0 0 #ededef,-50vw 0 0 #ededef;
@@ -100,6 +106,12 @@
     padding: 1.4rem 0;
     background: #f8f8f9;
     margin: 1em 0;
+
+}
+
+.fee-wrapper > div:last-child {
+
+	text-align: right;
 
 }
 
