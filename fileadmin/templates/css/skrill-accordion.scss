@@ -56,7 +56,7 @@
 
 .panel-title a:after {
 	
-	content: '+';
+	content: '\e60a';
 	display: inline-block;
 	text-align: center;
 	width: 1em;
@@ -68,7 +68,19 @@
 	right: 1em;
 	top: 50%;
 	transform: translateY(-50%);
+	font-family: icons;
+	padding: .25em;
+	font-size: .66em;
+	box-sizing: initial;
 	
+}
+
+.panel-title a[aria-expanded="true"]:after {
+	
+	content: '\e610';
+	color: #fff;
+	background: #544c64;
+
 }
 
 /* Merchants / Accordion Grid Item */
