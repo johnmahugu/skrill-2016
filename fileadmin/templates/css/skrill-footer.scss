@@ -35,3 +35,22 @@ footer nav ul li a[href] {
 
 }
 
+footer nav ul li:not(:first-child):before {
+	
+	content: '|';
+	display: inline-block;
+	margin: 0 1em;
+	
+}
+
+footer ul.legals, footer p {
+	
+	font-size: .8em;
+	
+}
+
+footer p {
+	
+	margin-top: 3rem;
+	
+}

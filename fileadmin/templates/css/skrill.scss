@@ -72,19 +72,6 @@ img.header {
 
 }
 
-a[href] {
-	
-	text-decoration: none;
-	display: inline-block;
-	
-}
-
-#content a[href]:not(.btn):not([role=button]) {
-	
-	color: $purple;
-	
-}
-
 .section:before, .section:after { // Clear inner margins
 	
 	content: '';
@@ -326,3 +313,52 @@ b.tick:before {
 
 }
 
+/* About us – Global offices */
+
+.global-offices .office-holder {
+	
+	padding: 1em;
+	margin: 1em;
+	
+}
+
+#content .global-offices li {
+	
+	margin: 1em;
+	padding: 0;
+	background: #fff;
+	flex: 0 1 calc(50% - 2em);
+
+}
+
+#content .global-offices ul {
+	
+	margin: 1em 0;
+
+}
+
+main#content .global-offices a[href]:not(.btn):not([role=button]) {
+	
+	text-decoration: none;
+	color: unset;
+	width: 50%;
+
+}
+
+#content .global-offices .office-map {
+	
+	position: absolute;
+	right: -1em;
+	bottom: -1em;
+	width: calc(50% + 1em);
+	top: -1em;
+	background-size: cover;
+	background-position: center center;
+	
+}
+
+#content .global-offices h3 {
+	
+	margin-top: 0;
+
+}

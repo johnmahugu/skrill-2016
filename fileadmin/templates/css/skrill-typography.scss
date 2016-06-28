@@ -180,6 +180,19 @@ h1, h2, h3, h4, h5, h6 {
 	
 }
 
+a[href] {
+	
+	text-decoration: none;
+	display: inline-block;
+	
+}
+
+#content a[href]:not(.btn):not([role=button]) {
+	
+	color: $purple;
+	
+}
+
 main#content a[href]:not(.btn):not([role=button]) {
 	
 	text-decoration: underline;
