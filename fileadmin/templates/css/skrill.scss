@@ -20,7 +20,7 @@
 
 html, body {
 	
-	font-family:robotolight,Helvetica,Arial,sans-serif;
+	font-family: robotolight, Helvetica, Arial, sans-serif;
 	margin: 0;
 	font-size: 14px;
 	letter-spacing: 1px;
@@ -296,7 +296,7 @@ b.tick:before {
 
 .circle > :first-child {
 	
-	transition: all .2s ease-in-out;
+	transition: all .1s linear;
 	
 }
 

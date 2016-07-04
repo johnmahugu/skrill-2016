@@ -45,7 +45,7 @@
 #content .tx-fees li {
 	
 	display: inline-block;
-	margin: 0;
+	margin: .5em;
     padding: 0;
     border: 1px solid #ededef;
     border-radius: 3px;
@@ -88,6 +88,14 @@
 	
 }
 
+#content .tx-fees h4 {
+	
+	font-family: unset;
+	text-transform: none;
+	color: unset;
+
+}
+
 .fee-wrapper {
 
     width: 100%;
@@ -105,12 +113,54 @@
     
     padding: 1.4rem 0;
     background: #f8f8f9;
-    margin: 1em 0;
+    margin: 1rem 0;
 
 }
 
-.fee-wrapper > div:last-child {
+.fee-wrapper > div:nth-child(n+1) {
 
+	text-align: right;
+
+}
+
+.tx-fees .fee-wrapper.send-money, .tx-fees .fee-wrapper.receive-money {
+	
+	display: inline-block;
+    text-align: left;
+    padding: 1rem;
+
+}
+
+.tx-fees .fee-wrapper.send-money, .tx-fees .fee-wrapper.receive-money strong {
+
+    text-transform: uppercase;
+    font-family: bebas_neuelight, Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
+
+}
+
+.tx-fees .fee-wrapper.receive-money p {
+	
+	margin-top: 0;
+
+}
+
+.tx-fees .fee-wrapper.receive-money strong, .tx-fees table b, .tx-fees table strong {
+	
+	font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	font-size: 1.5em;
+
+}
+
+.tx-fees .fee-wrapper.send-money .convert-currency, .tx-fees .fee-wrapper.receive-money .convert-currency {
+	
+	display: inline-block;
+
+}
+
+.tx-fees table td:last-child {
+	
 	text-align: right;
 
 }

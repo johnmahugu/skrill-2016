@@ -227,6 +227,8 @@ $(document).ready(function() {
 		
 	});
 	
+	/* Affiliates modal content */
+	
 	$('[data-target=#affiliatesModal]').each( function (n) {
 		
 		$(this).click ( function (e) {
