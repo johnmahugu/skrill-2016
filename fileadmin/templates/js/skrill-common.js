@@ -161,6 +161,7 @@ if (!isTouchDevice()) {
 	
 }
 
+/*
 function reveal() {
 	
 	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
@@ -187,6 +188,7 @@ function reveal() {
 	});
 
 }
+*/
 
 function escapeHTML(html) {
 
@@ -212,6 +214,7 @@ $(document).ready(function() {
 	
 	/* On scroll, reveal Hero content, Step circles, Icons */
 
+/*
 	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
 	
 		$(this).css('opacity', 0);
@@ -226,6 +229,7 @@ $(document).ready(function() {
 		var t = setTimeout(reveal, 100);	
 		
 	});
+*/
 	
 	/* Affiliates modal content */
 	

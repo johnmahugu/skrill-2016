@@ -38,6 +38,22 @@
 	
 }
 
+.hero-content.invisible {
+	
+    transition: all .5s ease;
+    opacity: 0.0;
+    transform: translate3d(0,10rem,0) !important;
+
+}
+
+.hero-content.visible {
+	
+    transition: all .5s ease;
+    opacity: 1.0;
+    transform: translate3d(0,0,0) !important;
+
+}
+
 .hero-content h1 {
 	
 	font-size: 12em;
