@@ -45,11 +45,11 @@
 #content .tx-fees li {
 	
 	display: inline-block;
-	margin: .5em;
+	margin: .5rem;
     padding: 0;
     border: 1px solid #ededef;
     border-radius: 3px;
-    padding: .4em;
+    padding: .4rem;
     background: #fff;
 	
 }
@@ -111,10 +111,19 @@
     justify-content: space-between;
     margin: 0;
     
-    padding: 1.4rem 0;
+    padding: 1rem 0;
     background: #f8f8f9;
     margin: 1rem 0;
+    font-family: bebas_neuelight, Helvetica, Arial, sans-serif;
+    font-size: 1.7em;
 
+}
+
+.fee-wrapper p {
+	
+	font-family: robotolight, Helvetica, Arial, sans-serif;
+	font-size: 1rem;
+	
 }
 
 .fee-wrapper > div:nth-child(n+1) {
@@ -128,6 +137,7 @@
 	display: inline-block;
     text-align: left;
     padding: 1rem;
+    font-size: 1rem;
 
 }
 

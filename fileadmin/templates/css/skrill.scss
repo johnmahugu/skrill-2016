@@ -72,6 +72,12 @@ img.header {
 
 }
 
+.table tbody {
+	
+	border-right-width: 1px;
+	
+}
+
 .section:before, .section:after { // Clear inner margins
 	
 	content: '';
