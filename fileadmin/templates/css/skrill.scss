@@ -9,6 +9,7 @@
 @import 'skrill-viewport-hero';
 @import 'skrill-nav';
 @import 'skrill-lists';
+@import 'skrill-tables';
 @import 'skrill-accordion';
 @import 'skrill-tabs';
 @import 'skrill-footer';
@@ -70,12 +71,6 @@ img.header {
 	
 	opacity: 0;
 
-}
-
-.table tbody {
-	
-	border-right-width: 1px;
-	
 }
 
 .section:before, .section:after { // Clear inner margins
