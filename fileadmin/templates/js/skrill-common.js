@@ -161,39 +161,22 @@ if (!isTouchDevice()) {
 	
 }
 
-/*
-function reveal() {
-	
-	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
-
-		var k = Number((($(this)[0].getBoundingClientRect().bottom - $(window).height())/$(window).height()*-7).toFixed(1));
-		$(this).css('opacity', k);
-		if (k <= 0) {
-			
-			$(this).css({'opacity': 0, 'contain': 'strict'});
-			
-		}
-		if (k >= 1) {
-			
-			$(this).css('opacity', 1);
-			
-		}
-		
-		if (k>0) {
-
-			$(this).css({'transform': ('scale(' + ((k<1) ? k : 1) + ')'), 'contain': 'none'});
-
-		}
-	
-	});
-
-}
-*/
-
 function escapeHTML(html) {
 
     return document.createElement('div').appendChild(document.createTextNode(html)).parentNode.innerHTML;
 
+}
+
+function setImage(el) {
+	// JS image replacement on load and resize. Original image is lowest resolution.
+	var newImageURL = $(el).find('span[data-size="wide"]').data('src'); // To do: Choose the correct new image
+	
+	if (typeof newImageURL != 'undefined') {
+	
+		$(el).css('background-image', 'url(' + newImageURL + ')');
+	
+	}
+		
 }
 
 $(document).ready(function() {
@@ -211,25 +194,6 @@ $(document).ready(function() {
 		}
 	
 	}
-	
-	/* On scroll, reveal Hero content, Step circles, Icons */
-
-/*
-	$('.circle > :first-child, .module-stepcircles li .icon').each( function (n) {
-	
-		$(this).css('opacity', 0);
-	
-	});
-	
-	reveal();
-	
-	$(window).scroll( function (e) {
-		
-		clearTimeout(t);
-		var t = setTimeout(reveal, 100);	
-		
-	});
-*/
 	
 	/* Affiliates modal content */
 	
@@ -261,9 +225,15 @@ $(document).ready(function() {
 	
 });
 
-$(window).load(function() {
+$(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 
 
-// executes when complete page is fully loaded, including all frames, objects and images. Responsive images replacement
+// Responsive images replacement
+
+	$('.full-background-image').each( function (n) { // To do: also on resize
+		
+		setImage(this);
+		
+	});
 
 });
 
