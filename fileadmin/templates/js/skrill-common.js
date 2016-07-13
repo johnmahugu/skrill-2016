@@ -223,6 +223,22 @@ $(document).ready(function() {
 		
 	});
 	
+	/* Close nav menu on click outside */
+	$('html').on('click', function(e) {
+
+		/* If click is outside of the element and the element is open, then click on the trigger */
+		if($(e.target).closest('.head').length == 0 && $('#nav-trigger')[0].checked) { 
+		    $('#nav-trigger').click();
+	    }
+	    
+	});
+	
+	$('#nav-trigger').on('change', function (e) {
+		
+		$('html').toggleClass('menu-open');
+		
+	});
+	
 });
 
 $(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 

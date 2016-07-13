@@ -216,6 +216,41 @@ label[for=nav-trigger] {
         
 }
 
+@keyframes slidein {
+	
+	0% {
+
+		background: rgba(84, 76, 100, 0);
+		
+	}
+
+	100% {
+		
+		background: rgba(84, 76, 100, .75);
+
+	}
+
+}
+
+html.menu-open body:after {
+	
+	content: '';	
+	position: fixed;
+	background: rgba(84, 76, 100, .75);
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	animation: slidein .5s 1;
+
+}
+
+html.menu-open {
+	
+	overflow: hidden;
+
+}
+
 @media screen and (max-width: $mediumScreen) {
 	
 	.head .nav nav div.menu, .head input.trigger:checked ~ * {
