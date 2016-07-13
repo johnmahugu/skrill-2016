@@ -30,14 +30,6 @@ html, body {
 
 }
 
-/*
-*:not(html) { // Pre-render everything below, almost works
-
-    -webkit-transform: translate3d(0, 0, 0);
-
-}
-*/
-
 header {
 	
 	overflow: hidden;
@@ -92,7 +84,6 @@ img.header {
 	
 	background-color: #fff;
 	background-size: cover;
-	will-change: transform;
 
 }
 
@@ -133,7 +124,6 @@ Dark: dark purple background, white elements, grey text
 	/* grey SVG rectangle with a transparent circle */
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#fbfbfc" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
 	background-size: cover;
-	will-change: transform;
 	
 }
 
@@ -172,7 +162,6 @@ Dark: dark purple background, white elements, grey text
 	/* grey SVG rectangle with a transparent circle */
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#544c64" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
 	background-size: cover;
-	will-change: transform;
 	
 }
 
@@ -358,7 +347,6 @@ main#content .global-offices a[href]:not(.btn):not([role=button]) {
 	top: -1em;
 	background-size: cover;
 	background-position: center center;
-	will-change: transform;
 	
 }
 

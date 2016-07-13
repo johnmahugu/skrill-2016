@@ -22,7 +22,7 @@ label[for=nav-trigger] {
 	padding: 1em;
 	width: 6em;
 	text-align: center;
-	line-height: 3.96;
+	line-height: 4;
 
 }
 
@@ -207,7 +207,7 @@ label[for=nav-trigger] {
 
 .head .icon:hover {
 	
-    color: $purple;
+    background: rgba(84, 77, 100, .7);
     
 }
 
@@ -221,17 +221,24 @@ label[for=nav-trigger] {
         
 }
 
+.menu-open .head .icon.icon-menu:before {
+
+	content: "\e603";
+	font-size: 2em;
+
+}
+
 @keyframes slidein {
 	
 	0% {
 
-		background: rgba(84, 76, 100, 0);
+		opacity: 0;
 		
 	}
 
 	100% {
 		
-		background: rgba(84, 76, 100, .75);
+		opacity: 1;
 
 	}
 
@@ -248,6 +255,9 @@ html.menu-open body:after {
 	left: 0;
 	animation: slidein .5s 1;
 	z-index: 16; /* above carousel controls etc */
+	will-change: opacity;
+    -webkit-transform: translate3d(0,0,0); // Faster refresh
+
 
 }
 
