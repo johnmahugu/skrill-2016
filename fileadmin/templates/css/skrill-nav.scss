@@ -26,6 +26,11 @@ label[for=nav-trigger] {
 
 }
 
+.head {
+	
+	z-index: 17; // above the overlay
+}
+
 .head .nav > div > input.trigger {
 	
 	display: none;
@@ -242,6 +247,7 @@ html.menu-open body:after {
 	right: 0;
 	left: 0;
 	animation: slidein .5s 1;
+	z-index: 16; /* above carousel controls etc */
 
 }
 
