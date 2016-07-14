@@ -253,6 +253,8 @@ html.menu-open body:after {
 	bottom: 0;
 	right: 0;
 	left: 0;
+	height: 100vh;
+	width: 100vw;
 	animation: slidein .5s 1;
 	z-index: 16; /* above carousel controls etc */
 	will-change: opacity;
