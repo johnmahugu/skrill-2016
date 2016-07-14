@@ -333,6 +333,13 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
+.container-fluid {
+	
+	margin: 0;
+	padding: 0;
+
+}
+
 @media screen and (max-width: $mediumScreen) {
 
 	.row > * {

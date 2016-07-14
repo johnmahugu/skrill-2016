@@ -29,6 +29,7 @@ ol {
     padding-left: 4em;
     position: relative;
     min-height: 2em;
+    padding-top: .5em;
 	
 }
 
@@ -47,8 +48,8 @@ ol {
     font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
     position: absolute;
 	left: 0;
-    top: -.3em;
-	
+	top: .2em;
+ 	
 }
 
 ol li:before {
