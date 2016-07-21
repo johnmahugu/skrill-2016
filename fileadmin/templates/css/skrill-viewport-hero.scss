@@ -96,6 +96,12 @@
 	
 }
 
+.head.row:before, .head.row:after {
+	
+	display: none;
+
+}
+
 .head > * {
 	
 	justify-content: center;
@@ -103,6 +109,9 @@
 	flex-direction: column;
 	flex: 0 0 auto;
     padding: 0 2em;
+	margin: 0;
+	width: auto;
+	overflow: visible;
 
 }
 

@@ -1,8 +1,8 @@
 @charset 'utf-8';
 
-@import 'bootstrap.min';
+// @import 'bootstrap.min';
+// @import 'skrill-bootstrap';
 @import 'skrill-variables';
-@import 'skrill-bootstrap';
 @import 'skrill-typography';
 @import 'skrill-transparency';
 @import 'skrill-button';
@@ -27,6 +27,12 @@ html, body {
 	letter-spacing: 1px;
 	box-sizing: border-box;
 	overflow-x: hidden;
+
+}
+
+body {
+	
+	 -webkit-font-smoothing: antialiased;
 
 }
 
@@ -55,13 +61,219 @@ img {
 	max-width: 100%;
 	display: inline-block;
 	border: 0;
-	text-indent: -100%; /* Hide the broken image icon */
+	text-indent: -100%; // Hide the broken image icon
 
 }
 
 img.header {
 	
 	opacity: 0;
+
+}
+
+// Masonry in CSS only
+
+.masonry {
+
+    -moz-column-count: 3;
+    -moz-column-gap: 1rem;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 1rem;
+    column-count: 3;
+    column-gap: 1rem;
+    background: #fff;
+
+}
+
+	.masonry.col2 {
+		
+	    -moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+		
+	}
+
+	.masonry.col4 {
+		
+	    -moz-column-count: 4;
+		-webkit-column-count: 4;
+		column-count: 4;
+		
+	}
+
+    .masonry > * {
+
+        display: inline-block;
+        margin-bottom: 1rem;
+        width: 100%;
+        -webkit-column-break-inside: avoid;
+		page-break-inside: avoid;
+		break-inside: avoid-column;
+
+    }
+
+	@media screen and (max-width: $mediumScreen) {
+	
+		.masonry, .masonry.col2, .masonry.col4 {
+			
+		    -moz-column-count: 1;
+		    -webkit-column-count: 1;
+		    column-count: 1;
+		
+		}
+	
+	}
+
+// Bootstrap Carousel additions
+
+.carousel {
+	
+	margin-bottom: 3em;
+
+}
+
+.carousel-inner.row > * {
+	
+	margin: 0;
+	padding: 0;
+	
+}
+
+.carousel-inner > .item > img {
+	
+	margin: 0 auto;
+	
+}
+
+.carousel-indicators {
+	
+	bottom: -1em;
+	
+}
+
+#content .carousel-indicators li, #content .carousel-indicators li.active {
+	
+	width: 1em;
+	height: 1em;
+	border: 2px solid #fff;
+	min-height: 0;
+    padding: 0;
+    display: inline-block;
+	
+}
+
+#content .carousel-indicators li:before {
+	
+	display: none;
+
+}
+
+.carousel-control {
+	
+	width: 3em;
+    height: 2em;
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.carousel-control.left, .carousel-control.right {
+	
+    background: none;
+
+}
+
+.carousel-control .glyphicon {
+	
+    color: #ddd;
+    text-shadow: none;
+	
+}
+
+.carousel .item:not(.active) {
+	
+	contain: strict;
+
+}
+
+// Buttons
+
+.btn {
+	
+	display: inline-block;
+	vertical-align: middle;
+	text-align: left;
+	text-align: start;
+	max-width: 100%;
+	overflow: hidden;
+	white-space: normal; // Bootstrap fix
+	
+}
+
+a:focus {
+	
+	outline: none;
+
+}
+
+// Form de-style
+
+.btn-default:hover {
+
+	background: none;
+
+}
+
+.form-control {
+	
+	box-shadow: none;
+	background-color: transparent;
+}
+
+select option:first-child, select.form-control option:first-child {
+	
+	display: block !important;
+	
+}
+
+// Modal
+
+.modal-backdrop {
+	
+	display: none; // z-index mix-up
+	
+}
+
+.modal {
+	
+	padding-top: 4em;
+	contain: strict;
+
+}
+
+.modal.in {
+	
+	contain: none;
+
+}
+
+.modal-open .modal {
+
+    background: rgba(0,0,0,.5);	
+	
+}
+
+.modal .btn {
+	
+	letter-spacing: .9px;
+	
+}
+
+.container-fluid {
+	
+	margin: 0;
+	padding: 0;
 
 }
 
@@ -87,13 +299,7 @@ img.header {
 
 }
 
-/* Themes: 
-
-Default: white background, purple elements, grey text
-Light: grey background, purple elements, grey text
-Dark: dark purple background, white elements, grey text
-
-*/
+// Themes: Default: white background, purple elements, grey text	Light: grey background, purple elements, grey text	Dark: dark purple background, white elements, grey text
 
 .section.light:not(.transparent) {
 	
@@ -121,7 +327,7 @@ Dark: dark purple background, white elements, grey text
 
 .light.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
 
-	/* grey SVG rectangle with a transparent circle */
+	// grey SVG rectangle with a transparent circle
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#fbfbfc" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
 	background-size: cover;
 	
@@ -159,7 +365,7 @@ Dark: dark purple background, white elements, grey text
 
 .dark.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
 
-	/* grey SVG rectangle with a transparent circle */
+	// grey SVG rectangle with a transparent circle
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#544c64" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
 	background-size: cover;
 	
@@ -171,7 +377,7 @@ Dark: dark purple background, white elements, grey text
 	
 }
 
-/* Themes – end */
+// Themes – end
 
 #content {
 	
@@ -179,7 +385,7 @@ Dark: dark purple background, white elements, grey text
 	
 }
 
-/* Uncollapsing child margins */
+// Uncollapsing child margins
 .module-title {
 	
 	padding: 1px;
@@ -187,7 +393,7 @@ Dark: dark purple background, white elements, grey text
 	
 }
 
-/* App Store / Play Store badges */
+// App Store / Play Store badges
 
 .badges {
 	
@@ -227,7 +433,7 @@ Dark: dark purple background, white elements, grey text
 	
 }
 
-/* Tick */
+// Tick
 
 b.tick {
 	
@@ -246,7 +452,7 @@ b.tick:before {
 	
 }
 
-/* Box */
+// Box
 
 .box {
 	
@@ -261,7 +467,7 @@ b.tick:before {
 
 }
 
-/* Element themes */
+// Element themes
 
 .dark {
 	
@@ -285,7 +491,7 @@ b.tick:before {
 
 }
 
-/* Reveal effect */
+// Reveal effect
 
 .circle > :first-child {
 	
@@ -306,7 +512,7 @@ b.tick:before {
 
 }
 
-/* About us – Global offices */
+// About us – Global offices
 
 .global-offices .office-holder {
 	
