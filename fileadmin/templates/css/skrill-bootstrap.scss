@@ -1,6 +1,9 @@
 // Flexbox grid with equal column height, vertical alignment and support for classless columns
 // Structure: div.row > div.col-md-6 > div > *
 // To do: gutter
+
+$grid-gutter-width: 20px;
+
 .row {
 	
 	width: 100%;
@@ -30,7 +33,7 @@
 		flex: 1 0 auto;
 		text-align: left;
 		text-align: start;
-		padding: 0;
+		padding: $grid-gutter-width/2;
 		margin: 0;
 	    overflow: hidden;
 		max-width: 100%;
@@ -46,77 +49,77 @@
 	}
 	
 .col-xs-12 {
- 	flex: 0 1 100%;
+ 	flex: 0 1 calc(100% - #{$grid-gutter-width});
 }
 .col-xs-11 {
- 	flex: 0 1 91.66666667%;
+ 	flex: 0 1 calc(91.66666667% - #{$grid-gutter-width});
 }
 .col-xs-10 {
- 	flex: 0 1 83.33333333%;
+ 	flex: 0 1 calc(83.33333333% - #{$grid-gutter-width});
 }
 .col-xs-9 {
- 	flex: 0 1 75%;
+ 	flex: 0 1 calc(75% - #{$grid-gutter-width});
 }
 .col-xs-8 {
- 	flex: 0 1 66.66666667%;
+ 	flex: 0 1 calc(66.66666667% - #{$grid-gutter-width});
 }
 .col-xs-7 {
- 	flex: 0 1 58.33333333%;
+ 	flex: 0 1 calc(58.33333333% - #{$grid-gutter-width});
 }
 .col-xs-6 {
- 	flex: 0 1 50%;
+ 	flex: 0 1 calc(50% - #{$grid-gutter-width});
 }
 .col-xs-5 {
- 	flex: 0 1 41.66666667%;
+ 	flex: 0 1 calc(41.66666667% - #{$grid-gutter-width});
 }
 .col-xs-4 {
- 	flex: 0 1 33.33333333%;
+ 	flex: 0 1 calc(33.33333333% - #{$grid-gutter-width});
 }
 .col-xs-3 {
- 	flex: 0 1 25%;
+ 	flex: 0 1 calc(25% - #{$grid-gutter-width});
 }
 .col-xs-2 {
- 	flex: 0 1 16.66666667%;
+ 	flex: 0 1 calc(16.66666667% - #{$grid-gutter-width});
 }
 .col-xs-1 {
- 	flex: 0 1 8.33333333%;
+ 	flex: 0 1 calc(8.33333333% - #{$grid-gutter-width});
 }
 @media (min-width: 768px) {
   .col-sm-12 {
-   	flex: 0 1 100%;
+   	flex: 0 1 calc(100% - #{$grid-gutter-width});
   }
   .col-sm-11 {
-   	flex: 0 1 91.66666667%;
+   	flex: 0 1 calc(91.66666667% - #{$grid-gutter-width});
   }
   .col-sm-10 {
-   	flex: 0 1 83.33333333%;
+   	flex: 0 1 calc(83.33333333% - #{$grid-gutter-width});
   }
   .col-sm-9 {
-   	flex: 0 1 75%;
+   	flex: 0 1 calc(75% - #{$grid-gutter-width});
   }
   .col-sm-8 {
-   	flex: 0 1 66.66666667%;
+   	flex: 0 1 calc(66.66666667% - #{$grid-gutter-width});
   }
   .col-sm-7 {
-   	flex: 0 1 58.33333333%;
+   	flex: 0 1 calc(58.33333333% - #{$grid-gutter-width});
   }
   .col-sm-6 {
-   	flex: 0 1 50%;
+   	flex: 0 1 calc(50% - #{$grid-gutter-width});
   }
   .col-sm-5 {
-   	flex: 0 1 41.66666667%;
+   	flex: 0 1 calc(41.66666667% - #{$grid-gutter-width});
   }
   .col-sm-4 {
-   	flex: 0 1 33.33333333%;
+   	flex: 0 1 calc(33.33333333% - #{$grid-gutter-width});
   }
   .col-sm-3 {
-   	flex: 0 1 25%;
+   	flex: 0 1 calc(25% - #{$grid-gutter-width});
   }
   .col-sm-2 {
-   	flex: 0 1 16.66666667%;
+   	flex: 0 1 calc(16.66666667% - #{$grid-gutter-width});
   }
   .col-sm-1 {
-   	flex: 0 1 8.33333333%;
+   	flex: 0 1 calc(8.33333333% - #{$grid-gutter-width});
   }
 }
 @media (min-width: 992px) {
@@ -124,78 +127,78 @@
 		width: 20%; // Minimum column width
 	}
   .col-md-12 {
-   	flex: 0 1 100%;
+   	flex: 0 1 calc(100% - #{$grid-gutter-width});
   }
   .col-md-11 {
-   	flex: 0 1 91.66666667%;
+   	flex: 0 1 calc(91.66666667% - #{$grid-gutter-width});
   }
   .col-md-10 {
-   	flex: 0 1 83.33333333%;
+   	flex: 0 1 calc(83.33333333% - #{$grid-gutter-width});
   }
   .col-md-9 {
-   	flex: 0 1 75%;
+   	flex: 0 1 calc(75% - #{$grid-gutter-width});
   }
   .col-md-8 {
-   	flex: 0 1 66.66666667%;
+   	flex: 0 1 calc(66.66666667% - #{$grid-gutter-width});
   }
   .col-md-7 {
-   	flex: 0 1 58.33333333%;
+   	flex: 0 1 calc(58.33333333% - #{$grid-gutter-width});
   }
   .col-md-6 {
-   	flex: 0 1 50%;
+   	flex: 0 1 calc(50% - #{$grid-gutter-width});
   }
   .col-md-5 {
-   	flex: 0 1 41.66666667%;
+   	flex: 0 1 calc(41.66666667% - #{$grid-gutter-width});
   }
   .col-md-4 {
-   	flex: 0 1 33.33333333%;
+   	flex: 0 1 calc(33.33333333% - #{$grid-gutter-width});
   }
   .col-md-3 {
-   	flex: 0 1 25%;
+   	flex: 0 1 calc(25% - #{$grid-gutter-width});
   }
   .col-md-2 {
-   	flex: 0 1 16.66666667%;
+   	flex: 0 1 calc(16.66666667% - #{$grid-gutter-width});
   }
   .col-md-1 {
-   	flex: 0 1 8.33333333%;
+   	flex: 0 1 calc(8.33333333% - #{$grid-gutter-width});
   }
 }
 @media (min-width: 1200px) {
   .col-lg-12 {
-   	flex: 0 1 100%;
+   	flex: 0 1 calc(100% - #{$grid-gutter-width});
   }
   .col-lg-11 {
-   	flex: 0 1 91.66666667%;
+   	flex: 0 1 calc(91.66666667% - #{$grid-gutter-width});
   }
   .col-lg-10 {
-   	flex: 0 1 83.33333333%;
+   	flex: 0 1 calc(83.33333333% - #{$grid-gutter-width});
   }
   .col-lg-9 {
-   	flex: 0 1 75%;
+   	flex: 0 1 calc(75% - #{$grid-gutter-width});
   }
   .col-lg-8 {
-   	flex: 0 1 66.66666667%;
+   	flex: 0 1 calc(66.66666667% - #{$grid-gutter-width});
   }
   .col-lg-7 {
-   	flex: 0 1 58.33333333%;
+   	flex: 0 1 calc(58.33333333% - #{$grid-gutter-width});
   }
   .col-lg-6 {
-   	flex: 0 1 50%;
+   	flex: 0 1 calc(50% - #{$grid-gutter-width});
   }
   .col-lg-5 {
-   	flex: 0 1 41.66666667%;
+   	flex: 0 1 calc(41.66666667% - #{$grid-gutter-width});
   }
   .col-lg-4 {
-   	flex: 0 1 33.33333333%;
+   	flex: 0 1 calc(33.33333333% - #{$grid-gutter-width});
   }
   .col-lg-3 {
-   	flex: 0 1 25%;
+   	flex: 0 1 calc(25% - #{$grid-gutter-width});
   }
   .col-lg-2 {
-   	flex: 0 1 16.66666667%;
+   	flex: 0 1 calc(16.66666667% - #{$grid-gutter-width});
   }
   .col-lg-1 {
-   	flex: 0 1 8.33333333%;
+   	flex: 0 1 calc(8.33333333% - #{$grid-gutter-width});
   }
 }
 
