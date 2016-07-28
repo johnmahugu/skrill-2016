@@ -341,6 +341,12 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
+.transparency main .row.transparent.light .hole > *:last-child:before {
+
+	background: $grey-light;
+	
+}
+
 .section.dark:not(.transparent) {
 	
 	background-color: $purple-dark;
