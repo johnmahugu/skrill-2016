@@ -29,6 +29,8 @@ label[for=nav-trigger] {
 .head {
 	
 	z-index: 17; // above the overlay
+	padding-right: 6em;
+	    
 }
 
 .head .nav > div > input.trigger {
@@ -89,6 +91,8 @@ label[for=nav-trigger] {
 	
 	padding: 0;
 	justify-content: flex-start;
+	position: absolute;
+    right: 0;
 	
 }
 
