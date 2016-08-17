@@ -5,7 +5,8 @@ input.trigger ~ * {
 	overflow: hidden;
 	width: 0;
 	height: 0;
-	transition: width .2s ease-in-out;
+	transition: margin-right .2s ease-in-out;
+	will-change: margin-right;
 	
 }
 
@@ -41,7 +42,7 @@ label[for=nav-trigger] {
 
 .head input.trigger:checked ~ * {
 	
-	width: 30em; // animate margin instead?
+	margin-right: 0; // animate transform instead?
 	
 }
 
@@ -110,6 +111,8 @@ label[for=nav-trigger] {
 	overflow: visible;
 	vertical-align: top;
 	white-space: normal;
+	width: 30em;
+	margin-right: -30em;
 
 }
 

@@ -195,7 +195,7 @@ img.header {
 
 .carousel .item:not(.active) {
 	
-	contain: strict;
+	will-change: transform;
 
 }
 
