@@ -127,6 +127,17 @@ main .row.transparent > * > .circle {
 
 	background: transparent;
 	text-align: center;
+	
+	max-width: 22em;
+    margin: 0 auto;
+    padding: 0;
+    box-shadow: 15em 0 0 #fff, -12em 0 0 #fff;
+
+}
+
+main .row.transparent > * > .circle.two {
+
+	max-width: none;
 
 }
 

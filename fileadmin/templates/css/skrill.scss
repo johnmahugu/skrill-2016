@@ -315,6 +315,18 @@ select option:first-child, select.form-control option:first-child {
 	
 }
 
+main .row.transparent.light > * > .circle {
+
+    box-shadow: 15em 0 0 $grey-light, -12em 0 0 $grey-light;
+
+}
+
+main .row.transparent.dark > * > .circle {
+
+    box-shadow: 15em 0 0 $purple-dark, -12em 0 0 $purple-dark;
+
+}
+
 // Themes – end
 
 #content {
