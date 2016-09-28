@@ -3,6 +3,7 @@
 // div.row > div.col-md-6 > div > *
 // IE10+
 
+@import 'skrill-variables';
 $gutter: 20px;
 
 .row {
@@ -395,4 +396,40 @@ $gutter: 20px;
 	
 	justify-content: flex-end;
 
+}
+
+.pad {
+	
+	padding: 1em;
+
+}
+
+@media screen and (max-width: $mediumScreen) {
+
+	.row {
+		
+		display: block;
+		
+	}
+	
+	.row > * {
+		
+		width: 100%;
+// 		width: calc(100% - #{$gutter/2});
+		padding: 0;
+		
+	}
+	
+	body .section > .row, body .section.background {
+		
+		min-height: 0;
+
+	}
+	
+	.section > .row > div:empty {
+		
+		display: none;
+		
+	}
+	
 }

@@ -80,3 +80,12 @@
 
 }
 
+@media screen and (max-width: $mediumScreen) {
+
+	.box .carousel .carousel-indicators {
+		
+		bottom: -4em;
+		
+	}
+
+}

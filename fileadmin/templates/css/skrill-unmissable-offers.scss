@@ -87,3 +87,12 @@
 	
 }
 
+@media screen and (max-width: $mediumScreen) {
+
+	.unmissable-offers .row > * {
+		
+		padding: 0 .5em;
+	
+	}
+
+}

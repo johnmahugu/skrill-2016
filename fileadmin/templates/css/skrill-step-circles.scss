@@ -101,3 +101,13 @@
 	}
 
 }
+
+@media screen and (max-width: $mediumScreen) {
+
+	#content .module-stepcircles li:before {
+		
+		margin-left: -1em;
+	
+	}
+
+}

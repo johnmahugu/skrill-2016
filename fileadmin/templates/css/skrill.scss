@@ -224,6 +224,7 @@ select option:first-child, select.form-control option:first-child {
 	
 	background-color: #fff;
 	background-size: cover;
+    padding: 1em;
 
 }
 
@@ -502,5 +503,28 @@ main#content .global-offices a[href]:not(.btn):not([role=button]) {
 #content .global-offices h3 {
 	
 	margin-top: 0;
+
+}
+
+@media screen and (max-width: $mediumScreen) {
+
+	.badges {
+		
+		padding: 1em 5em;
+		
+		a {
+			
+			width: auto;
+			margin: .5em;
+			
+		}
+	
+	}
+
+	.global-offices .office-holder {
+		
+		padding: 0;
+	
+	}
 
 }
