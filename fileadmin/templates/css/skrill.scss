@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
-// @import 'bootstrap.min';
-// @import 'skrill-bootstrap';
+@import 'bootstrap.min';
+@import 'skrill-bootstrap';
 @import 'skrill-variables';
 @import 'skrill-typography';
 @import 'skrill-transparency';
@@ -233,6 +233,12 @@ select option:first-child, select.form-control option:first-child {
 .section.light:not(.transparent) {
 	
 	background-color: $grey-light;
+
+}
+
+.section.dark:not(.transparent) {
+	
+	background-color: $purple-dark;
 
 }
 
