@@ -135,7 +135,7 @@
 
 }
 
-header .hero {
+.hero {
 	
 	text-align: center;
 	font-size: 1.3em;
@@ -148,13 +148,13 @@ header .hero {
 
 }
 
-header .hero p {
+.hero p {
 	
 	font-size: 1.2em;
 
 }
 
-header p {
+.hero p {
 	
 	display: inline-block;
 	padding: .3em .7em;
@@ -235,7 +235,7 @@ header p {
 
 /* Hero arrow */
 
-header .content-arrow {
+.viewport-flex .content-arrow {
 
 	background: url(../images/icons/scroll-down-arch.png) top center no-repeat;
 	background-size: 100% auto;
