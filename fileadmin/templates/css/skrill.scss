@@ -23,8 +23,9 @@
 html, body {
 	
 	font-family: robotolight, Helvetica, Arial, sans-serif;
-	margin: 0;
-	font-size: 14px;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
 	letter-spacing: 1px;
 	box-sizing: border-box;
 	overflow-x: hidden;
@@ -227,113 +228,6 @@ select option:first-child, select.form-control option:first-child {
     padding: 1em;
 
 }
-
-// Themes: Default: white background, purple elements, grey text	Light: grey background, purple elements, grey text	Dark: dark purple background, white elements, grey text
-
-.section.light:not(.transparent) {
-	
-	background-color: $grey-light;
-
-}
-
-.section.dark:not(.transparent) {
-	
-	background-color: $purple-dark;
-
-}
-
-.section.contain.light {
-	
-	box-shadow: 50vw 0 0 $grey-light, -50vw 0 0 $grey-light;
-
-}
-
-.transparency main .light.row.transparent > * > * {
-	
-	border-color: $grey-light;
-
-}
-
-.transparency main .light.row.transparent > * > *:not(.circle) {
-	
-	background: $grey-light;	
-
-}
-
-.light.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
-
-	// grey SVG rectangle with a transparent circle
-	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#fbfbfc" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
-	background-size: cover;
-	background-image: url(../images/transparent-circle-in-grey-square.svg); // IE/Edge/FF not supporting inline SVG
-
-	
-}
-
-.transparency main .row.transparent.dark .hole > *:last-child:before {
-
-	background: $grey-light;
-	
-}
-
-.transparency main .row.transparent.light .hole > *:last-child:before {
-
-	background: $grey-light;
-	
-}
-
-.section.dark:not(.transparent) {
-	
-	background-color: $purple-dark;
-
-}
-
-.section.contain.dark {
-	
-	box-shadow: 50vw 0 0 $purple-dark, -50vw 0 0 $purple-dark;
-
-}
-
-.transparency main .dark.row.transparent > * > * {
-	
-	border-color: $purple-dark;
-
-}
-
-.transparency main .dark.row.transparent > * > *:not(.circle) {
-	
-	background: $purple-dark;	
-
-}
-
-.dark.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
-
-	// grey SVG rectangle with a transparent circle
-	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#544c64" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
-	background-size: cover;
-	background-image: url(../images/transparent-circle-in-purple-square.svg); // IE/Edge/FF not supporting inline SVG
-	
-}
-
-.transparency main .row.transparent.dark .hole > *:last-child:before {
-
-	background: $purple-dark;
-	
-}
-
-main .row.transparent.light > * > .circle {
-
-    box-shadow: 15em 0 0 $grey-light, -12em 0 0 $grey-light;
-
-}
-
-main .row.transparent.dark > * > .circle {
-
-    box-shadow: 15em 0 0 $purple-dark, -12em 0 0 $purple-dark;
-
-}
-
-// Themes – end
 
 #content {
 	
