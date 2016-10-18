@@ -216,6 +216,13 @@ main#content .dark a[href]:not(.btn):not([role=button]) {
 
 }
 
+.head .links strong {
+	
+	font-size: inherit;
+
+}
+
+
 @media screen and (max-width: $mediumScreen) {
 
 	header h1 {

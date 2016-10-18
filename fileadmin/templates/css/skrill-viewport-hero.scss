@@ -16,6 +16,15 @@
 
 }
 
+.viewport-flex > :first-child {
+	
+	flex-grow: 1;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
 .viewport-flex > .grow-align {
 
 	flex: 1 1 auto; 
@@ -209,6 +218,7 @@
 	 max-width: none; 
 	 background: #fff; 
 	 width: 100%;
+	 padding: 1em 0;
 	 
 }
 

@@ -68,13 +68,21 @@ main .row.transparent > * {
 
 }
 
-main .row.transparent > *, .section, .section:before, .section:after {
+main .row.transparent > * > * {
+	
+	display: block;
+	max-width: 22em;
+    margin: 0 auto;
+
+}
+
+.section, .section:before, .section:after, main .row.transparent > * div {
 	
 	background: #fff;
 
 }
 
-main .row.transparent .hole, main .row.transparent .hole object {
+main .row.transparent > * .circle-hole, main .row.transparent .circle-hole object {
 	
 	background: transparent;
 	text-align: center;
@@ -83,17 +91,25 @@ main .row.transparent .hole, main .row.transparent .hole object {
 
 }
 
-.section, main .row.transparent .hole > * {
+.section, main .row.transparent div {
 
 	position: relative;
 
 }
 
-main .row.transparent .hole > *:last-child:before { /* Put background over transparent space below the last div, a result of other taller columns */
+main .row.transparent > div div:last-child:before { /* Put background over transparent space below the last div, a result of other taller columns */
+	
+	content: '';
+	display: table;
+
+}
+
+main .row.transparent > div div:last-child:after { /* Put background over transparent space below the last div, a result of other taller columns */
 	
 	content: '';
     position: absolute;
     left: calc(-50% - 3rem);
+    bottom: 0;
     right: 0;
     width: calc(200% + 6rem);
     bottom: auto;
@@ -103,7 +119,22 @@ main .row.transparent .hole > *:last-child:before { /* Put background over trans
 	
 }
 
-main .row.transparent > * > * {
+main .row.transparent > div .circle-hole ~ div:last-child:after { /* Put background over transparent space below the last div, a result of other taller columns */
+	
+	content: '';
+    position: absolute;
+    left: calc(-50% - 3rem);
+    top: 0;
+    right: 0;
+    width: calc(200% + 6rem);
+    bottom: auto;
+    height: 100vh;
+    background: #fff;
+    z-index: -1;
+	
+}
+
+main .row.transparent .circle-hole {
 
 	font-size: 1rem;
 	background: #fff;
@@ -117,32 +148,30 @@ main .row.transparent > * > * {
 
 /* Transparent circles */
 
-.transparent .circle {
+.transparent .circle-hole {
 
 	overflow: visible;
 	position: relative;
 
 }
 
-main .row.transparent > * > .circle {
+main .row.transparent .circle-hole {
 
 	background: transparent;
 	text-align: center;
 	
-	max-width: 22em;
-    margin: 0 auto;
     padding: 0;
     box-shadow: 15em 0 0 #fff, -12em 0 0 #fff;
 
 }
 
-main .row.transparent > * > .circle.two {
+main .row.transparent .circle-hole.two {
 
 	max-width: none;
 
 }
 
-.transparent .circle:before { // Make it a square aspect ratio
+.transparent .circle-hole:before { // Make it a square aspect ratio
 	
 	content: '';
 	display: inline-block;
@@ -153,7 +182,7 @@ main .row.transparent > * > .circle.two {
 
 // Transparent circle box
 
-.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
+.transparent .circle-hole:after { // Overlay the square with a circle with big enough border to create a round hole
 
 	content: '';
 	display: block;
@@ -169,7 +198,7 @@ main .row.transparent > * > .circle.two {
 	
 }
 
-.transparent .circle > * {
+.transparent .circle-hole > * {
 	
 	vertical-align: middle;
 	display: inline-block;
@@ -240,7 +269,7 @@ _:-ms-lang(x), .full-background-container .full-background-image {
 
 /* Overlay Icon: Additional smaller icon on at the bottom-left of a hole with icon */
 
-.transparent .circle * ~ * {
+.transparent .circle-hole * ~ * {
 	
     position: absolute;
     bottom: 0;
@@ -274,19 +303,19 @@ _:-ms-lang(x), .full-background-container .full-background-image {
 
 }
 
-main .light.row.transparent > * > * {
+main .light.row.transparent > * div {
 	
 	border-color: $grey-light;
 
 }
 
-main .light.row.transparent > * > *:not(.circle) {
+main .light.row.transparent > * div:not(.circle-hole) {
 	
 	background: $grey-light;	
 
 }
 
-.light.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
+.light.transparent .circle-hole:after { // Overlay the square with a circle with big enough border to create a round hole
 
 	// grey SVG rectangle with a transparent circle
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#fbfbfc" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
@@ -296,13 +325,7 @@ main .light.row.transparent > * > *:not(.circle) {
 	
 }
 
-main .row.transparent.dark .hole > *:last-child:before {
-
-	background: $grey-light;
-	
-}
-
-main .row.transparent.light .hole > *:last-child:before {
+main .row.transparent.light > div .circle-hole ~ div:last-child:after {
 
 	background: $grey-light;
 	
@@ -320,19 +343,19 @@ main .row.transparent.light .hole > *:last-child:before {
 
 }
 
-main .dark.row.transparent > * > * {
+main .dark.row.transparent > * div {
 	
 	border-color: $purple-dark;
 
 }
 
-main .dark.row.transparent > * > *:not(.circle) {
+main .dark.row.transparent > * div:not(.circle-hole) {
 	
 	background: $purple-dark;	
 
 }
 
-.dark.transparent .circle:after { // Overlay the square with a circle with big enough border to create a round hole
+.dark.transparent .circle-hole:after { // Overlay the square with a circle with big enough border to create a round hole
 
 	// grey SVG rectangle with a transparent circle
 	background: url('data:image/svg+xml; utf8, <svg width="202px" height="202px" viewBox="0 0 202 202" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"> <defs></defs> <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage"> <path d="M0,0 L202,0 L202,202 L0,202 L0,0 Z M101,202 C156.78076,202 202,156.78076 202,101 C202,45.2192403 156.78076,0 101,0 C45.2192403,0 0,45.2192403 0,101 C0,156.78076 45.2192403,202 101,202 Z" id="Rectangle-2" fill="#544c64" sketch:type="MSShapeGroup"></path> </g> </svg>') center center no-repeat;
@@ -341,19 +364,19 @@ main .dark.row.transparent > * > *:not(.circle) {
 	
 }
 
-main .row.transparent.dark .hole > *:last-child:before {
+main .row.transparent.dark > div .circle-hole ~ div:last-child:after {
 
 	background: $purple-dark;
 	
 }
 
-main .row.transparent.light > * > .circle {
+main .row.transparent.light .circle-hole {
 
     box-shadow: 15em 0 0 $grey-light, -12em 0 0 $grey-light;
 
 }
 
-main .row.transparent.dark > * > .circle {
+main .row.transparent.dark .circle-hole {
 
     box-shadow: 15em 0 0 $purple-dark, -12em 0 0 $purple-dark;
 
@@ -392,3 +415,8 @@ main .row.transparent.dark > * > .circle {
 	
 }
 
+body { // To be added by T3 template
+	
+	background-image: url('/fileadmin/content/homepage-hero/homepage_consumer-blur.jpg');
+	
+}
