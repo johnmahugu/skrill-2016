@@ -206,6 +206,12 @@ select option:first-child, select.form-control option:first-child {
 
 }
 
+.section {
+	
+	overflow: hidden;
+
+}
+
 .section:before, .section:after { // Clear inner margins
 	
 	content: '';

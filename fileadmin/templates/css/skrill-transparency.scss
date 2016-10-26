@@ -71,7 +71,10 @@ main .row.transparent > * {
 main .row.transparent > * > * {
 	
 	display: block;
-	max-width: 22em;
+// 	max-width: 22em;
+	border: 2em solid #fff;
+	border-top: 0;
+	border-bottom: 0;
     margin: 0 auto;
 
 }
