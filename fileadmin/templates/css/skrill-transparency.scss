@@ -183,6 +183,14 @@ main .row.transparent .circle-hole.two {
 	
 }
 
+
+.transparent.row > div div:not(.circle-hole):before, .transparent.row > div div:not(.circle-hole):after { // Make it a square aspect ratio
+	
+	content: '';
+	display: table;
+
+}
+
 // Transparent circle box
 
 .transparent .circle-hole:after { // Overlay the square with a circle with big enough border to create a round hole
