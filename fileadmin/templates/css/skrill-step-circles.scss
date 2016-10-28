@@ -90,7 +90,7 @@
 
 @media screen and (min-width: $mediumScreen) {
 
-	.circle > :first-child.invisible, .module-stepcircles li .icon.invisible {
+	.circle-hole > :first-child.invisible, .module-stepcircles li .icon.invisible {
 	
 	    transition: all .5s ease;
 	    opacity: 0.0;
@@ -98,7 +98,7 @@
 	
 	}
 	
-	.circle > :first-child.visible, .module-stepcircles li .icon.visible {
+	.circle-hole > :first-child.visible, .module-stepcircles li .icon.visible {
 	
 	    transition: all .5s ease;
 	    opacity: 1.0;

@@ -115,7 +115,7 @@ main .row.transparent > div div:last-child:after { /* Put background over transp
     bottom: 0;
     right: 0;
     width: calc(200% + 6rem);
-    bottom: auto;
+    bottom: -100vh;
     height: 100vh;
     background: #fff;
     z-index: -1;
