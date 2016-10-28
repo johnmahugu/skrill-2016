@@ -239,6 +239,19 @@ $(document).ready(function() {
 		
 	});
 	
+	// Carousel must have an .active .item
+	
+	$('.carousel .item:first-child').addClass('active');
+	
+	/* Select elements with scroll effects – requires ScrollTrigger.min.js */
+	$('.circle-hole > *, .module-stepcircles li .icon, .hero-content').each( function (n) {
+		
+		$(this).attr('data-scroll', '');
+		
+	});
+
+    ScrollTrigger.init();
+
 });
 
 $(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 
