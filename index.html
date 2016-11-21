@@ -49,7 +49,7 @@
 						
 						<div class="menu">
 							
-							<div class="row" style="width: 200%;"> <!-- Open language menu by     transform: translateX(-50%); -->
+							<div class="row"> <!-- Open language menu by     transform: translateX(-50%); -->
 							
 								<div class="col-sm-6">
 									
@@ -75,24 +75,22 @@
 									
 									</div>
 									
-									<form>
-										
-										<span>English</span> 
-																	
-										<select class="form-control">
-										  <option>Change language</option>
-										  <option>German</option>
-										  <option>French</option>
-										  <option>Chinese</option>
-										  <option>Japanese</option>
-										</select>
-									
-									</form>
+									<ul class="language-links"> 
+											<li> <span>English</span> </li>
+											<li> <label for="language-toggle"> Change language <input type="checkbox" id="language-toggle" class="language-toggle"> </label> </li>
+									 </ul>
 								
 								</div>
 	
 								<div class="col-sm-6 subnav language-selection">
-									<a href="#" class="back"><span class="icon icon-arrow-left-thin"></span>Back</a> 
+
+									<label for=language-toggle-back> 
+									
+										Back 
+										<input type="checkbox" id=language-toggle-back class="language-toggle">
+									
+									</label>																	
+
 									<ul>
 										<li class="active"><a href="en/">English</a></li>
 										<li><a href="de/">Deutsch</a></li>
@@ -128,7 +126,7 @@
 	<div class=viewport-flex>
 
 		<div class="full-background-container">
-	<div style="background-image: url(fileadmin/_processed_/csm_homepage_consumer_cd53b3456f.jpg);" class="full-background-image anchor-left background-fixed"> 
+	<div class="full-background-image anchor-left background-fixed"> 
 		<div class="background-data">
 			<span data-size="small" data-src="fileadmin/_processed_/csm_homepage_consumer_cd53b3456f.jpg"></span> 
 			<span data-size="medium" data-src="fileadmin/_processed_/csm_homepage_consumer_2786d44709.jpg"></span> 

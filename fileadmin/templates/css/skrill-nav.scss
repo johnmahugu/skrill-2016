@@ -141,36 +141,20 @@ label[for=nav-trigger] {
 
 }
 
-.head .nav form {
+.head .nav ul.language-links {
 
 	text-align: center;
 	text-transform: uppercase;
 	color: #a09da9;
     font-family: robotoregular, Helvetica, Arial, sans-serif;
-
-}
-
-.head .nav form * {
-	
 	font-size: .9em;
 
 }
 
-.head .nav select.form-control {
+.head .nav ul.language-links li {
 	
 	display: inline-block;
-    width: auto;
-	-webkit-appearance: none !important;
-    background: none;
-    border: none;
-    text-transform: uppercase;
-    text-indent: 0;
-	color: inherit;
-	margin: 0;
-    padding: 0 !important;
-    transform: translateY(-1px);
-    cursor: pointer;
-    
+
 }
 
 .head .nav form span:after {
@@ -233,6 +217,12 @@ label[for=nav-trigger] {
 
 	content: "\e603";
 	font-size: 2em;
+
+}
+
+.head .menu > .row {
+	
+	width: 200%;
 
 }
 
@@ -303,6 +293,26 @@ html.menu-open body:after {
 html.menu-open {
 	
 	overflow: hidden;
+
+}
+
+.head .language-selection {
+	
+	transition: tranform .2s linear;
+	background: #f4f4f4;
+	
+}
+
+.head .language-selection.open {
+	
+    transform: translate3d(-100%,0,0);
+	
+}
+
+label[for*=language-toggle] {
+	
+    display: inline-block;
+    cursor: pointer;
 
 }
 

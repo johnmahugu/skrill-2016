@@ -180,6 +180,10 @@ function setImage(el) {
 }
 
 $(document).ready(function() {
+	
+	// Toggle langage selection sub menu inside the main menu
+	
+	$('input.language-toggle').on('change', function () { $('.head .language-selection').toggleClass('open'); } );
 
     if (typeof time_override == 'number') {
 	    
@@ -261,6 +265,7 @@ $(window).load(function() { // Executes when complete page is fully loaded, incl
 	$('.full-background-image').each( function (n) { // To do: also on resize
 		
 		setImage(this);
+		$('body').addClass('images-replaced');
 		
 	});
 

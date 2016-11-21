@@ -128,7 +128,7 @@ $gutter: 20px;
 
 @media (min-width: 768px) {
 
-	.col-sm-12 {
+	.col-sm-12, .col-md-12, .col-lg-12 {
 
 		flex-basis: calc(100% - #{$gutter/2});
 
@@ -210,7 +210,7 @@ $gutter: 20px;
 	
 	}
 	
-	.col-md-12 {
+	.col-md-12, .col-lg-12 {
 	
 		flex-basis: calc(100% - #{$gutter/2});
 	
