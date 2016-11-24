@@ -74,14 +74,18 @@
 	color: #fff;
 	
 	font-family: roboto, Helvetica, Arial, sans-serif;
+/*
 	letter-spacing: 1px;
 	letter-spacing: 1.03px; // Chrome bug
 	letter-spacing: .07em; // Chrome bug
+*/
     border-color: #811e68;
 	-webkit-animation: none;
 	animation: none;
 	background: transparent;
     outline: none;
+    
+    margin-right: -1px; // letter spacing bug fix
 	
 }
 
@@ -167,7 +171,7 @@
 	animation: button-animation 1.5s 1;
 	background: rgba(85, 78, 102, .5);
 	border-color: #fff;
-	letter-spacing: 1.03px; // Chrome bug
+// 	letter-spacing: 1.03px; // Chrome bug
 
 }
 
