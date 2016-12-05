@@ -23,6 +23,7 @@ body:before {
     z-index: -1;
     -webkit-transform: translate3d(0,0,0); // Faster refresh
     transform: translate3d(0,0,0); // Faster refresh
+    background-size: cover;
 	
 }
 
@@ -259,10 +260,11 @@ main .row.transparent .circle-hole.two {
 	left: 0;
 	width: 100%;
 	height: 100%;
-// 	background-size: cover; // Slow
+	background-size: cover; // Slow, but matching low-res initial background to final background after loading
 	background-position: center center;
-	-webkit-transform: translate3d(0,0,0); //Faster refresh     
-	transform: translate3d(0,0,0); //Faster refresh;
+	background-repeat: no-repeat;
+	-webkit-transform: translate3d(0,0,0); // Faster refresh
+	transform: translate3d(0,0,0); // Faster refresh
 	
 }
 
