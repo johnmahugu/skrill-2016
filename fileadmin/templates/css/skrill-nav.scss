@@ -304,9 +304,9 @@ html.menu-open body:after {
 
 }
 
-html.menu-open {
+html.menu-open { // Disabled, because it moves when hidin/showing the scrollbar
 	
-	overflow: hidden;
+// 	overflow: hidden;
 
 }
 
