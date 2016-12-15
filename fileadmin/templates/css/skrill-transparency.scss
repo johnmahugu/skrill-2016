@@ -21,7 +21,6 @@ body:before {
 	width: 100%;
 	height: 100%;
     z-index: -1;
-    -webkit-transform: translate3d(0,0,0); // Faster refresh
     transform: translate3d(0,0,0); // Faster refresh
     background-size: cover;
 	
@@ -42,7 +41,6 @@ main {
 .section.contain {
 	
 	-webkit-backface-visibility: hidden;
-	-webkit-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
 	box-shadow: 50vw 0 0 #fff, -50vw 0 0 #fff; /* Background colour on the sides */
 	margin-bottom: -1px;
@@ -90,7 +88,6 @@ main .row.transparent > * .circle-hole, main .row.transparent .circle-hole objec
 	
 	background: transparent;
 	text-align: center;
-    -webkit-transform: translate3d(0,0,0); // Faster refresh
     transform: translate3d(0,0,0); // Faster refresh
 
 }

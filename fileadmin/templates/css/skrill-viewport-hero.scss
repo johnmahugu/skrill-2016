@@ -41,7 +41,7 @@
 
 }
 
-.hero-content {
+.homepage-hero .hero-content {
 	
 	color: #fff;
 	
@@ -76,7 +76,7 @@
 
 @media screen and (min-width: $mediumScreen) {
 
-	.hero-content h1 {
+	.homepage-hero .hero-content h1 {
 	
 		font-size: 12em;
 	
@@ -146,9 +146,14 @@
 
 .hero {
 	
+	padding-top: 6em;
+
+}
+
+.hero.homepage-hero {
+	
 	text-align: center;
 	font-size: 1.3em;
-	padding-top: 6em;
 
 }
 
@@ -158,14 +163,9 @@
 
 }
 
-.hero p {
+.hero.homepage-hero p {
 	
 	font-size: 1.2em;
-
-}
-
-.hero p {
-	
 	display: inline-block;
 	padding: .3em .7em;
 

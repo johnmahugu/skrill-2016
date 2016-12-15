@@ -288,7 +288,7 @@ html body:after {
 	height: 100vh;
 	width: 100vw;
 	will-change: opacity;
-    -webkit-transform: translate3d(0,0,0); // Faster refresh
+    transform: translate3d(0,0,0); // Faster refresh
 	animation: slideout .5s 1;
 	animation-fill-mode: backwards;
 	opacity: 0;
@@ -315,6 +315,7 @@ html.menu-open { // Disabled, because it moves when hidin/showing the scrollbar
 	
 	transition: transform .2s linear;
 	background: #f4f4f4;
+	will-change: transform;
 	
 }
 
