@@ -59,6 +59,35 @@ ol li:before {
 
 }
 
+.text-list-2col.light.tick-icons { // Grey box with 2 columns of an unordered list with tick icons
+
+    background-color: #eeeef0;
+
+}
+
+#content .module-stepcircles .text-list-2col ul {
+	
+	column-count: 2;
+	
+}
+
+#content .module-stepcircles .text-list-2col li {
+	
+	text-align: left;
+	margin: 1rem 0;
+    padding-left: 5rem;
+	
+}
+
+#content .module-stepcircles .text-list-2col li:before {
+	
+	left: 0;
+	transform: none;
+	border-color: #eeeef0;
+	top: -.25rem;
+	
+}
+
 @media screen and (max-width: $mediumScreen) {
 
 	.awards li {
