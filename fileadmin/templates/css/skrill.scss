@@ -221,7 +221,7 @@ select option:first-child, select.form-control option:first-child {
 
 }
 
-.section.background, .section > .row {
+.section.background, .section:not(.borders) > .row {
 	
 	min-height: 40em;
 
@@ -239,6 +239,24 @@ select option:first-child, select.form-control option:first-child {
 	
 	text-align: center;
 	
+}
+
+.section.borders .row + .row {
+
+	border-top: 1px solid #a09da9;
+
+}
+
+.section.borders > .row > :first-child {
+
+    box-shadow: 0 0 0px 1px #a09da9;
+
+}
+
+.section.borders .row > div > div {
+
+    padding: 1.5em;
+
 }
 
 // Uncollapsing child margins
