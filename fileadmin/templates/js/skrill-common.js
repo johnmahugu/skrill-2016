@@ -254,6 +254,21 @@ $(document).ready(function() {
 		
 	});
 
+	var timeline_slider = document.querySelector('.timeline-slider');
+	if (timeline_slider) {
+		
+		timeline_slider.insertAdjacentHTML('afterend', '<input type=range max=1 min=0 value=2016 step=.01 class="timeline">');
+		timeline_slider.style.overflow = 'hidden';
+		timeline_slider.scrollLeft = timeline_slider.scrollWidth - timeline_slider.offsetWidth;
+		
+		document.querySelector('input[type=range].timeline').onmousemove = document.querySelector('input[type=range].timeline').onchange = function (e) {
+			
+			timeline_slider.scrollLeft = (timeline_slider.scrollWidth - timeline_slider.offsetWidth)*e.target.value;
+			
+		};
+	
+	}
+
     ScrollTrigger.init();
 
 });

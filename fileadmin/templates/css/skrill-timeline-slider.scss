@@ -131,3 +131,16 @@ input[type=range].timeline:focus::-ms-fill-upper {
 	text-align: center;
 
 }
+
+#content .timeline-slider li {
+	
+	padding: 0;
+	
+}
+
+#content .timeline-slider li:before {
+	
+	display: none;
+	
+}
+
