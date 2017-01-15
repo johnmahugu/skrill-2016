@@ -74,7 +74,8 @@ main .row.transparent > * > * {
 	border: 2em solid #fff;
 	border-top: 0;
 	border-bottom: 0;
-    margin: 0 auto;
+//     margin: 0 auto;
+    margin: 0;
 
 }
 
@@ -101,6 +102,12 @@ main .row.transparent > * .circle-hole, main .row.transparent .circle-hole objec
 main .row.transparent div {
 
 	box-shadow: 0 0 0 2px #fff;
+
+}
+
+main .row.transparent > div.opaque {
+
+	background: #fff;
 
 }
 
