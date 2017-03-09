@@ -72,13 +72,14 @@
     margin: 0;
     letter-spacing: .1em;
     
+    
 }
 
 @media screen and (min-width: $mediumScreen) {
 
 	.homepage-hero .hero-content h1 {
 	
-		font-size: 12em;
+		font-size: 8em;
 	
 	}
 
@@ -153,7 +154,7 @@
 .hero.homepage-hero {
 	
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.5em;
 
 }
 
@@ -219,7 +220,7 @@
 	 max-width: none; 
 	 background: #fff; 
 	 width: 100%;
-	 padding: 1em 0;
+// 	 padding: 1em 0;
 	 
 }
 
