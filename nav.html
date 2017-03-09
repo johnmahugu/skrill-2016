@@ -11,6 +11,12 @@
 	
 	<style>
 		
+		header {
+			
+			position: relative;
+
+		}
+		
 		header li a[href] {
 			
 			color: #fff;
@@ -39,7 +45,70 @@
 
 		}
 		
+		header input[type=checkbox] {
+			
+			display: none;
+			position: absolute;
+			top: 1em;
+			right: 1em;
+			height: 1em;
+			width: 1em;
+			background: red;
+			position: static;
+
+		}
+		
+		header .right {
+			
+			order: 3;
+
+		}
+
+		header .left {
+
+			order: 1;
+		
+		}
+			
+		header .top-left {
+			
+			order: -2;
+
+		}
+			
+		header .top-right {
+			
+			order: -1;
+		
+		}
+		
+		header .middle {
+			
+			order: 2;
+
+		}
+		
+		header .right-mobile {
+			
+			display: none;
+			
+		}
+
 		@media (max-width: 900px) {
+			
+			header .right {
+				
+				order: -2;
+				width: 33.33%;
+
+			}
+			
+			header .left {
+				
+				order: -1;
+				width: 33.33%;
+
+			}
 			
 			header .top-left {
 				
@@ -47,15 +116,27 @@
 				
 			}
 			
-			header .top-right {
+			header .middle {
 				
 				order: 1;
+	
+			}
+
+			header .top-right {
+				
+				order: 2;
 
 			}
 			
-			header .left {
+			header .right-mobile {
 				
-				order: -1;
+				display: block;
+				
+			}
+
+			header .right .btn.active {
+				
+				display: none;
 
 			}
 			
@@ -71,6 +152,26 @@
 				text-align: center;
 
 			}
+			
+			header input[type=checkbox] ~ * {
+				
+				visibility: hidden;
+				position: absolute;
+
+			}
+
+			header input[type=checkbox]:checked ~ * {
+				
+				visibility: visible;
+				position: static;
+
+			}
+			
+			header input[type=checkbox] {
+				
+				display: inline-block;
+
+			}
 
 		}
 		
@@ -81,8 +182,31 @@
 <body>
 
 	<header>
-	
-	<div class="row">
+		
+		<div class="row">
+		
+		<div class="col-sm-3 align-right right">
+			
+			<div>
+			
+				<a class="btn" href=#>Login</a>
+				<a class="btn active" href=#>Register</a>
+			
+			</div>
+		
+		</div>
+
+		<div class="col-sm-2 left">
+			
+			<a href="#"> <img src=fileadmin/templates/images/skrill-logo-white-transparent.svg alt=Skrill> </a>
+
+		</div>
+		
+		<div class="right-mobile col-xs-4">
+			
+		</div>
+		
+		<input type="checkbox">
 		
 		<div class="col-sm-4 top-left">
 			
@@ -115,12 +239,6 @@
 		
 		</div>
 
-		<div class="col-sm-2 left">
-			
-			<a href="#"> <img src=fileadmin/templates/images/skrill-logo-white-transparent.svg alt=Skrill> </a>
-
-		</div>
-		
 		<div class="col-sm-7 middle">
 			
 			<nav>
@@ -138,21 +256,10 @@
 			</nav>
 		
 		</div>
-		
-		<div class="col-sm-3 align-right right">
-			
-			<div>
-			
-				<a class="btn" href=#>Login</a>
-				<a class="btn" href=# class="active">Register</a>
-			
-			</div>
-
-		</div>
 
 	</div>
 	
-</header>
+	</header>
 
 	<main>
 	
