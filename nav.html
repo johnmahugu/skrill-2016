@@ -20,9 +20,16 @@
 		
 		header {
 			
-			position: relative;
+			position: fixed;
 			border-bottom: 1px solid #fff;
 			background: rgba(255,255,255,.3);
+			width: 100%;
+
+		}
+		
+		main {
+			
+			padding-top: 12em;
 
 		}
 		
@@ -83,6 +90,7 @@
 			
 			order: -2;
 			background: #485160;
+			flex-basis: calc(33.333% - 10px);
 
 		}
 			
@@ -90,6 +98,7 @@
 			
 			order: -1;
 			background: #485160;
+			flex-basis: calc(66.667% - 10px);
 		
 		}
 		
@@ -113,9 +122,15 @@
 			            user-select: none; /* Non-prefixed version, currently */
 			
 		}
-
-		@media (max-width: 900px) {
+		
+		@media (max-width: 767px) {
 			
+			main {
+				
+				padding-top: 7em;
+	
+			}
+		
 			header .right {
 				
 				order: -3;
