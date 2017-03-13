@@ -57,7 +57,7 @@
 
 		}
 
-		header .btn {
+		header .btn, header .btn:focus {
 			
 			padding: .5em 1em;
 			border-color: #fff;
@@ -74,6 +74,14 @@
 			
 			background: none;
 			
+		}
+		
+		header .btn.active {
+			
+		    box-shadow: none;
+		    background: #fff;
+		    color: #811e68;
+    
 		}
 		
 		header .row > * {
@@ -93,6 +101,7 @@
 			order: 1;
 			background: transparent url(fileadmin/templates/images/skrill-logo-white-transparent.svg) center center no-repeat;
 		    background-size: auto 38px;
+		    background-position: 1em;
 		
 		}
 			
@@ -158,6 +167,7 @@
 			header .left {
 				
 				order: -2;
+			    background-position: center center;
 
 			}
 			
