@@ -53,12 +53,14 @@
 		header nav ul {
 			
 			text-align: inherit;
+			margin: .5em;
 
 		}
 
 		header .btn {
 			
-			padding-right: 1.7em;
+			padding: .5em 1em;
+			border-color: #fff;
 
 		}
 		
@@ -66,6 +68,12 @@
 			
 			display: none;
 
+		}
+
+		header .btn:before {
+			
+			background: none;
+			
 		}
 		
 		header .row > * {
@@ -84,7 +92,7 @@
 
 			order: 1;
 			background: transparent url(fileadmin/templates/images/skrill-logo-white-transparent.svg) center center no-repeat;
-			background-size: contain;
+		    background-size: auto 38px;
 		
 		}
 			
@@ -112,8 +120,9 @@
 		
 		header .right-mobile {
 			
-			background: url(fileadmin/templates/images/burger.png) no-repeat center center;
-			background-size: contain;
+			background: url(fileadmin/templates/images/burger.svg) no-repeat center center;
+			background-size: auto 2em;
+			background-position: calc(100% - 1.25em) 1.25em;
 			cursor: pointer;
 			display: none;
 			  -webkit-touch-callout: none; /* iOS Safari */
@@ -133,16 +142,22 @@
 	
 			}
 		
-			header .right {
+			header .row > .right.align-right {
 				
 				order: -3;
+			    text-align: left;
+
+			}
+			
+			header .row > .right.align-right > div {
+				
+				padding: 0 1em;
 
 			}
 			
 			header .left {
 				
 				order: -2;
-
 
 			}
 			
@@ -223,7 +238,7 @@
 			
 			header input[type=checkbox]:checked ~ .right-mobile {
 			
-				background-image: url(fileadmin/templates/images/menu-close.png);
+				background-image: url(fileadmin/templates/images/menu-close.svg);
 
 			}
 		
@@ -232,6 +247,14 @@
 				background-image: url(fileadmin/templates/images/skrill-logo-purple-transparent.svg);
 
 			}
+			
+			header input[type=checkbox]:checked ~ .right .btn {
+			
+				border-color: #811e68;
+				color: #811e68;
+	
+			}
+
 		
 		}
 			
