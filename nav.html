@@ -25,7 +25,7 @@
 			background: rgba(255,255,255,.3);
 			width: 100%;
 			max-height: 100vh;
-			overflow: auto;
+			overflow: visible;
 
 		}
 		
@@ -47,6 +47,7 @@
 		header nav li {
 			
 			display: inline-block;
+			position: relative;
 
 		}
 		
@@ -57,6 +58,51 @@
 
 		}
 
+		header nav li ul {
+			
+			visibility: hidden;
+			position: absolute;
+			background: #fff;
+			margin: 0;
+			padding: .5em 0;
+
+		}
+		
+		@media (hover) {
+		
+			header nav li.sub:hover {
+				
+				background: #fff;
+	
+			}
+		
+			header nav li.sub:hover:before {
+				
+				content: '';
+				position: absolute;
+				background: #fff;
+				top: -5em;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				z-index: -1;				
+	
+			}
+		
+			header nav li.sub:hover a[href] {
+				
+				color: #999;
+	
+			}
+		
+			header nav li.sub:hover ul {
+				
+				visibility: visible;
+	
+			}
+		
+		}
+		
 		header .btn, header .btn:focus {
 			
 			padding: .5em 1em;
@@ -341,7 +387,18 @@
 					<ul>
 						
 						<li> <a href=#>Transfer money</a> </li>
-						<li> <a href=#>Pay online</a> </li>
+						<li class="sub"> <a href=#>Pay online</a> 
+						
+							<ul>
+								
+								<li> <a href=#>Gambling</a> </li>
+								<li> <a href=#>Gaming</a> </li>
+								<li> <a href=#>Forex</a> </li>
+								<li> <a href=#>Security</a> </li>
+							
+							</ul>
+						
+						</li>
 						<li> <a href=#>Skrill prepaid MasterCard</a> </li>
 						<li> <a href=#>Earn money</a> </li>
 						<li> <a href=#>VIP</a> </li>
