@@ -36,20 +36,13 @@
 
 		}
 		
-		header li a[href] {
+		header li a[href], header li a {
 			
 			color: #fff;
 			text-transform: uppercase;
 			padding: 0 .5em;
 			display: inline-block;
 		
-		}
-		
-		header nav li {
-			
-			display: inline-block;
-			position: relative;
-
 		}
 		
 		header nav ul {
@@ -59,6 +52,13 @@
 
 		}
 
+		header nav li {
+			
+			display: inline-block;
+			position: relative;
+
+		}
+		
 		header nav li ul {
 			
 			visibility: hidden;
@@ -249,6 +249,25 @@
 		.row>[class^=col] {
 			
 			flex-grow: 1;
+
+		}
+		
+		header nav .language ul {
+			
+			position: fixed;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			padding: 2em 0;
+			overflow: auto;
+
+		}
+
+		header nav .language li, header .language li a[href] {
+			
+			display: block;
+			text-align: left;
+			padding: .25em 1.5em;
 
 		}
 		
@@ -466,7 +485,26 @@
 						
 						<li> <a href=#>Exclusive offers</a> </li>
 						<li> <a href=#>(?) Help</a> </li>
-						<li> <a href=#>🌐 En</a> </li>
+						<li class="sub language"> <a>🌐 En</a> 
+						
+							<ul>
+								<li class="active"><a href="en/">English</a></li>
+								<li><a href="de/">Deutsch</a></li>
+								<li><a href="fr/">Français</a></li>
+								<li><a href="es/">Español</a></li>
+								<li><a href="it/">Italiano</a></li>
+								<li><a href="pl/">Polski</a></li>
+								<li><a href="gr/">Ελληνικά</a></li>
+								<li><a href="ro/">Român</a></li>
+								<li><a href="ru/">Русский</a></li>
+								<li><a href="tr/">Türkçe</a></li>
+								<li><a href="cn/">中文</a></li>
+								<li><a href="cz/">Český</a></li>
+								<li><a href="es-us/">USA - Español</a></li>
+								<li><a href="en-us/">USA - English</a></li>
+							</ul>
+				
+						</li>
 					
 					</ul>
 				
