@@ -281,8 +281,9 @@
 			
 			header {
 				
-				max-height: 80vh;
-				overflow: scroll;
+				max-height: 90vh;
+				overflow: visible;
+				-webkit-overflow-scrolling: touch;
 				
 			}
 		
@@ -304,7 +305,6 @@
 				order: -2;
 			    background-position: center center;
 			    background-size: contain;
-			    flex-basis: 27%;
 
 			}
 			
@@ -422,7 +422,17 @@
 			}
 			
 		}
-		
+
+		@media (max-width: 600px) {
+
+			header .left {
+				
+			    flex-basis: 27%;
+
+			}
+
+		}
+				
 		@media (hover) and (max-width: 900px) {
 			
 			header nav li.sub:hover ul {
