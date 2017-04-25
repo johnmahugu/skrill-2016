@@ -32,7 +32,9 @@
 		
 		main {
 			
+			padding: 1em;
 			padding-top: 12em;
+			height: 150vh;
 
 		}
 		
@@ -41,7 +43,6 @@
 			color: #fff;
 			text-transform: uppercase;
 			padding: 0 .5em;
-			display: block;
 		
 		}
 		
@@ -79,7 +80,7 @@
 
 		header nav li.sub {
 			
-			padding-right: 1em;
+			padding-right: 3em;
 
 		}
 		
@@ -88,7 +89,7 @@
 			content: '∨';
 			color: #fff;
 			position: absolute;
-			right: 0;
+			right: 1em;
 			top: 0;
 
 		}
@@ -108,12 +109,6 @@
 		header nav li.sub.open:before {
 			
 			top: -5em;
-
-		}
-	
-		header nav li.sub.open a[href] {
-			
-			color: #999;
 
 		}
 	
@@ -244,6 +239,7 @@
 			background-size: auto 2em;
 /* 			background-position: calc(100% - 1.25em) 1.25em; */
 			background-position-x: calc(100% - 1em);
+			background-position-y: 1em;
 			cursor: pointer;
 			display: none;
 			  -webkit-touch-callout: none; /* iOS Safari */
@@ -277,7 +273,8 @@
 			
 			display: block;
 			text-align: left;
-			padding: .25em 1.5em;
+			padding: .25em 0;
+			margin: 0 3em;
 
 		}
 		
@@ -388,7 +385,7 @@
 
 			}
 			
-			header input[type=checkbox]:checked ~ * a[href]:not(.btn) {
+			header input[type=checkbox]:checked ~ * a:not(.btn) {
 				
 				color: #4a525f;
 
@@ -438,7 +435,7 @@
 				left: 0;
 				width: 100%;
 				transform: translateX(100%);
-				transition: transform .2s linear;
+				transition: transform .2s ease-in-out;
 				background-image: url(fileadmin/templates/images/menu-close.svg);
 				background-repeat: no-repeat;
 				background-position: calc(100% - 1em) 1em;
@@ -457,6 +454,16 @@
 				
 				text-align: center;
 
+			}
+			
+		}
+		
+		@media (min-width: 900px) {
+			
+			header nav li.sub.open a[href] {
+				
+				color: #999;
+			
 			}
 			
 		}
@@ -516,8 +523,8 @@
 					
 					<ul>
 						
-						<li class="active">	<a href=#>Personal</a> </li>
-						<li> <a href=#>Business</a> </li>
+						<li class="active">	<a href=asd>Personal</a> </li>
+						<li> <a href=asd>Business</a> </li>
 					
 					</ul>
 				
@@ -531,8 +538,8 @@
 					
 					<ul>
 						
-						<li> <a href=#>Exclusive offers</a> </li>
-						<li> <a href=#>❓ Help</a> </li>
+						<li> <a href=asd>Exclusive offers</a> </li>
+						<li> <a href=asd>❓ Help</a> </li>
 						<li class="sub language"> <a>🌐 En</a> 
 						
 							<ul>
@@ -566,7 +573,7 @@
 					
 					<ul>
 						
-						<li> <a href=#>Transfer money</a> </li>
+						<li> <a href=asd>Transfer money</a> </li>
 						<li class="sub"> 
 						
 							<a href=asd>Pay online</a>
@@ -574,16 +581,16 @@
 							<ul>
 								
 								<li> <a href=aaa>Gambling</a> </li>
-								<li> <a href=#>Gaming</a> </li>
-								<li> <a href=#>Forex</a> </li>
-								<li> <a href=#>Security</a> </li>
+								<li> <a href=asd>Gaming</a> </li>
+								<li> <a href=asd>Forex</a> </li>
+								<li> <a href=asd>Security</a> </li>
 							
 							</ul>
 						
 						</li>
-						<li> <a href=#>Skrill prepaid MasterCard</a> </li>
-						<li> <a href=#>Earn money</a> </li>
-						<li> <a href=#>VIP</a> </li>
+						<li> <a href=asd>Skrill prepaid MasterCard</a> </li>
+						<li> <a href=asd>Earn money</a> </li>
+						<li> <a href=asd>VIP</a> </li>
 					
 					</ul>
 				
@@ -597,9 +604,9 @@
 
 	<main>
 	
-	Main
-
-</main>
+		<p>Main</p>
+	
+	</main>
 	
 <script src="fileadmin/templates/js/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="fileadmin/templates/js/bootstrap.min.js" type="text/javascript"></script>
@@ -613,16 +620,13 @@
 	$('header nav li.sub, header nav li.sub *').on('touchend', function (e) { // Toggle sub nav on touch
 		
 		e.stopPropagation();
-		if ($(this).hasClass('sub')) {
+		if ($(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
 		
-			$(this).toggleClass('open');
+			$(this).closest('.sub').toggleClass('open');
+			return false;
 		
 		}
-		if ($(this).parent().hasClass('sub language')) {
 
-			$(this).parent().toggleClass('open');
-
-		}		
 	});
 
 	function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
