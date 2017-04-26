@@ -178,20 +178,6 @@ header li.language a {
 
 	}
 
-	header nav li.sub:not(.language):hover:after {
-		
-		content: '';
-		position: absolute;
-		display: block;
-		width: 50%;
-		left: 25%;
-		height: 1px;
-		background: #999;
-		z-index: 1;
-		top: 2.5em;
-
-	}
-	
 	header nav li.sub:hover a[href] {
 		
 		color: #999;
@@ -218,6 +204,8 @@ header .btn, header .btn:focus {
 	padding: .5em 1em;
 	border-color: #fff;
 	margin: .5em 0;
+	border: 1px solid #fff;
+	border-radius: 2px;
 
 }
 
@@ -294,8 +282,8 @@ header .right-mobile {
 	background: url(../images/burger.svg) no-repeat center center;
 	background-size: auto 1.5em;
 /* 			background-position: calc(100% - 1.25em) 1.25em; */
-	background-position-x: calc(100% - .75em);
-	background-position-y: .75em;
+	background-position-x: calc(100% - 1.75em);
+/* 	background-position-y: .75em; */
 	cursor: pointer;
 	display: none;
 	  -webkit-touch-callout: none; /* iOS Safari */
@@ -370,6 +358,7 @@ header nav .language li, header .language li a[href] {
 	    background-position: center center;
 	    background-size: contain;
 	    height: 3em;
+	    border: 1em solid transparent;
 
 	}
 	
@@ -387,7 +376,34 @@ header nav .language li, header .language li a[href] {
 		flex-basis: 100%;
 		
 	}
+
+	header .top-left ul {
+		
+		font-size: 0;
+		margin: 2rem 0;
+
+	}
+		
+	header .top-left li {
+		
+		border: 1px solid #41aeb5;
+		font-size: 1rem;
+		padding: 1em 2em;
 	
+	}
+	
+	header .top-left li.active {
+		
+		background: #41aeb5;
+	
+	}
+
+	header input[type=checkbox]:checked ~ .top-left li.active a:not(.btn) {
+	
+		color: #fff;
+	
+	}	
+
 	header .middle {
 		
 		order: 1;
@@ -413,6 +429,22 @@ header nav .language li, header .language li a[href] {
 		
 		display: block;
 		text-align: left;
+		padding: 1em 0;
+		border-bottom: 1px solid #999;
+		margin: 0 1em;
+
+	}
+	
+	header .middle nav li:first-child {
+		
+		border-top: 1px solid #999;
+
+	}
+	
+	header .middle nav li li, header .middle nav li li:first-child {
+		
+		border: none;		
+		padding: 0;
 
 	}
 	
@@ -457,6 +489,8 @@ header nav .language li, header .language li a[href] {
 	header input[type=checkbox]:checked ~ .left {
 		
 		background-image: url(../images/skrill-logo-purple-transparent.svg);
+		border-color: #fff;
+		transition: border-color .2s ease-in-out;
 
 	}
 	
@@ -489,6 +523,7 @@ header nav .language li, header .language li a[href] {
 		
 		position: static;
 		margin-left: .5em;
+		padding: 0;
 	
 	}
 	
@@ -519,6 +554,34 @@ header nav .language li, header .language li a[href] {
 
 	}
 	
+	header .middle li a[href], header .middle li a {
+		
+		margin: 0;
+		padding: 1rem 0;
+		display: inline-block;
+	
+	}
+
+	header .middle nav li.sub {
+		
+		background-image: url(../images/nav-arrow-black-right.svg);
+	
+	}
+
+	header .middle nav li.sub.open {
+		
+		background: url(../images/nav-arrow-black.svg) no-repeat top right;
+		background-position-y: 2em
+	
+	}
+
+	header .right .btn {
+		
+		display: block;
+		
+	}
+
+
 }
 
 @media (min-width: 900px) {
@@ -535,13 +598,27 @@ header nav .language li, header .language li a[href] {
 
 	}
 	
+	header nav li.sub:not(.language):hover:after {
+		
+		content: '';
+		position: absolute;
+		display: block;
+		width: 50%;
+		left: 25%;
+		height: 1px;
+		background: #999;
+		z-index: 1;
+		top: 2.5em;
+
+	}
+	
 }
 
 @media (max-width: 600px) {
 
 	header .left {
 		
-	    flex-basis: 27%;
+	    flex-basis: calc(27% - .5em);
 
 	}
 
