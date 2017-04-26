@@ -59,6 +59,7 @@ header nav li {
 	
 	display: inline-block;
 	position: relative;
+	padding: .25em 0;
 
 }
 
@@ -71,7 +72,7 @@ header .top-right nav > ul > li + li {
 header nav li li {
 	
 	display: block;
-	padding: .25em 0;
+	padding: .5em;
 
 }
 
@@ -81,9 +82,10 @@ header nav li ul {
 	position: absolute;
 	background: #fff;
 	margin: 0;
-	padding: .5em 0;
+	padding: 2em 0 .5em 0;
 	z-index: 1;
 	width: 100%;
+	
 
 }
 
@@ -143,35 +145,50 @@ header li.language a {
 }
 
 @media (hover) {
+	
+	header nav li.sub:hover {
+		
+		background-image: url(../images/nav-arrow-black.svg);
+		
+	}
 
 	header nav li.sub:hover:before {
 		
 		content: '';
 		position: absolute;
 		background: #fff;
-		top: 0;
+		top: -5em;
 		left: 0;
 		right: 0;
 		bottom: 0;
 		z-index: -1;
 
 	}
+
+	header nav li.sub:hover:after {
+		
+		content: '';
+		position: absolute;
+		display: block;
+		width: 50%;
+		left: 25%;
+		height: 1px;
+		background: #999;
+		z-index: 1;
+		top: 2em;
+
+	}
 	
-	header nav li.sub:hover {
-		
-		background: #fff;
-
-	}
-
-	header nav li.sub:hover:before {
-		
-		top: -5em;
-
-	}
-
 	header nav li.sub:hover a[href] {
 		
 		color: #999;
+
+	}
+
+	header nav li.sub:hover li a[href] {
+		
+		padding: 0;
+		display: block;
 
 	}
 
@@ -240,6 +257,7 @@ header .top-left {
 	order: -2;
 	background: #485160;
 	flex-basis: calc(33.333% - 10px);
+	padding: 0;
 
 }
 	
@@ -248,6 +266,7 @@ header .top-right {
 	order: -1;
 	background: #485160;
 	flex-basis: calc(66.667% - 10px);
+	padding: 0;
 
 }
 
