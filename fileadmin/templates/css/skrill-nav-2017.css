@@ -577,7 +577,7 @@ header nav .language li, header .language li a[href] {
 
 	header .right .btn {
 		
-		display: block;
+		display: inline-block;
 		
 	}
 
