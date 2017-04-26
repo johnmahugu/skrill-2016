@@ -47,6 +47,18 @@ header li a[href], header li a {
 
 }
 
+header .middle li a[href], header .middle li a {
+	
+	margin: 0 1em;
+
+}
+
+header .middle li.sub > a[href], header .middle li.sub > a {
+	
+	margin-right: 0;
+
+}
+
 header nav ul {
 	
 	text-align: inherit;
@@ -91,9 +103,10 @@ header nav li ul {
 
 header nav li.sub {
 	
-	padding-right: 2em;
+	padding-right: 1.5em;
 	background: url(../images/nav-arrow-white.svg) right center no-repeat;
 	background-position-x: calc(100% - .5em);
+	background-size: 1em auto;
 
 }
 
@@ -165,7 +178,7 @@ header li.language a {
 
 	}
 
-	header nav li.sub:hover:after {
+	header nav li.sub:not(.language):hover:after {
 		
 		content: '';
 		position: absolute;
@@ -175,7 +188,7 @@ header li.language a {
 		height: 1px;
 		background: #999;
 		z-index: 1;
-		top: 2em;
+		top: 2.5em;
 
 	}
 	
@@ -316,8 +329,8 @@ header nav .language li, header .language li a[href] {
 	
 	display: block;
 	text-align: left;
-	padding: .25em 0;
-	margin: 0 2em;
+	padding: .5em 0;
+	margin: 0 1.5em;
 
 }
 
