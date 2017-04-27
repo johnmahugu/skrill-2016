@@ -453,11 +453,18 @@ header nav .language li, header .language li a[href] {
 		position: absolute;
 
 	}
+	
+	header input[type=checkbox] ~ .top-left {
+		
+		height: 0;
+		
+	}
 
 	header input[type=checkbox] ~ .right, header input[type=checkbox] ~ .left, header input[type=checkbox] ~ .right-mobile, header input[type=checkbox]:checked ~ .top-left, header input[type=checkbox]:checked ~ .top-right, header input[type=checkbox]:checked ~ .middle {
 		
 		visibility: visible;
 		position: static;
+		height: auto;
 
 	}
 	
@@ -588,14 +595,27 @@ header nav .language li, header .language li a[href] {
 		
 	}
 	
-	header .top-right nav li:not(.language):not(.help) {
+	header .top-right nav > ul > li:not(.language):not(.help) {
 		
 		display: block;
 		padding: 1em;
 
 	}
 
-	header li.language a {
+	header .top-right nav > ul > li:not(.language):not(.help) {
+		
+		display: block;
+		padding: 1em;
+
+	}
+
+	header .top-right nav > ul > li.language li {
+		
+		padding: 0;
+
+	}
+	
+	header li.language > a {
 		
 		background-image: url(../images/globe-black.svg);
 		background-size: 1.5em 1.5em;
