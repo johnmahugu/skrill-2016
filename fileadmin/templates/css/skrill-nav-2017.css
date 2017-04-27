@@ -128,13 +128,6 @@ header nav li.sub.open ul {
 
 }
 
-header .top-left li + li:before {
-	
-	content: '|';
-	color: #fff;
-	
-}
-
 header .top-left li:not(.active) a[href] {
 	
 	color: #999;
@@ -333,7 +326,8 @@ header nav .language li, header .language li a[href] {
 	header {
 		
 		max-height: 90vh;
-		overflow: visible;
+		overflow-y: auto;
+		overflow-x: hidden;
 		-webkit-overflow-scrolling: touch;
 		
 	}
@@ -380,7 +374,7 @@ header nav .language li, header .language li a[href] {
 	header .top-left ul {
 		
 		font-size: 0;
-		margin: 2rem 0;
+		margin: 1rem 0 1.5rem 0;
 
 	}
 		
@@ -388,7 +382,7 @@ header nav .language li, header .language li a[href] {
 		
 		border: 1px solid #41aeb5;
 		font-size: 1rem;
-		padding: 1em 2em;
+		padding: .5em 1.5em;
 	
 	}
 	
@@ -429,7 +423,6 @@ header nav .language li, header .language li a[href] {
 		
 		display: block;
 		text-align: left;
-		padding: 1em 0;
 		border-bottom: 1px solid #999;
 		margin: 0 1em;
 
@@ -500,6 +493,12 @@ header nav .language li, header .language li a[href] {
 		color: #811e68;
 
 	}
+	
+	header nav ul {
+		
+		margin: 0;
+
+	}
 
 	header nav li a[href] {
 		
@@ -548,6 +547,12 @@ header nav .language li, header .language li a[href] {
 
 	}
 	
+	header nav .language li {
+		
+		margin: 0 3em;
+		
+	}
+	
 	header .language li a[href] {
 		
 		text-align: center;
@@ -557,7 +562,7 @@ header nav .language li, header .language li a[href] {
 	header .middle li a[href], header .middle li a {
 		
 		margin: 0;
-		padding: 1rem 0;
+		padding: .5rem 0;
 		display: inline-block;
 	
 	}
@@ -565,13 +570,15 @@ header nav .language li, header .language li a[href] {
 	header .middle nav li.sub {
 		
 		background-image: url(../images/nav-arrow-black-right.svg);
+		background-size: 1em 1em;
+		background-position-x: 100%;
 	
 	}
 
 	header .middle nav li.sub.open {
 		
 		background: url(../images/nav-arrow-black.svg) no-repeat top right;
-		background-position-y: 2em
+		background-position-y: 1em;
 	
 	}
 
@@ -580,7 +587,27 @@ header nav .language li, header .language li a[href] {
 		display: inline-block;
 		
 	}
+	
+	header .top-right nav li:not(.language):not(.help) {
+		
+		display: block;
+		padding: 1em;
 
+	}
+
+	header li.language a {
+		
+		background-image: url(../images/globe-black.svg);
+		background-size: 1.5em 1.5em;
+		
+	}
+
+	header li.help a[href] {
+		
+		background-image: url(../images/question-mark-circle-black.svg);
+		background-size: 1.5em 1.5em;
+		
+	}
 
 }
 
@@ -612,6 +639,13 @@ header nav .language li, header .language li a[href] {
 
 	}
 	
+	header .top-left li + li:before {
+		
+		content: '|';
+		color: #fff;
+		
+	}
+
 }
 
 @media (max-width: 600px) {
