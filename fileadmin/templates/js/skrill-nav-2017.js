@@ -33,9 +33,11 @@ $(window).on('scroll', function (e) {
 	}
 	
 });
+
 $('#toggle-menu').on('change', function (e) {
 	
 	$('header').toggleClass('open');
+	$('header').scrollTop(0);
 	
 });
 
