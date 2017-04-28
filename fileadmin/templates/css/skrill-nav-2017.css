@@ -167,6 +167,7 @@ header li.language a {
 		right: 0;
 		bottom: 0;
 		z-index: -1;
+		min-width: 10em;
 
 	}
 
@@ -287,7 +288,7 @@ header .right-mobile {
 	
 }
 
-.row>[class^=col] {
+header .row>[class^=col] {
 	
 	flex-grow: 1;
 
@@ -616,14 +617,14 @@ header nav .language li, header .language li a[href] {
 	header li.language > a {
 		
 		background-image: url(../images/globe-black.svg);
-		background-size: 1.5em 1.5em;
+		background-size: 1.25em 1.25em;
 		
 	}
 
 	header li.help a[href] {
 		
 		background-image: url(../images/question-mark-circle-black.svg);
-		background-size: 1.5em 1.5em;
+		background-size: 1.25em 1.25em;
 		
 	}
 	
@@ -633,6 +634,23 @@ header nav .language li, header .language li a[href] {
 		height: var(--height);
 		background: #fff;
 		overflow: auto;
+	
+	}
+
+	header nav li.sub:not(.language) ul {
+		
+		max-height: 0;
+		transition: max-height .2s ease-in-out;
+		overflow: hidden;
+		padding: 0;
+		visibility: visible;
+	
+	}
+	
+	header nav li.sub.open:not(.language) ul {
+		
+		max-height: 100vh;
+		max-height: var(--max-height);
 	
 	}
 
@@ -670,6 +688,12 @@ header nav .language li, header .language li a[href] {
 		
 		content: '|';
 		color: #fff;
+		
+	}
+	
+	header nav li ul {
+		
+		min-width: 10em;
 		
 	}
 

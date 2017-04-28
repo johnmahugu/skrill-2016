@@ -41,9 +41,17 @@ $('#toggle-menu').on('change', function (e) {
 	
 });
 
-$('#toggle-menu').on('resize', function (e) {
-	
+function setHeaderVariables() {
+
 	$('header')[0].style.setProperty('--height', window.innerHeight + 'px');
-	
-});
-$('header')[0].style.setProperty('--height', window.innerHeight + 'px');
+	$('header nav li.sub:not(.language) ul').each( function (n) {
+		
+		$(this)[0].style.setProperty('--max-height', $(this)[0].scrollHeight + 'px');
+		
+	});
+	$('main').css('padding-top', $('header').height() + 'px');
+
+}
+
+$(window).on('resize', setHeaderVariables);
+setHeaderVariables();
