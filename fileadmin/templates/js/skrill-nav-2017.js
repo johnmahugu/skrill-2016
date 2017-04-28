@@ -1,4 +1,4 @@
-$('header nav li.sub, header nav li.sub *').on('touchend', function (e) { // Toggle sub nav on touch
+$('header nav li.sub, header nav li.sub *').on('touchend click', function (e) { // Toggle sub nav on touch
 	
 	e.stopPropagation();
 	if ($(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
