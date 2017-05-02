@@ -19,7 +19,7 @@ header {
 	background: rgba(255,255,255,.3);
 	width: 100%;
 	overflow: visible;
-	z-index: 2;
+	z-index: 3;
 
 }
 
@@ -102,7 +102,7 @@ header nav li ul {
 
 header nav li.sub {
 	
-	padding-right: 2.5em;
+	padding-right: 1.5em;
 	background: url(../images/nav-arrow-white.svg) right center no-repeat;
 	background-position-x: calc(100% - .5em);
 	background-size: 1em auto;
@@ -531,6 +531,7 @@ header nav .language li, header .language li a[href] {
 	header nav li.sub {
 		
 		background-image: url(../images/nav-arrow-black.svg);
+		padding-right: 2.5em;
 
 	}
 					
