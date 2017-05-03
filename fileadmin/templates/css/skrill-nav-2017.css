@@ -149,7 +149,7 @@ header li.language a {
 	
 }
 
-@media (hover) {
+@media (hover: hover) {
 	
 	header nav li.sub:hover {
 		
@@ -375,6 +375,7 @@ header nav .language li, header .language li a[href] {
 		
 		font-size: 0;
 		margin: 1rem 0 1.5rem 0;
+		width: 100vw;
 
 	}
 		
@@ -519,6 +520,7 @@ header nav .language li, header .language li a[href] {
 	header nav ul {
 		
 		margin: 0;
+		width: 100vw;
 
 	}
 
@@ -702,7 +704,7 @@ header nav .language li, header .language li a[href] {
 
 }
 
-@media (hover) and (max-width: 900px) {
+@media (hover: hover) and (max-width: 900px) {
 	
 	header nav li.sub:hover ul {
 		
@@ -712,7 +714,7 @@ header nav .language li, header .language li a[href] {
 
 }
 
-@media (hover) and (min-width: 900px) {
+@media (hover: hover) and (min-width: 900px) {
 	
 	header nav li.sub:not(.language):hover:after {
 		
