@@ -50,7 +50,7 @@ header li a[href], header li a {
 
 header .middle li a[href], header .middle li a {
 	
-	margin: 0 1em;
+	margin: 0 .5em;
 
 }
 
@@ -85,6 +85,12 @@ header .top-right nav > ul > li + li {
 header nav li li {
 	
 	display: block;
+	padding: .5em 0;
+
+}
+
+html:not(.can-touch) header nav li li {
+	
 	padding: .5em;
 
 }
@@ -95,7 +101,7 @@ header nav li ul {
 	position: absolute;
 	background: #fff;
 	margin: 0;
-	padding: 2em 0 .5em 0;
+	padding: 1em 0;
 	z-index: 1;
 	width: 100%;
 	
@@ -151,15 +157,16 @@ header li.language a {
 	
 }
 
-html:not(.can-touch) {
-	
-	header nav li.sub:hover {
+	html:not(.can-touch) header nav li.sub:hover, header nav li.sub.open {
 		
 		background-image: url(../images/nav-arrow-black.svg);
+		background-repeat: no-repeat;
+		background-position-x: calc(100% - .5em);
+		background-position-y: .55em;
 		
 	}
 
-	header nav li.sub:hover:before {
+	html:not(.can-touch) header nav li.sub:hover:before, header nav li.open.sub:before {
 		
 		content: '';
 		position: absolute;
@@ -173,6 +180,8 @@ html:not(.can-touch) {
 
 	}
 
+html:not(.can-touch) {
+	
 	header nav li.sub:hover a[href] {
 		
 		color: #999;
@@ -734,7 +743,14 @@ header .btn {
 	header nav li ul {
 		
 		min-width: 10em;
+		padding: 1em 0 .5em 0;
+	
+	}
+
+	html:not(.can-touch) header nav li ul {
 		
+		padding-top: 2em;
+	
 	}
 
 	html:not(.can-touch) header nav li.sub:not(.language):hover:after {
@@ -751,4 +767,10 @@ header .btn {
 
 	}
 	
+	header nav li[data-show].show {
+		
+		display: inline-block !important;
+	
+	}
+
 }

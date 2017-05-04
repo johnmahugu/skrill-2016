@@ -71,12 +71,14 @@ function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
 	if (!e.target.closest('header')) {
 		
 		$('#toggle-menu')[0].checked = false;
+		$('header .open').removeClass('open');
 		
 	}
 	
 }
 
 $(window).on('click touchend', closeFoldClickOutside);
+
 $(window).on('scrollstop', function (e) {
 	
 	if ($('#toggle-menu')[0].checked) {
@@ -102,7 +104,7 @@ function setHeaderVariables() {
 	$('header')[0].style.setProperty('--height', window.innerHeight + 'px');
 	$('header nav li.sub:not(.language) ul').each( function (n) {
 		
-		$(this)[0].style.setProperty('--max-height', $(this)[0].scrollHeight + 'px');
+		$(this)[0].style.setProperty('--max-height', $(this)[0].scrollHeight + 'px'); // for height animation
 		
 	});
 	$('main').css('padding-top', $('header').height() + 'px');
