@@ -54,7 +54,10 @@
 
 })();
 
-$('header nav li.sub, header nav li.sub *').on('touchend click', function (e) { // Toggle sub nav on touch
+
+// Toggle sub nav on touch and remove the fallback checkboxes
+$('header input[type=radio]').remove();
+$('header nav li.sub, header nav li.sub *').on('touchend click', function (e) {
 	
 	e.stopPropagation();
 	if ($(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
@@ -65,6 +68,7 @@ $('header nav li.sub, header nav li.sub *').on('touchend click', function (e) { 
 	}
 
 });
+
 
 function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
 	
@@ -79,7 +83,7 @@ function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
 
 $(window).on('click touchend', closeFoldClickOutside);
 
-$(window).on('scrollstop', function (e) {
+$(window).on('scroll', function (e) {
 	
 	if ($('#toggle-menu')[0].checked) {
 
