@@ -5,8 +5,9 @@
     var isTouch = false; //var to indicate current input type (is touch versus no touch) 
     var isTouchTimer;
     var curRootClass = ''; //var indicating current document root class ("can-touch" or "")
-     
+
     function addtouchclass(e) {
+// alert('touch');
 
         clearTimeout(isTouchTimer);
         isTouch = true;
@@ -22,6 +23,7 @@
     }
      
     function removetouchclass(e){
+// alert('mouse');
 
         if (!isTouch && curRootClass === 'can-touch'){ //remove 'can-touch' class if not triggered by a touch event and class is present
 
@@ -33,8 +35,22 @@
 
     }
      
-    document.addEventListener('mouseover', removetouchclass, false); //this event gets called when input type is everything from touch to mouse/ trackpad
-    document.addEventListener('touchstart', addtouchclass, false); //this event only gets called when input type is touch
+    $(window).on('mouseover', removetouchclass); //this event gets called when input type is everything from touch to mouse/ trackpad
+    $(window).on('touchstart', addtouchclass); //this event only gets called when input type is touch
+
+/*
+	function pointerhandler(event) {
+		alert(event);	
+	    if (event.pointerType) {
+	    
+		    alert(event.pointerType);
+	    
+	    }
+	
+	}
+*/
+	    
+//     $(window).on('touchstart', pointerhandler); //this event only gets called when input type is touch
 
 })();
 
@@ -61,7 +77,7 @@ function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
 }
 
 $(window).on('click touchend', closeFoldClickOutside);
-$(window).on('scroll', function (e) {
+$(window).on('scrollstop', function (e) {
 	
 	if ($('#toggle-menu')[0].checked) {
 
