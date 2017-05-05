@@ -1,3 +1,5 @@
+$grey: #485161;
+
 body {
 	
 	background: url(../images/desktop-nav-bg.jpg);
@@ -40,6 +42,12 @@ header a[href], header a {
 	word-break: break-all;
 	word-wrap: break-word;
 
+}
+
+header a[href].btn#register {
+	
+	background: #fff;
+	color: #bd728e;
 }
 
 header li a[href], header li a {
@@ -105,7 +113,6 @@ header nav li ul {
 	padding: 1em 0;
 	z-index: 1;
 	width: 100%;
-	
 
 }
 
@@ -124,12 +131,6 @@ header nav li.sub.open {
 
 }
 
-header nav li.sub.open:before {
-	
-	top: -5em;
-
-}
-
 header nav li.sub.open ul, header nav li.sub > :checked ~ ul {
 	
 	visibility: visible;
@@ -138,7 +139,7 @@ header nav li.sub.open ul, header nav li.sub > :checked ~ ul {
 
 header .top-left li:not(.active) a[href] {
 	
-	color: #999;
+	color: #8f91a4;
 	
 }
 
@@ -167,13 +168,13 @@ header li.language a {
 		
 	}
 
-	html:not(.can-touch) header nav li.sub:not(.language):hover > ul, header nav li.open.sub:not(.language) > ul, header nav li.sub:not(.language) > :checked ~ ul {
+	header nav li.open.sub:not(.language) > ul, header nav li.sub:not(.language) > :checked ~ ul {
 		
 		z-index: -1;
 
 	}
 
-	html:not(.can-touch) header nav li.sub:not(.language):hover > ul:before, header nav li.open.sub:not(.language) > ul:before, header nav li.sub:not(.language) > :checked ~ ul:before {
+	html:not(.can-touch) header nav li.sub:hover:before, header nav li.open.sub:not(.language) > ul:before, header nav li.sub:not(.language) > :checked ~ ul:before {
 		
 		content: '';
 		position: absolute;
@@ -191,7 +192,7 @@ html:not(.can-touch) {
 	
 	header nav li.sub:hover a {
 		
-		color: #999;
+		color: $grey;
 
 	}
 
@@ -249,7 +250,6 @@ header .row > * {
 header .right {
 	
 	order: 3;
-// 	padding-right: 1em;
 
 }
 
@@ -293,7 +293,7 @@ header .right-mobile {
 	background: url(../images/burger.svg) no-repeat center center;
 	background-size: auto 1.5em;
 /* 			background-position: calc(100% - 1.25em) 1.25em; */
-	background-position-x: calc(100% - 1.75em);
+	background-position-x: calc(100% - 1em);
 /* 	background-position-y: .75em; */
 	cursor: pointer;
 	display: none;
@@ -473,14 +473,14 @@ header input[type=radio] {
 		
 		display: block;
 		text-align: left;
-		border-bottom: 1px solid #999;
+		border-bottom: 1px solid $grey;
 		margin: 0 1em;
 
 	}
 	
 	header .middle nav li:first-child {
 		
-		border-top: 1px solid #999;
+		border-top: 1px solid $grey;
 
 	}
 	
@@ -587,7 +587,7 @@ header input[type=radio] {
 					
 	header nav li.sub:after {
 		
-		color: #999;
+		color: $grey;
 	
 	}
 	
@@ -698,7 +698,7 @@ header input[type=radio] {
 	header.open, :checked ~ header {
 		
 		border: none;
-		height: var(--height);
+		height: var(--viewport-height);
 		background: #fff;
 		overflow: auto;
 	
@@ -739,7 +739,7 @@ header input[type=radio] {
 	
 	header nav li.sub.open a, header nav li.sub > :checked ~ ul a, header nav li.sub > :checked ~ a {
 		
-		color: #999;
+		color: $grey;
 	
 	}
 	
@@ -769,7 +769,20 @@ header input[type=radio] {
 	
 	}
 
-	html:not(.can-touch) header nav li.sub:not(.language):hover:after {
+	header nav li[data-show].show {
+		
+		display: inline-block !important;
+	
+	}
+
+	header .right {
+		
+		margin: 0 .5em;
+		padding: 0 .5em;
+	
+	}
+
+	header nav li ul:after {
 		
 		content: '';
 		position: absolute;
@@ -777,16 +790,10 @@ header input[type=radio] {
 		width: 50%;
 		left: 25%;
 		height: 1px;
-		background: #999;
+		background: $grey;
 		z-index: 1;
-		top: 2.5em;
+		top: 1.1em;
 
-	}
-	
-	header nav li[data-show].show {
-		
-		display: inline-block !important;
-	
 	}
 
 }

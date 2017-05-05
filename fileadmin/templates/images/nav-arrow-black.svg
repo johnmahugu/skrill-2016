@@ -1,12 +1,7 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg width="18px" height="10px" viewBox="0 0 18 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
-    <title>Untitled</title>
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="nav-arrow-white" stroke-width="2" stroke="#000000">
-            <polyline id="Shape" points="16.985 0.794 8.984 8.012 0.985 0.794"></polyline>
-        </g>
-    </g>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="19px" height="12px">
+<path fill-rule="evenodd"  stroke="rgb(72, 81, 97)" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+ d="M16.985,2.794 L8.984,10.012 L0.985,2.794 "/>
 </svg>
