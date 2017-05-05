@@ -537,7 +537,7 @@ header input[type=radio] {
 */
 		
 		margin-left: 50%;
-		max-width: 50%;
+		max-width: 50.1%; // +.1% for Chrome
 		transition: margin-left .2s ease-in-out;
 	
 	}		
