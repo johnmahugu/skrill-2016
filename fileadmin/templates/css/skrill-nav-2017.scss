@@ -241,6 +241,13 @@ header .btn.active {
 
 }
 
+header .row {
+	
+	width: 200%;
+	justify-content: flex-start;
+	
+}
+
 header .row > * {
 	
 	transition: background-color .2s ease-in-out;
@@ -381,7 +388,7 @@ header input[type=radio] {
 	    text-align: left;
 	    width: 33%;
 	    flex-grow: 0;
-	    max-width: 33%;
+	    max-width: 16.667%;
 		overflow: hidden;
 
 	}
@@ -400,7 +407,7 @@ header input[type=radio] {
 	    height: 3em;
 	    border: 1em solid transparent;
 	    box-sizing: border-box;
-	    flex-basis: 33%;
+	    flex-basis: 16.667%;
 
 	}
 	
@@ -408,6 +415,7 @@ header input[type=radio] {
 		
 		display: block;
 		order: -1;
+		max-width: 16.667%;
 		
 	}
 
@@ -447,6 +455,12 @@ header input[type=radio] {
 	
 	}	
 
+	header .row > input[type=checkbox]:checked ~ .right.align-right {
+		
+		visibility: hidden;
+
+	}
+	
 	header .middle {
 		
 		order: 1;
@@ -517,7 +531,8 @@ header input[type=radio] {
 		transition: transform .2s ease-in-out;
 */
 		
-		margin-left: 100%;
+		margin-left: 50%;
+		max-width: 50%;
 		transition: margin-left .2s ease-in-out;
 	
 	}		
@@ -541,6 +556,12 @@ header input[type=radio] {
 	header input[type=checkbox]:checked ~ * a:not(.btn) {
 		
 		color: #4a525f;
+
+	}
+	
+	header input[type=checkbox]:checked ~ .top-left a:not(.btn) {
+		
+		color: #cecece;
 
 	}
 	
@@ -700,7 +721,6 @@ header input[type=radio] {
 		border: none;
 		height: var(--viewport-height);
 		background: #fff;
-		overflow: auto;
 	
 	}
 

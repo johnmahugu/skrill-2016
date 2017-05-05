@@ -83,6 +83,7 @@ function closeFoldClickOutside(e) { // Close menu when clicking/tapping outside
 
 $(window).on('click touchend', closeFoldClickOutside);
 
+/*
 $(window).on('scroll', function (e) {
 	
 	if ($('#toggle-menu')[0].checked) {
@@ -95,6 +96,7 @@ $(window).on('scroll', function (e) {
 	}
 	
 });
+*/
 
 $('#toggle-menu').on('change', function (e) {
 	
