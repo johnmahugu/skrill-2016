@@ -243,7 +243,6 @@ header .btn.active {
 
 header .row {
 	
-	width: 200%;
 	justify-content: flex-start;
 	
 }
@@ -382,6 +381,12 @@ header input[type=radio] {
 		
 	}
 	
+	header .row {
+	
+		width: 200%;
+
+	}
+	
 	header .row > .right.align-right {
 		
 		order: -3;
@@ -405,7 +410,7 @@ header input[type=radio] {
 	    background-position: center center;
 	    background-size: contain;
 	    height: 3em;
-	    border: 1em solid transparent;
+	    border: .75em solid transparent;
 	    box-sizing: border-box;
 	    flex-basis: 16.667%;
 
@@ -721,6 +726,7 @@ header input[type=radio] {
 		border: none;
 		height: var(--viewport-height);
 		background: #fff;
+		overflow-y: auto;
 	
 	}
 
@@ -802,7 +808,7 @@ header input[type=radio] {
 	
 	}
 
-	header nav li ul:after {
+	header nav li:not(.language) ul:after {
 		
 		content: '';
 		position: absolute;
