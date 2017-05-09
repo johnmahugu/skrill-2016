@@ -1,16 +1,18 @@
 $grey: #485161;
 
+@font-face {
+
+    font-family: robotoregular;
+    src: url(../fonts/roboto/roboto_regular/Roboto-Regular-webfont.woff);
+    font-weight: 400;
+    font-style: normal;
+
+}
+
 body {
 	
 	background: url(../images/desktop-nav-bg.jpg);
 	background-size: cover;
-	font-family: robotolight, Helvetica Neue, Arial, sans-serif;
-
-}
-
-input#toggle-menu {
-	
-	display: none;
 
 }
 
@@ -22,6 +24,14 @@ header {
 	width: 100%;
 	overflow: visible;
 	z-index: 3;
+	font-family: robotoregular, Helvetica Neue, Arial, sans-serif;
+	font-size: 15px;
+
+}
+
+input#toggle-menu {
+	
+	display: none;
 
 }
 
@@ -58,8 +68,8 @@ header li a[href], header li a {
 
 header .middle li a[href], header .middle li a {
 	
-	margin: 0 .5em;
 	word-break: initial;
+	margin: 0 .5em;
 
 }
 
@@ -94,7 +104,7 @@ header .top-right nav > ul > li + li {
 header nav li li {
 	
 	display: block;
-	padding: .5em 0;
+	padding: .1em 0;
 
 }
 
@@ -280,6 +290,7 @@ header .top-right {
 header .middle {
 	
 	order: 2;
+	font-size: 16px;
 
 }
 
@@ -650,7 +661,6 @@ header input[type=radio] {
 	
 	header .middle li a[href], header .middle li a {
 		
-		margin: 0;
 		padding: .5rem 0;
 		display: inline-block;
 		width: 100%;
@@ -858,6 +868,13 @@ header input[type=radio] {
 	
 		}
 
+	}
+
+	header .middle li li a[href], header .middle li li a {
+		
+		font-size: .9em;
+		display: block;
+	
 	}
 
 }
