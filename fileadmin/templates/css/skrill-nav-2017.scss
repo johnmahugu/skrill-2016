@@ -98,9 +98,21 @@ header nav li li {
 
 }
 
-html:not(.can-touch) header nav li li {
+header nav li.sub.language li {
+	
+	padding: 0;
+
+}
+
+header nav li.sub.language li a[href] {
 	
 	padding: .5em;
+
+}
+
+header nav .language .hidden_language {
+	
+	display: none;
 
 }
 
@@ -159,7 +171,7 @@ header li.language a {
 	
 }
 
-	html:not(.can-touch) header nav li.sub:hover, header nav li.sub.open, header nav li.sub > :checked {
+	header nav li.sub.open, header nav li.sub > :checked {
 		
 		background-image: url(../images/nav-arrow-black.svg);
 		background-repeat: no-repeat;
@@ -174,7 +186,7 @@ header li.language a {
 
 	}
 
-	html:not(.can-touch) header nav li.sub:hover:before, header nav li.open.sub:not(.language) > ul:before, header nav li.sub:not(.language) > :checked ~ ul:before {
+	header nav li.open.sub:not(.language) > ul:before, header nav li.sub:not(.language) > :checked ~ ul:before {
 		
 		content: '';
 		position: absolute;
@@ -187,29 +199,6 @@ header li.language a {
 		min-width: 10em;
 
 	}
-
-html:not(.can-touch) {
-	
-	header nav li.sub:hover a {
-		
-		color: $grey;
-
-	}
-
-	header nav li.sub:hover li a[href] {
-		
-		padding: 0;
-		display: block;
-
-	}
-
-	header nav li.sub:hover ul {
-		
-		visibility: visible;
-
-	}
-
-}
 
 header .btn, header .btn:focus {
 	
@@ -343,8 +332,10 @@ header nav .language li, header .language li a[href] {
 header .btn {
 	
 	display: inline-block;
+	background: none;
 
 }
+
 #myaccount, .logged-in #login {
 	
 	display: none;
@@ -747,12 +738,6 @@ header input[type=radio] {
 	
 	}
 
-	html:not(.can-touch) header nav li.sub:hover ul {
-		
-		position: static;
-	
-	}
-	
 	#register {
 		
 		display: none;
@@ -771,7 +756,7 @@ header input[type=radio] {
 	
 	header .left {
 		
-		padding: 2em 0;
+		min-height: 5em;
 
 	}
 	
@@ -803,8 +788,10 @@ header input[type=radio] {
 
 	header .right {
 		
-		margin: 0 .5em;
-		padding: 0 .5em;
+		margin: 0 .5em 0 0;
+		padding: 0 .5em 0 0;
+		flex-grow: 0 !important;
+		flex-basis: auto;
 	
 	}
 
@@ -819,6 +806,57 @@ header input[type=radio] {
 		background: $grey;
 		z-index: 1;
 		top: 1.1em;
+
+	}
+
+	html:not(.can-touch) {
+		
+		header nav li.sub:hover a {
+			
+			color: $grey;
+	
+		}
+	
+		header nav li.sub:hover li:hover a {
+			
+			color: #41aeb5;
+	
+		}
+	
+		header nav li.sub.language:hover li:hover a {
+			
+			color: #4f2556;
+	
+		}
+	
+		header nav li.sub:hover ul {
+			
+			visibility: visible;
+	
+		}
+
+		header nav li.sub:hover {
+			
+			background-image: url(../images/nav-arrow-black.svg);
+			background-repeat: no-repeat;
+			background-position-x: calc(100% - .5em);
+			background-position-y: .55em;
+			
+		}
+
+		header nav li.sub:hover:before {
+			
+			content: '';
+			position: absolute;
+			background: #fff;
+			top: -5em;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: -1;
+			min-width: 10em;
+	
+		}
 
 	}
 
