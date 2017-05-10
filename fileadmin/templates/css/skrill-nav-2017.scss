@@ -249,6 +249,7 @@ header .row {
 header .row > * {
 	
 	transition: background-color .2s ease-in-out;
+	box-sizing: border-box; // Breaks IE10 support
 
 }
 
@@ -368,7 +369,7 @@ header input[type=radio] {
 
 }
 
-@media screen and (max-width: 900px) {
+@media (max-width: 1366px) {
 	
 	main {
 		
@@ -756,7 +757,7 @@ header input[type=radio] {
 
 }
 
-@media screen and (min-width: 900px) {
+@media (min-width: 1366px) {
 	
 	header nav li.sub.open a, header nav li.sub > :checked ~ ul a, header nav li.sub > :checked ~ a {
 		
