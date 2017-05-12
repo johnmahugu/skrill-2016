@@ -332,11 +332,12 @@ header nav .language ul {
 	
 	position: fixed;
 	top: 0;
-	bottom: 0;
+// 	bottom: 0;
 	right: 0;
 	padding: 2em 0;
 	overflow: auto;
 	width: auto;
+	max-height: 100%;
 
 }
 
