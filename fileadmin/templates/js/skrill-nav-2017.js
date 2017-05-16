@@ -58,8 +58,8 @@
 $('header input[type=radio]').remove();
 $('header nav li.sub, header nav li.sub *').on('touchend click', function (e) {
 	
-	e.stopPropagation();
-	if ($(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
+/* 	e.stopPropagation(); */
+	if (!e.target.getAttribute('href') && $(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
 	
 		$(this).closest('.sub').toggleClass('open');
 		return false;

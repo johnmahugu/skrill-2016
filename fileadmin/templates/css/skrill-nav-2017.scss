@@ -1,4 +1,7 @@
 $grey: #485161;
+$lightgrey: #8c90a0;
+$teal: rgb(76, 188, 195);
+$purple: #811e68;
 
 @font-face {
 
@@ -61,7 +64,7 @@ header a[href], header a {
 header a[href].btn#register {
 	
 	background: #fff;
-	color: #bd728e;
+	color: $lightgrey;
 }
 
 header li a[href], header li a {
@@ -87,7 +90,7 @@ header .middle li.sub > a[href], header .middle li.sub > a {
 header nav ul {
 	
 	text-align: inherit;
-	margin: .5em;
+	margin: .75em 2.5em;
 	padding: 0;
 
 }
@@ -217,7 +220,7 @@ header li.language a {
 
 header .btn, header .btn:focus {
 	
-	padding: .5em 1em;
+	padding: .5em 2em;
 	border-color: #fff;
 	margin: .5em 0;
 	border: 1px solid #fff;
@@ -270,13 +273,13 @@ header .left {
 	order: 1;
 	background: transparent url(../images/skrill-logo-white-transparent.svg) center center no-repeat;
     background-size: auto 34px;
-    background-position: 1em;
+    background-position: 3em;
     flex-basis: 128px;
 	flex-grow: 0 !important;
 	transition: all .2s ease-in-out;
 
 }
-	
+
 header .top-left {
 	
 	order: -2;
@@ -691,6 +694,12 @@ header .absolute nav li.sub ul {
 	
 	}
 
+	header .middle li li a[href], header .middle li li a {
+		
+		padding: .25rem 0;
+
+	}
+	
 	header .middle nav li.sub {
 		
 		background-image: url(../images/nav-arrow-black-right.svg);
@@ -782,6 +791,19 @@ header .absolute nav li.sub ul {
 
 @media (min-width: 901px) {
 	
+	header {
+		
+		background: #fff;
+	
+	}
+
+	body.scrolled header {
+		
+		box-shadow: 0 0 1px 2px #ddd;
+		border: none;
+		
+	}
+	
 	header nav .middle li {
 		
 	    padding: 1.25em 0;
@@ -796,7 +818,7 @@ header .absolute nav li.sub ul {
 	
 	header .left {
 		
-		min-height: 5em;
+		min-height: 7em;
 
 	}
 	
@@ -804,7 +826,7 @@ header .absolute nav li.sub ul {
 		
 		min-height: 0;
 		background-size: auto 24px;
-	    flex-basis: 82px;
+	    flex-basis: 100px;
 
 	}
 
@@ -840,8 +862,8 @@ header .absolute nav li.sub ul {
 
 	header .right {
 		
-		margin: 0 .5em 0 0;
-		padding: 0;
+		margin: 0;
+	    padding: 0 3em 0 0;
 		flex-grow: 0 !important;
 		flex-basis: auto;
 	
@@ -923,7 +945,8 @@ header .absolute nav li.sub ul {
 
 	body:not(.scrolled) header {
 		
-		background-color: rgba(255, 255, 255, .25);
+// 		background-color: rgba(255, 255, 255, .25);
+background: rgba(72,81,96, .5);
 	
 	}
 
@@ -931,6 +954,61 @@ header .absolute nav li.sub ul {
 		
 		margin-right: 0;
 		padding: 1.5em .5em;
+	
+	}
+
+	body.scrolled header .left {
+	
+		background-image: url(../images/skrill-logo-purple-transparent.svg);
+	
+	}
+	
+	body.scrolled header .middle a[href], body.scrolled header .middle a {
+		
+		color: $lightgrey;
+		
+	}
+
+	body.scrolled header .middle nav li.sub {
+		
+		background-image: url(../images/nav-arrow-black.svg);
+
+	}
+					
+	body.scrolled header a[href].btn#register, body.scrolled header a[href].btn#myaccount {
+		
+		color: #fff;
+		border-color: $teal;
+		background: $teal;
+	
+	}
+
+	header a[href].btn#login {
+		
+		margin-right: 1em;		
+	
+	}
+	
+	header a[href].btn#login:hover {
+		
+		background: #fff !important;
+		color: $grey !important;
+		
+	}
+
+	header a[href].btn#register:hover, header a[href].btn#myaccount:hover {
+		
+		background: $purple !important;
+		border-color: $purple !important;
+		color: #fff !important;
+		
+	}
+
+	body.scrolled header a[href].btn#login {
+		
+		color: $teal;
+		border-color: $teal;
+		background: none;
 	
 	}
 
