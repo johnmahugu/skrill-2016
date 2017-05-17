@@ -283,6 +283,19 @@ header .left {
 
 }
 
+header .left img {
+	
+    max-height: 100%;
+    max-width: 100%;
+
+}
+	
+header .left img:last-child {
+	
+	display: none;
+
+}
+	
 header .top-left {
 	
 	order: -2;
@@ -450,6 +463,18 @@ header .absolute nav li.sub ul {
 
 	}
 	
+	header :checked ~ .left img:first-child {
+		
+		display: none;
+	
+	}
+		
+	header :checked ~ .left img:last-child {
+		
+		display: block;
+	
+	}
+
 	header .right-mobile {
 		
 		display: block;
@@ -494,7 +519,7 @@ header .absolute nav li.sub ul {
 	
 	}	
 
-	header .row > input[type=checkbox]:checked ~ .right.align-right {
+	header .row > input[type=checkbox]:checked ~ .right.align-right > * {
 		
 		visibility: hidden;
 
@@ -841,12 +866,6 @@ header .absolute nav li.sub ul {
 	    left: 3em;
 	    display: block;
 		    
-	}
-	
-	header .left img:last-child {
-		
-		display: none;
-
 	}
 	
 	body.scrolled header .left {
