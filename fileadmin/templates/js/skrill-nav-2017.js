@@ -111,7 +111,7 @@ function setHeaderVariables() {
 		$(this)[0].style.setProperty('--max-height', $(this)[0].scrollHeight + 'px'); // for height animation
 		
 	});
-	$('main').css('padding-top', $('header').height() + 'px'); // Position content below the fixed header
+	$('.homepage-hero .hero-content').css('padding-top', $('header').height() + 'px'); // Position content below the fixed header
 
 }
 
