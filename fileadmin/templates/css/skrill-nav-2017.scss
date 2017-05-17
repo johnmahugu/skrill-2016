@@ -504,6 +504,7 @@ header .absolute nav li.sub ul {
 		border: 1px solid #41aeb5;
 		font-size: 1rem;
 		padding: .5em 1.5em;
+	    margin-left: -1px; // compensate for white space between buttons
 	
 	}
 	
@@ -744,7 +745,8 @@ header .absolute nav li.sub ul {
 	header .middle nav li.sub.open {
 		
 		background: url(../images/nav-arrow-black.svg) no-repeat top right;
-		background-position-y: 1em;
+		background-position-y: 1.67em;
+		background-size: 1em auto;
 	
 	}
 

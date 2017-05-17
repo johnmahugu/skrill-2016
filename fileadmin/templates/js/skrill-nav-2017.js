@@ -83,8 +83,10 @@ function closeFoldClickOutside(e) {
 $(window).on('click touchend', closeFoldClickOutside);
 
 $(window).on('scroll', function (e) {
-
-	if (window.scrollY > window.innerHeight) {
+	
+	var threshold = ($('.trustmark-bar').height()) ? (window.innerHeight - $('.trustmark-bar').height()) : window.innerHeight;
+	
+	if (window.scrollY > (threshold - 100)) { // where 100 is the full height of the header, when not scrolled
 		
 		$('body').addClass('scrolled');
 
