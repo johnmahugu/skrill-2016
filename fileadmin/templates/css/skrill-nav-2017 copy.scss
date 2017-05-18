@@ -467,12 +467,6 @@ header .absolute nav li.sub ul {
 
 	}
 	
-	header .left img {
-		
-		height: 3em;
-
-	}
-	
 	header :checked ~ .left img:first-child {
 		
 		display: none;
@@ -842,7 +836,7 @@ header .absolute nav li.sub ul {
 	
 	}
 
-/* 	body.scrolled */ header {
+	body.scrolled header {
 		
 		box-shadow: 0 0 1px 2px #ddd;
 		border: none;
@@ -1012,7 +1006,7 @@ header .absolute nav li.sub ul {
 	body:not(.scrolled) header {
 		
 // 		background-color: rgba(255, 255, 255, .25);
-// background: rgba(72,81,96, .5);
+background: rgba(72,81,96, .5);
 	
 	}
 
@@ -1031,19 +1025,19 @@ header .absolute nav li.sub ul {
 	}
 */
 	
-/* 	body.scrolled */ header .middle a[href], /* body.scrolled */ header .middle a {
+	body.scrolled header .middle a[href], body.scrolled header .middle a {
 		
 		color: $lightgrey;
 		
 	}
 
-/* 	body.scrolled */ header .middle nav li.sub {
+	body.scrolled header .middle nav li.sub {
 		
 		background-image: url(../images/nav-arrow-black.svg);
 
 	}
 					
-/* 	body.scrolled */ header a[href].btn#register, /* body.scrolled */ header a[href].btn#myaccount {
+	body.scrolled header a[href].btn#register, body.scrolled header a[href].btn#myaccount {
 		
 		color: #fff;
 		border-color: $teal;
@@ -1051,13 +1045,13 @@ header .absolute nav li.sub ul {
 	
 	}
 
-/* 	body.scrolled */ header .left img:last-child {
+	body.scrolled header .left img:last-child {
 		
 		display: block;
 
 	}
 	
-/* 	body.scrolled */ header .left img:first-child {
+	body.scrolled header .left img:first-child {
 		
 		display: none;
 
@@ -1084,7 +1078,7 @@ header .absolute nav li.sub ul {
 		
 	}
 
-/* 	body.scrolled */ header a[href].btn#login {
+	body.scrolled header a[href].btn#login {
 		
 		color: $teal;
 		border-color: $teal;
