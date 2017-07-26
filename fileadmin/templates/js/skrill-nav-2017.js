@@ -59,7 +59,7 @@ $('header input[type=radio]').remove();
 $('header nav li.sub, header nav li.sub *').on('touchend click', function (e) {
 	
 /* 	e.stopPropagation(); */
-	if (!e.target.getAttribute('href') && $(this).hasClass('sub') || $(this).parent().hasClass('sub language')) {
+	if (!e.target.getAttribute('href') && $(this).hasClass('sub')) {
 	
 		$(this).closest('.sub').toggleClass('open');
 		return false;
@@ -126,6 +126,8 @@ function setMediaQueryType (media_type, new_media_type) {
 	// Loop all stylesheets' CSS rules with type 4 (media query) matching the media_type parameter and update their cssText with new_media_type
 
 	var sheet = 0;
+	var all_new_media = '';
+
 	while (sheet < document.styleSheets.length) {
 	
 		var styles = document.styleSheets[sheet];
@@ -133,11 +135,13 @@ function setMediaQueryType (media_type, new_media_type) {
 		var i = 0;
 		while (i < styles.cssRules.length) {
 			
-			if (styles.cssRules[i].type === 4) {
+			if (styles.cssRules[i].type === 4 && styles.cssRules[i].cssText.indexOf(media_type) !== -1) { // If a media query with matching media type
 				
-				var new_media = styles.cssRules[i].cssText.replace(media_type, new_media_type); // to do: limit search to the type section, don't process the rules inside { } 
-				styles.deleteRule(i);
-				styles.insertRule(new_media, i);
+				// var new_media = styles.cssRules[i].cssText.replace(media_type, new_media_type); // to do: limit search to the type section, don't process the rules inside { } 
+				// styles.deleteRule(i); // Breaks Safari's inspector, bc pointers to CSS file are wrong?
+				// styles.insertRule(new_media, i);
+// 				all_new_media += '<style class="updated-media">' + new_media + '</style>';
+				styles.cssRules[i].media[0] = styles.cssRules[i].media.mediaText = new_media_type;
 	
 			}
 			
@@ -149,6 +153,8 @@ function setMediaQueryType (media_type, new_media_type) {
 	
 	}
 		
+// 	document.head.insertAdjacentHTML('beforeend', all_new_media);
+
 }
 
 // Calculate required window width for unwrapped nav and set the breakpoint accordingly
@@ -162,7 +168,9 @@ function setBreakpoint() {
 
 	if (new_breakpoint > breakpoint) {
 
-		setMediaQueryType ('width: ' + breakpoint + 'px)', 'width: ' +  new_breakpoint + 'px)');
+// 		setMediaQueryType('width: ' + breakpoint + 'px)', 'width: ' +  new_breakpoint + 'px)');
+		setMediaQueryType('(min-width: ' + breakpoint + 'px)', '(min-width: ' +  new_breakpoint + 'px)');
+		setMediaQueryType('(max-width: ' + breakpoint + 'px)', '(max-width: ' +  new_breakpoint + 'px)');
 
 	}
 
