@@ -1,0 +1,1820 @@
+/* TYPO3-specific styles */
+
+.align-left {
+	
+	text-align: left;
+	
+} 
+
+.align-center {
+	
+	text-align: center;
+	
+}
+
+.align-right {
+
+	text-align: right;
+	
+}
+
+.float-right {
+	
+	float: right;
+	
+}
+
+.float-left {
+	
+	float: left;
+	
+}
+
+.outline-text-cta p, .outline-text-cta h2 {
+	
+	text-align: center;
+
+}  
+
+div.hidden_language {
+	
+	display: none;
+
+}
+
+/* _animated-stepcircles.scss */
+
+.animated-stepcircles ol.module-stepcircles li:before {
+
+	font-size: 18px !important;
+	font-size: 1.3rem !important;
+
+}
+
+.animated-stepcircles.white .module-title {
+	
+	color: #41aeb5; /* Teal */
+
+}
+
+.punchout-image.light.teal .module-title {
+	
+	color: #41aeb5; /* Teal */
+
+}
+
+.align-centre img {
+	
+	max-width: 100%;
+	
+}
+
+/* _base.scss */
+
+p {
+
+    margin: 2rem 0;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.5rem;
+
+}
+
+.offer-copy p {
+	
+	line-height: 1em;
+
+}
+
+li { 
+
+	line-height: 1.5; 
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+	
+	word-break: break-word;
+	word-wrap: break-word;
+
+}
+
+@-moz-document url-prefix() {
+
+	h1, h2, h3, h4, h5, h6 { 
+		
+		word-break: initial;
+		word-wrap: break-word;
+			 
+	}
+
+}
+
+nav#nav .button:after {
+	
+	display: block;
+	content: '';
+	clear: both;
+
+}
+
+/* _accordion.scss */
+
+.accordion-content li {
+        
+	text-align: left;
+	font-weight: normal;
+	line-height: 22px;
+
+}
+
+.accordion.accordion-inner > li > .accordion-wrap.is-open a[href] {
+	
+	color: #41aeb5; /* Teal */
+
+}
+
+.accordion.accordion-inner > li {
+	
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;           /* FF 20+ */
+	break-inside: avoid-column;
+
+}
+/* Masonry */
+.section.affiliates .accordion .embedded-html .accordion-content .row {
+	
+	-moz-column-count: 4;
+	-moz-column-gap: 1rem;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 1rem;
+	column-count: 4;
+	column-gap: 1rem;
+
+}
+
+.section.affiliates .accordion .embedded-html .accordion-content .banner {
+
+	display: inline-block;
+	width: 100%;
+	-webkit-column-break-inside: avoid;
+	page-break-inside: avoid;
+	break-inside: avoid-column;
+	float: none;
+	position: static;
+	min-height: 0;
+	margin-bottom: 1rem;
+	text-align: center;
+
+}
+
+@media screen and (max-width: 768px) {
+
+	.section.affiliates .accordion .embedded-html .accordion-content .row {
+		
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
+	
+	}
+
+}
+
+@media screen and (max-width: 640px) {
+
+	.section.affiliates .accordion .embedded-html .accordion-content .row {
+		
+		-moz-column-count: 2;
+		-webkit-column-count: 2;
+		column-count: 2;
+	
+	}
+
+}
+
+/* Affiliate */
+
+.affiliates form .form-row {
+	
+	vertical-align: top;
+
+}
+
+/* _text-list-2col.scss */
+
+.text-list-2col.tick-icons ol, .text-list-2col.tick-icons ul {
+
+    margin-top: 0;
+
+}
+
+.text-list-2col.tick-icons ol li, .text-list-2col.tick-icons ul li {
+
+	padding-left: 3.4rem;
+
+}
+
+.text-list-2col.tick-icons ul li:before {
+
+	content: "\e60c";
+	font-family: 'icons';
+
+}
+
+/* _our-fees.scss */
+
+.tx-fees select option:first-child, .affiliates select option:first-child {
+	
+	display: block;
+
+}
+
+.provider-logos .payment-icon, .provider-logos .payment-icon.sofortüberweisung, .provider-logos .payment-icon.maestro, .provider-logos .payment-icon.swift, .provider-logos .payment-icon.visa {
+    display: block;
+    width: 60px;
+    height: 60px;
+/*     background-image: url(/fileadmin/templates/images/icons/payment-cards.png); */
+    background-image: url('/fileadmin/templates/images/payment-provider.png?20170421') !important;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+    background-position: 0 0;
+ }
+
+/*
+.provider-logos .payment-icon.sofort {
+    width: 74px;
+}
+*/
+
+.provider-logos .payment-icon.bank_withdrawal, .provider-logos .payment-icon.bank_transfer_upload, .provider-logos .payment-icon.bank_transfer {
+   background-position: 0 0;
+}
+.provider-logos .payment-icon.LVA-OBT_upload {
+   background-position: 0 -70px;
+}
+.provider-logos .payment-icon.LTU-OBT_upload {
+   background-position: 0 -140px;
+}
+.provider-logos .payment-icon.ITA-OBT_upload {
+   background-position: 0 -210px;
+}
+.provider-logos .payment-icon.cartasi_upload {
+   background-position: 0 -280px;
+}
+.provider-logos .payment-icon.carte_bleue_upload {
+   background-position: 0 -350px;
+}
+.provider-logos .payment-icon.cheque, .provider-logos .payment-icon.cheque_upload, .provider-logos .payment-icon.cheque_withdrawal, .provider-logos .payment-icon.cheque_int_withdrawal {
+   background-position: 0 -420px;
+}
+.provider-logos .payment-icon.credit_card_amex {
+   background-position: 0 -490px;
+}
+.provider-logos .payment-icon.credit_card_mastercard {
+   background-position: 0 -560px;
+}
+.provider-logos .payment-icon.credit_card_jcb {
+   background-position: 0 -630px;
+}
+.provider-logos .payment-icon.credit_card_diners {
+   background-position: 0 -700px;
+}
+.provider-logos .payment-icon.credit_card_visa, .provider-logos .payment-icon.visa_withdrawal, .provider-logos .payment-icon.visa, .provider-logos .payment-icon.visaxx {
+   background-position: 0 -770px;
+}
+.provider-logos .payment-icon.e_nets_upload {
+   background-position: 0 -840px;
+}
+.provider-logos .payment-icon.epaybg_upload, .provider-logos .payment-icon.epay_bulgaria {
+   background-position: 0 -910px;
+}
+.provider-logos .payment-icon.eps_upload, .provider-logos .payment-icon.eps {
+   background-position: 0 -980px;
+}
+.provider-logos .payment-icon.ESP-OBT_upload {
+   background-position: 0 -1050px;
+}
+.provider-logos .payment-icon.giropay_upload, .provider-logos .payment-icon.giropay {
+   background-position: 0 -1120px;
+}
+.provider-logos .payment-icon.i_deal_upload, .provider-logos .payment-icon.ideal {
+   background-position: 0 -1190px;
+}
+.provider-logos .payment-icon.PLO-OBT_upload {
+   background-position: 0 -1260px;
+}
+.provider-logos .payment-icon.laser_upload {
+   background-position: 0 -1330px;
+}
+.provider-logos .payment-icon.maestro_upload, .provider-logos .payment-icon.maestro {
+   background-position: 0 -1400px;
+}
+.provider-logos .payment-icon.nordea_upload, .provider-logos .payment-icon.nordea_solo, .provider-logos .payment-icon.solo, .provider-logos .payment-icon.nordea {
+   background-position: 0 -1470px;
+}
+.provider-logos .payment-icon.GBR-OBT_upload, .provider-logos .payment-icon.online_bank_transfer {
+   background-position: 0 -1540px;
+}
+.provider-logos .payment-icon.SWE-OBT_upload {
+   background-position: 0 -1610px;
+}
+.provider-logos .payment-icon.DNK-OBT_upload {
+   background-position: 0 -1680px;
+}
+.provider-logos .payment-icon.DEU-OBT_upload {
+   background-position: 0 -1750px;
+}
+.provider-logos .payment-icon.p24_upload, .provider-logos .payment-icon.przelewy24 {
+   background-position: 0 -1820px;
+}
+.provider-logos .payment-icon.EST-OBT_upload {
+   background-position: 0 -1890px;
+}
+.provider-logos .payment-icon.poli_upload, .provider-logos .payment-icon.internet_banking_via_poli, .provider-logos .payment-icon.poli {
+   background-position: 0 -1960px;
+}
+.provider-logos .payment-icon.sofort_upload, .provider-logos .payment-icon.sofortüberweisung {
+   background-position: 0 -2030px;
+}
+.provider-logos .payment-icon.swift, .provider-logos .payment-icon.swift_upload, .provider-logos .payment-icon.swift_withdrawal {
+   background-position: 0 -2100px;
+}
+.provider-logos .payment-icon.FIN-OBT_upload {
+   background-position: 0 -2170px;
+}
+.provider-logos .payment-icon.FRA-OBT_upload {
+   background-position: 0 -2240px;
+}
+.provider-logos .payment-icon.skrill_direct, .provider-logos .payment-icon.rapid_transfer {
+   background-position: 0 -2310px;
+}
+.provider-logos .payment-icon.sofort_banking {
+   background-position: 0 -2380px;
+}
+.provider-logos .payment-icon.paysafecard {
+   background-position: 0 -2440px;
+}
+.provider-logos .payment-icon.trustly {
+   background-position: 0 -2500px;
+}
+.provider-logos .payment-icon.ach {
+  background: #fff url('/fileadmin/templates/images/ach.png') -8px -6px no-repeat !important;
+}
+.provider-logos .payment-icon.neteller {
+   background-position: 0 -2560px;
+}
+
+.provider-logos .payment-icon.itau {
+   background-position: 0 -2640px;
+}
+.provider-logos .payment-icon.banco_do_brasil {
+   background-position: 0 -2700px;
+}
+.provider-logos .payment-icon.bradesco {
+   background-position: 0 -2760px;
+}
+.provider-logos .payment-icon.hsbc {
+   background-position: 0 -2820px;
+}
+.provider-logos .payment-icon.caixa {
+   background-position: 0 -2880px;
+}
+.provider-logos .payment-icon.santander {
+   background-position: 0 -2940px;
+}
+.provider-logos .payment-icon.boleto {
+   background-position: 0 -3000px;
+}
+.provider-logos .payment-icon.santander_rio {
+   background-position: 0 -3060px;
+}
+.provider-logos .payment-icon.dinero_mail_cash {
+   background-position: 0 -3120px;
+}
+.provider-logos .payment-icon.dinero_mail_transfer {
+   background-position: 0 -3180px;
+}
+.provider-logos .payment-icon.red_link {
+   background-position: 0 -3240px;
+}
+.provider-logos .payment-icon.pago_facil {
+   background-position: 0 -3300px;
+}
+.provider-logos .payment-icon.rapi_pago {
+   background-position: 0 -3360px;
+}
+.provider-logos .payment-icon.banco_de_chile {
+   background-position: 0 -3420px;
+}
+.provider-logos .payment-icon.servipag {
+   background-position: 0 -3480px;
+}
+.provider-logos .payment-icon.china_union_pay {
+   background-position: 0 -3540px;
+}
+.provider-logos .payment-icon.efecty {
+   background-position: 0 -3600px;
+}
+.provider-logos .payment-icon.bancolombia {
+   background-position: 0 -3660px;
+}
+.provider-logos .payment-icon.davivienda {
+   background-position: 0 -3720px;
+}
+.provider-logos .payment-icon.pse {
+   background-position: 0 -3780px;
+}
+.provider-logos .payment-icon.almancense_exito {
+   background-position: 0 -3840px;
+}
+.provider-logos .payment-icon.banco_de_occidente {
+   background-position: 0 -3900px;
+}
+.provider-logos .payment-icon.carulla {
+   background-position: 0 -3960px;
+}
+.provider-logos .payment-icon.empresa_de_energia_del_quindio {
+   background-position: 0 -4020px;
+}
+.provider-logos .payment-icon.surtimax {
+   background-position: 0 -4080px;
+}
+.provider-logos .payment-icon.oxxo {
+   background-position: 0 -4140px;
+}
+.provider-logos .payment-icon.bbva_bancomer {
+   background-position: 0 -4200px;
+}
+.provider-logos .payment-icon.banamex {
+   background-position: 0 -4260px;
+}
+.provider-logos .payment-icon.santander_mexico {
+   background-position: 0 -4320px;
+}
+.provider-logos .payment-icon.red_pagos {
+   background-position: 0 -4380px;
+}
+.provider-logos .payment-icon.m-pesa {
+   background-position: 0 -4440px;
+}
+.provider-logos .payment-icon.dompetku {
+   background-position: 0 -4500px;
+}
+.provider-logos .payment-icon.ez_cash {
+   background-position: 0 -4560px;
+}
+.provider-logos .payment-icon.e-sewa {
+   background-position: 0 -4620px;
+}
+.provider-logos .payment-icon.m-paisa {
+   background-position: 0 -4680px;
+}
+.provider-logos .payment-icon.mtn {
+   background-position: 0 -4740px;
+}
+.provider-logos .payment-icon.smart_money {
+   background-position: 0 -4800px;
+}
+.provider-logos .payment-icon.globe_gcash {
+   background-position: 0 -4860px;
+}
+.provider-logos .payment-icon.airtel_money {
+   background-position: 0 -4920px;
+}
+.provider-logos .payment-icon.mobidram {
+   background-position: 0 -4980px;
+}
+.provider-logos .payment-icon.bitcoin {
+   background-position: 0 -5040px;
+}
+.provider-logos .payment-icon.fast_bank_transfer {
+   background-position: 0 -5100px;
+}
+.provider-logos .payment-icon.multibanco {
+   background-position: 0 -5160px;
+}
+.provider-logos .payment-icon.astropay {
+   background-position: 0 -5220px;
+}
+
+/* hide debug info */
+
+body:before, body:after {
+	
+	display: none;
+
+}
+
+.accordion .embedded-html .banner { /* Should be universal and CSS only by initial design */
+
+	min-height: 360px;
+	
+}
+
+.animated-stepcircles .badges {
+	
+	margin-top: 4rem;
+	font-size: 0;
+	
+}
+
+.tabs .tab-menu ul {
+	
+	display: table;
+	width: 100% !important;
+	
+}
+
+.tabs .tab-menu li {
+	
+	display: table-cell;
+	
+}
+
+
+.unmissable-offers .other-offers-block + .row, .unmissable-offers .offer-copy p + p {
+	
+	display: none;
+
+}
+
+/* Punchout transparent circles – white background version (punchout-image-3col) */
+
+.punchout-image-3col .punchout-copy {
+
+	position: relative;
+
+}
+
+.punchout-image-3col.white {
+	
+	background-image: url(/fileadmin/templates/images/punchouts/punchColBg_white.png);
+	
+}
+
+.punchout-image-3col.white .row {
+	
+	background-image: url(/fileadmin/templates/images/punchouts/punchRowBg_white.png);
+	
+}
+
+.punchout-image-3col.white .punchout-icon {
+	
+	background-image: url(/fileadmin/templates/images/punchouts/punchHoleBg_white.png);
+	
+}
+
+.punchout-image-3col.white .punchout-title {
+	
+	background: #fff;
+
+}
+
+.punchout-image-3col .row .csc-default {
+	
+	text-align: center;
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.punchout-image-3col .punchout-copy:after {
+		
+		position: absolute;
+		content: '';
+		width: 100%;
+		display: block;
+		height: 100rem;
+		height: 100vh;
+		left: 0;
+		background: inherit;
+		
+	}
+
+	.punchout-image-3col.white .punchout-copy:after {
+		
+		background: #fff;
+		
+	}
+
+	.punchout-image-3col.white .punchout-copy {
+		
+		padding-bottom: 0;
+		
+	}
+
+}
+
+.hero .box-copy a[href] {
+	
+	color: #862165;
+	
+}
+
+p a[href]:not(a.purple-link) {
+	
+	color: #fff;
+	text-decoration: underline;
+
+}
+
+.text-list-2col.text-list-1col .button {
+	
+	min-height: 50px;
+
+}
+
+.section.text-image-2col .button .icon.icon-arrow-right-circle {
+	
+	bottom: auto;
+
+}
+
+/* Override Bebas on Greek pages, because Greek/English text is inconsistent */
+
+html[lang=el] body, html[lang=el] h3, html[lang=el] b, html[lang=el] strong, html[lang=el] .tab-menu a,
+html[lang=el] .leadership-team .accordion-grid-item-trigger strong, html[lang=el] .promo-exclusive-offers .box-title h2, html[lang=el] .promo-prizes .box-title, html[lang=el] .timeline-slider .slider-container .slide-title h2, html[lang=el] .unmissable-offers .offer .offer-content .offer-copy strong, html[lang=el] .module-title,
+html[lang=el] .fullbleed-level2-hero .box-title h1, html[lang=el] .fullbleed-level2-hero .box-title h2, html[lang=el] .fullbleed-level2-hero .box-title h3,
+html[lang=el] .accordion.top-level > li > .accordion-wrap > .accordion-trigger a,
+html[lang=el] .unmissable-offers .offer .offer-content .offer-copy,
+html[lang=el] .punchout-image-3col h2
+{
+
+	font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important; 
+
+}
+
+html[lang=el] .global-offices ul li .office-title h3 {
+	
+	letter-spacing: 1px;
+
+}
+
+html[lang=el] .homepage-hero .hero-title h2 {
+	
+	font-size: 11rem;
+	
+}
+
+html[lang=el] .text-list-2col .module-title h3, html[lang=el] .unmissable-offers .module-title h2 {
+
+	font-size: .7em;
+
+}
+
+html[lang=el] .module-title {
+	
+	font-size: 3em;
+
+}
+
+html[lang=el] .fullbleed-level2-hero .box-title h1, html[lang=el] .fullbleed-level2-hero .box-title h2, html[lang=el] .fullbleed-level2-hero .box-title h3 {
+	
+	font-size: 2.4em;
+	
+}
+
+html[lang=el] .unmissable-offers .main-offer .offer-copy {
+	
+	font-size: 2.6em !important;
+
+}
+
+.animated-stepcircles .module-container ul.module-stepcircles li:before {
+	
+/* 	margin: 2.65em 0 0 -2.8em !important; */
+	margin: 40px 0 0 -43px !important;
+
+}
+
+.text-list-2col.light {
+	
+	background-color: #eeeef0;
+
+}
+
+.text-list-2col .module-container ol li:before, .text-list-2col .module-container ul li:before { /* Absolute positioning doesn't work with Chrome */
+	
+	position: static;
+	margin-right: 1em;
+
+}
+
+.text-list-2col.tick-icons ol li, .text-list-2col.tick-icons ul li {
+
+    -webkit-column-break-inside: avoid;
+	page-break-inside: avoid;           /* FF 20+ */
+	break-inside: avoid-column;
+
+}	
+
+.punchout-image .full-background-container div.full-background-image.anchor-right.with-offset.background-fixed {
+	
+	background-size: cover;
+	background-position: left center !important;
+	
+}
+
+
+
+.box .carousel .pagination a {
+	
+	border-radius: 0px;
+	border: none;
+	background: url(/fileadmin/templates/images/circle.svg) center center no-repeat;
+	background-size: 100% auto;
+	overflow: hidden;
+	color: transparent;
+
+}
+
+.box .carousel .pagination a.active, .box .carousel .pagination a:hover {
+	
+	border-radius: 0px;
+	border: none;
+	background: transparent url(/fileadmin/templates/images/circle-full.svg) center center no-repeat;
+	background-size: 100% auto;
+
+}
+
+
+.small {
+	
+	font-size: 90%;
+
+}
+
+
+.legal-footer {
+	
+	font-size: .8em;
+
+}
+
+header .myaccount-text, .logged-in header .login-text {
+	
+	display: none;
+
+}
+
+.logged-in header .myaccount-text {
+	
+	display: block;
+
+}
+
+/* Countdown module */
+
+.counter {
+	
+	margin-bottom: 2em;
+	text-align: center;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+.counter span {
+	
+	display: inline-block;
+	min-width: 6em;
+	color: #3b9092;
+	text-transform: uppercase;
+	position: relative;
+
+}
+
+.counter span b {
+	
+	display: block;
+	color: #862165;
+	font-size: 7em;
+	font-family: bebas_neuebook, Helvetica, Arial, sans-serif;
+	line-height: 1em;
+
+}
+
+.counter span:not(:first-child):before {
+	
+	content: ':';
+	font-size: 2em;
+	color: #d6c7b4;
+	position: absolute;
+	left: -.25em;
+	top: 30%;
+	font-weight: bold;
+
+}
+
+@media screen and (max-width: 768px) {
+	
+	.counter span {
+		
+		min-width: 5em;
+	
+	}
+	
+	.counter span b {
+		
+		font-size: 6em;
+
+	}
+	
+}
+
+@media screen and (max-width: 320px) {
+	
+	.counter span {
+		
+		min-width: 4em;
+	
+	}
+	
+	.counter span b {
+		
+		font-size: 5em;
+
+	}
+	
+}
+
+.teal .counter span, .teal.counter span {
+	
+	font-family: bebas_neuebook, Helvetica, Arial, sans-serif;
+	color: #7c7e8a;
+	font-size: 1.5em;
+	
+}
+
+.teal .counter span b, .teal.counter span b {
+	
+	color: #3b9092;
+	font-size: 5em;
+	
+}
+
+.teal .counter span:not(:first-child):before, .teal.counter span:not(:first-child):before {
+	
+	font-size: 2.7em;
+	left: -.1em;
+	top: 33%;
+	font-weight: normal;
+	font-family: serif;
+
+}
+
+/* Countdown module – end */
+
+/* Featured Merchants module */
+
+.section.merchants h3 {
+	
+	font-family: 'Open Sans';
+	font-size: 1em;	
+	
+}
+
+.section.merchants a[href] {
+	
+	text-transform: uppercase;
+	color: #000;
+	text-decoration: underline;
+
+}
+
+.section.merchants.awards ul li {
+	
+	width: 20%;
+	min-width: 12em;
+
+}
+
+.section.merchants.awards ul li .award-image-holder {
+	
+	border-radius: none;
+	border: none;
+
+}
+
+.section.merchants.awards ul li .award-image-holder .award-image {
+	
+	width: 100%;
+	padding-bottom: 100%;	
+	
+}
+
+/* Purple button inside teal animated stepcircles */
+
+.animated-stepcircles .button.button-light-purple, .animated-stepcircles .button.button-light-purple:hover {
+	
+	border-color: #811e68;
+
+}
+
+.animated-stepcircles .button.button-light-purple .panel {
+	
+	background: #811e68;
+	
+}
+
+.animated-stepcircles .button.button-light-purple:hover .icon, .animated-stepcircles .button.button-light-purple:hover {
+
+	color: #811e68;
+
+}
+
+/* Dark text-list paragraph colour */
+
+.text-list-2col.dark p {
+	
+	color: #fff;
+	
+}
+
+/* Columns with equal width as class-less div's in a .row */
+
+.row.auto {
+	
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	margin: 0;
+	border-collapse: separate;
+
+}
+
+.row.auto:after, .row.auto:before {
+	
+	display: none !important;
+
+}
+
+.row.auto > * {
+	
+	display: table-cell;
+	vertical-align: top;
+	position: relative;
+	word-wrap: break-word;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: none;
+
+}
+
+.row.auto.spacing {
+	
+	border-spacing: 1rem;
+
+}
+
+.row.auto.spacing-horizontal {
+	
+	border-spacing: 1rem 0;
+
+}
+
+.row.auto.spacing-vertical {
+	
+	border-spacing: 0 1rem;
+
+}
+
+.cta-holder > a[href] {
+	
+	color: #fff;
+
+}
+
+.cta-holder p {
+	
+	text-align: center;
+
+}
+
+/* Button rebuilt with CSS and no JS */
+
+@-webkit-keyframes buttonanimation {
+
+	0% {
+		background-size: 100% 100%;
+		color: rgba(0, 0, 0, 0);
+		-webkit-transform: scale(.01,.01);
+	}
+
+	40% {
+		-webkit-transform: scale(1,.01);
+	}
+
+	80% {
+		-webkit-transform: scale(1,1);
+		background-size: 100% 100%;
+		color: rgb(84, 76, 100);
+	}
+	
+	100% {
+		
+		background-size: 100% 0;
+		color: rgb(255,255,255);
+		
+	}
+
+}	
+
+@keyframes buttonanimation {
+
+	0% {
+		background-size: 100% 100%;
+		color: rgba(0, 0, 0, 0);
+		transform: scale(.01,.01);
+	}
+
+	40% {
+		transform: scale(1,.01);
+	}
+
+	80% {
+		transform: scale(1,1);
+		background-size: 100% 100%;
+		color: rgb(84, 76, 100);
+	}
+	
+	100% {
+		
+		background-size: 100% 0;
+		color: rgb(255,255,255);
+		
+	}
+
+}	
+
+.btn, p a[href]:not(a.purple-link).btn {
+
+	-webkit-transition: all .15s linear;
+	transition: all .15s linear;
+	
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+	
+	-webkit-animation: buttonanimation 1.5s 1;
+	animation: buttonanimation 1.5s 1;
+
+	padding: 1.15em 1.7em;
+	border: 1px solid #fff;
+	border-radius: 3px;
+	text-transform: uppercase;
+	padding-right: 6em;
+	position: relative;
+	cursor: pointer;
+	display: inline-block;
+	vertical-align: middle;
+
+	background: rgba(5,218,252,.5) bottom no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP4/x8AAwAB/2+Bq7YAAAAASUVORK5CYII=);
+	
+	background-size: 100% 0;
+	color: rgb(255,255,255);
+	
+	font-family: robotoregular,Helvetica,Arial,sans-serif;
+	letter-spacing: 1px;
+	text-align: left;
+	overflow: hidden;
+	word-break: break-word;
+	word-wrap: break-word;
+	text-decoration: none;
+
+}
+
+.btn:after {
+	
+	content: '\e608';
+	display: inline-block;
+	position: absolute;
+	right: 1em;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: icons;
+	font-size: 1.5em;
+
+}
+
+.btn:hover {
+	
+	background-size: 100% 100%;
+	color: rgb(84, 76, 100);
+
+}
+
+.btn:hover:after {
+	
+	background-size: 100% 100%;
+	border-color: rgb(84, 76, 100);
+	color: rgb(84, 76, 100);
+
+}
+
+.hero .btn {
+	
+	background-color: rgba(85, 78, 102, .5);
+	width: 300px;
+
+}
+
+.hero .btn:hover {
+	
+	color: rgb(84, 76, 100);
+
+}
+
+.section .btn {
+	
+	padding: 1em 3.5em 1em 1.7em !important;
+    position: relative;
+    color: #fff;
+
+}
+
+.section .btn:after {
+	
+	right: .6em;
+
+}
+
+.section .btn.button-light-purple {
+	
+	background-color: #4f2556 !important;
+	border-color: #4f2556;
+	color: #fff;
+
+}
+
+.section .btn.button-teal {
+	
+	background-color: #41aeb5 !important;
+	border-color: #41aeb5;
+	color: #fff !important;
+
+}
+
+
+/* Old buttons fixes */
+
+.button {
+	
+	vertical-align: middle;
+	
+}
+
+.hero .button.button-light-purple, .purple-hero-cta .hero .button {
+	
+	background: #811e68 !important;
+	
+}
+
+.hero .button.button-light-purple .copy, .purple-hero-cta .hero .button .copy {
+	
+	color: #fff;
+	
+}
+
+.purple-hero-cta .hero .button:hover .copy, .purple-hero-cta .hero .button:hover .icon, .hero .button.button-light-purple:hover .copy {
+	
+	color: #811e68 !important;
+	
+}
+
+.purple-hero-cta .hero .button:hover, .purple-hero-cta .hero .button:hover {
+	
+	border-color: #811e68;
+	
+}
+
+.hero .button.button-light-purple:hover .panel, .hero .button.button-light-purple:hover, .purple-hero-cta .hero .button:hover .panel, .purple-hero-cta .hero .button:hover {
+	
+	background: transparent !important;
+	
+}
+
+.tick-icons.text-list-2col ul li {
+	
+	min-height: 3em;
+	
+}
+
+/* RTL support needs body+ inline-block grid columns, various fixes */
+
+@import 'rtl';
+
+/* Transparent boxes */
+
+.fullbleed-level2-hero .box.white h1, .fullbleed-level2-hero .box.white .box-copy p, .fullbleed-level2-hero .box.white .button.button-dark-purple {
+	
+	color: #fff;
+	border-color: #fff;
+	
+}
+
+.fullbleed-level2-hero .box.white .button.button-dark-purple .panel {
+	
+	display: none;
+	
+}
+
+/* Urgent fix for white element */
+
+.whitetext {
+	
+	.promo-exclusive-offers .box-title h2, .promo-exclusive-offers .box-title h2 a[href] {
+		
+		color: #fff;
+		
+	}
+	
+	.promo-exclusive-offers .box-title:after {
+	
+		background-image: url(/fileadmin/templates/images/promo/zigzag-white.png);
+		
+	}
+	
+	.promo-exclusive-offers .button, .promo-exclusive-offers .button:hover:not(.hero-cta) {
+		
+		border-color: #fff;
+		
+	}
+	
+	.button .copy {
+		
+		color: #000 !important;
+		
+	}
+	
+	.promo-exclusive-offers .button .panel {
+		
+		background: #fff;
+		
+	}
+	
+	.button:hover .copy { 
+		
+		color: #fff !important;
+
+	}
+	
+	.promo-exclusive-offers .button:hover { 
+		
+		border-color: #fff !important; 
+	
+	}
+	
+	.promo-exclusive-offers .button:hover .icon {
+		
+		color: #fff !important;
+
+	}
+
+}
+
+/* Form validation */
+
+form label.mandatory.alert input {
+	
+	background-color: #ef8f9b;
+	color: #fff;
+	
+}
+
+select { /* Equal height to input */
+	
+	padding: .9rem 1.4rem !important;
+
+}
+
+/* Big Punchout Icon */
+
+.big-punchout .punchout-image .punchout-icon object.svg-icon-image, .big-punchout .punchout-icon object.svg-icon-image {
+	
+	max-width: 90%;
+	width: auto;
+	
+}
+
+.small-punchout .punchout-image .punchout-icon object.svg-icon-image, .small-punchout .punchout-icon object.svg-icon-image {
+	
+	max-width: 40%;
+	width: auto;
+	
+}
+
+/* Purple Link */
+
+.accordion p a[href], .purple-link p a[href] {
+	
+	color: #4f2556;
+	
+}
+
+/* Dark text over white background */
+
+.dark-text .box .box-copy, .dark-text .promo-exclusive-offers .box .box-copy, .csc-default.dark-text .box-title h2, .csc-default.dark-text .promo-exclusive-offers .box-title h2 {
+
+	color: #4f2556; 
+
+}
+
+/* No left column, where we want the right-hand column to be positioned on the left */
+
+.no-left-col .left-col {
+	
+	display: none;
+
+}
+
+/* Hero content to bottom */
+
+.hero-bottom .homepage-hero .hero-content {
+	
+	vertical-align: bottom;
+
+}
+
+@media (max-height: 768px) {
+
+	.homepage-hero .hero-content {
+		
+		padding-top: 5em;	
+		
+	}
+
+}
+
+/* Extra image in hero */
+
+.extra-hero-image .hero-subtitle:before {
+	
+/*
+	content: '';
+	display: block;
+	background: url(/fileadmin/user_upload/win-flights-every-day.png) center no-repeat; 
+	height: 236px;
+*/
+	content: '';
+	display: block;
+	background: url(/fileadmin/templates/images/promo/cball4.png) center no-repeat;
+	height: 283px;
+	margin: 1em 0;
+	background-size: contain;
+
+}
+
+.extra-hero-image-en .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-en.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-de .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-de.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-es .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-es.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-fr .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-fr.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-it .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-it.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-pl .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-pl.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+.extra-hero-image-ru .hero-subtitle:before{content:'';display:block;background:url(/fileadmin/content/flightcampain/sk-hero-ru.png) center no-repeat;background-size: contain;height:236px;margin: 1em 0;}
+
+.float-1st-column-right .container-fluid > div:first-child {
+	
+	float: right;
+	
+}
+
+/* Promo Prizes module mobile background to span full height */
+
+.promo-prizes .full-background-image {
+	
+	height: 100%;
+
+}
+
+.trustmark-bar .carousel-offer img {
+	
+	max-width: 100%;
+    margin: 0 auto;
+    	
+}
+
+/* Video Hero */
+
+html:not(.video-ended) .section.video-hero .hero-content, html:not(.video-ended) .section.video-hero .full-background-container .full-background-image {
+
+	visibility: hidden;
+	transition: opacity .2s linear;
+	opacity: 0;
+
+}
+
+html.video-ended .section.video-hero .full-background-container .full-background-image, html.video-ended .section.video-hero .hero-content {
+
+	transition: opacity .2s linear;
+	visibility: visible;
+	opacity: 1;
+
+}
+
+/* New MBMC page fixes */
+
+#c57796 .punchout-copy, #c57797 .punchout-copy, #c57798 .punchout-copy {background-color: #fff !important;}
+
+/* Remember Me page */
+
+.extra-hero-image2 .hero-subtitle {
+    content: '';
+    display: block;
+    background: url(/fileadmin/templates/images/image-photos/remember-me-final.gif) center no-repeat;
+    height: 480px;
+    margin: 1em 0;
+    background-size: contain;
+}
+@media (max-width: 29.99em) {
+    .extra-hero-image2 .hero-subtitle {
+        content: '';
+        display: block;
+        background: url(/fileadmin/templates/images/image-photos/remember-me-mobile_v2.gif) center no-repeat;
+        height: 230px;
+        margin: 1em 0;
+        background-size: contain;
+    }
+}
+@media (min-width: 30em) and (max-width: 47.99em) {
+    .extra-hero-image2 .hero-subtitle {
+        content: '';
+        display: block;
+        background: url(/fileadmin/templates/images/image-photos/remember-me-mobile_v2.gif) center no-repeat;
+        height: 230px;
+        margin: 1em 0;
+        background-size: contain;
+    }
+}
+
+// Rapid transfer page
+
+@media (min-width:64em){.rapidtransfer .homepage-hero .hero-title h2{font-size:9rem !important;}}@media (min-width:75em){.rapidtransfer .homepage-hero .hero-title h2{font-size:9rem !important;}}.rapidtransfer .homepage-hero .hero-subtitle {margin-top: 50px;}.rapidtransfer .animated-stepcircles .module-container p.subrt{text-align:center;text-transform:uppercase;color:#fff;font-size: 1.675rem;}
+
+
+// 404 page
+
+.notfound .hero-title h2 {color:#811e68;}
+
+// Geo IP 
+
+.hide, [data-show]:not([data-show='']) {
+
+// 	display: none !important;
+
+	height: 0;
+	overflow: hidden;
+	
+}
+
+[data-show].show {
+
+// 	display: block !important;
+
+	height: auto;
+	overflow: visible;
+	
+}
+
+// Exclusive offers mobile fix
+
+@media screen and (max-width: 768px) {
+
+	.promo-exclusive-offers .full-background-image {
+		
+		height: 100% !important;
+		background-position: 16% 0;
+		
+	}
+
+}
+
+// Small hero headline on mobile
+
+@media screen and (max-width: 768px) {
+
+  .homepage-hero .hero-title h2 {
+
+    font-size: 5em !important;
+      margin-top: 1em;
+
+  }
+
+  .homepage-hero .cta-holder {
+
+    margin-top: 2em;
+
+  }
+
+}
+
+// Modal window used with openModalWindow(content)
+
+.modal-window {
+
+	z-index: 99;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: auto;
+	padding: 7em 5%;
+	background: rgba(61,68,84,.96);
+
+}
+  
+.modal-window .content {
+    
+	background: #fff;
+	border: 1px solid;
+	height: 100%;
+	padding: 1em;
+	text-align: center;
+	word-break: break-word;
+	word-wrap: break-word;
+	overflow: auto;
+	font-size: 0;
+	position: relative;
+    
+}
+   
+.modal-window .content > * {
+
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+	font-size: 1rem;
+
+}
+ 
+.modal-window .content > div > * {
+
+	max-width: 100%;
+
+}
+
+.modal-window .content:before {
+
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+	content: '';
+
+}
+
+.modal-window .content iframe[src*=youtube], .modal-window .content iframe[src*=vimeo] { /* Blow up YouTube or Vimeo embeds */
+	
+	position: absolute;
+    top: 1em;
+    left: 1em;
+    width: calc(100% - 2em) !important;
+    height: calc(100% - 2em) !important;
+		
+}
+
+.modal-window > a {
+
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	text-align: right;
+	text-decoration: none;
+	padding: 1em;
+	cursor: pointer;
+	color: #fff;
+	font-family: sans-serif;
+
+}
+
+.modal-link {
+
+	cursor: pointer;
+
+}
+
+.modal-link.video:not(.btn) {
+	
+/*
+	background: url(/fileadmin/templates/images/skrill-play-video-icon.svg) left center no-repeat;
+	background-size: auto 2em;
+	padding-left: 2.5em;
+*/
+    color: #646071;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 2;
+    font-size: 1.5rem;
+    color: #4f2556;
+    font-family: bebas_neuebold, Helvetica, Arial, sans-serif;
+	max-width: 100%;
+
+}
+
+.modal-link.video:not(.btn) img {
+
+	display: block;
+	max-width: 100%;
+
+}
+
+a.video.btn {
+	
+	text-transform: uppercase;
+	border: 1px solid #fff;
+    font-family: robotoregular,Helvetica,Arial,sans-serif;
+    padding: 1em 3.5em !important;
+	background: none;
+	display: inline-block;
+	
+}
+
+a.video.btn:after {
+	
+	left: .6em;
+    right: auto;
+    content: '';
+	background: url(../images/play-video-icon.svg);
+    width: 1.5em;
+    height: 1.5em;
+    background-size: cover;
+    	
+}
+
+// Align trustmark logos to center
+
+.trustmark-bar .client-logos {
+	
+	text-align: center;
+	
+}
+
+.trustmark-bar .client-logos li {
+	
+	float: none;
+	display: inline-block;	
+	
+}
+
+.trustmark-bar .client-logos li:empty {
+
+	display: none;
+
+}
+
+// eCommerce integration page two-line button fix
+
+.skrill-integration .button {
+	
+	padding-right: .75em;
+	vertical-align: top;
+	
+}
+
+.skrill-integration .button .copy {
+	
+	width: calc(100% - 2em);
+	vertical-align: middle;
+	float: none;
+
+}
+
+.skrill-integration .accordion-grid-item-content .button .icon {
+	
+	vertical-align: middle;
+	display: inline-block;
+	float: none;
+
+}
+
+table td {
+
+	word-break: break-word; // Overflow protection for long words
+	word-wrap: break-word;
+
+}
+
+// Auto hero height for all amount of content, disabled hero animation
+
+.section.is-parallax.homepage-hero.hero {
+	
+	height: auto !important;
+
+}
+
+.homepage-hero .hero-content > *, .button.hero-cta .copy {
+	
+	opacity: 1 !important;
+	transform: none !important;
+
+}
+
+.homepage-hero .button.hero-cta .icon {
+	
+	opacity: 1 !important;
+
+}
+
+.homepage-hero .button.hero-cta .panel {
+	
+	height: 0 !important;
+	
+}
+
+.homepage-hero .button.hero-cta:hover .panel {
+	
+	height: 100% !important;
+	
+}
+
+.homepage-hero .button.hero-cta .copy, .button.hero-cta .icon {
+	
+	color: #fff !important;
+	
+}
+
+.homepage-hero .button.hero-cta:hover .copy, .button.hero-cta:hover .icon {
+
+	color: rgb(84, 76, 100) !important;
+
+}
+
+/* Mobile: display ‘Log in’ link in header */
+
+@media (max-width: 47.99em) {
+	
+	#header .header-wrapper {
+		
+		display: flex;
+		
+	}
+	
+	#header .header-wrapper .site-title {
+		
+		margin-right: 0;
+		order: 1;
+		background: url('/fileadmin/templates/images/skrill-logo-white-transparent.svg') no-repeat center center;
+	    background-size: contain;
+	    width: 20%;
+	    height: 32px;
+		margin-top: 12px;
+		
+	}
+	
+	#header.is-fixed .header-wrapper .site-title {
+		
+		background-image: url('/fileadmin/templates/images/skrill-logo-purple-transparent.svg');
+		
+	}
+	
+	#header .header-wrapper button.menu-toggle {
+		
+		margin: 0;
+	    order: 2;
+        width: 40%;
+        border: none;
+		
+	}
+
+	#header .header-wrapper .menu-toggle:hover {
+		
+		background: none;	
+		
+	}
+
+	#header .header-wrapper .account-links.sm-hidden.xs-hidden {
+		
+		font-size: 1rem;
+        width: 40%;
+        display: table !important;
+    			
+	}
+	
+	#header .header-wrapper .account-links li + li {
+		
+	    margin-left: 0;
+        padding: .75rem .5em .75rem 1.25rem;
+		word-break: break-all;
+		word-wrap: break-word;
+
+		
+	}
+	
+	#header .header-wrapper .menu-toggle .icon {
+		
+		right: 1.5rem;
+	    left: auto;
+		
+	}
+
+	#header .header-wrapper .account-links li:first-child a {
+		
+		display: none;
+	
+	}		
+
+}
