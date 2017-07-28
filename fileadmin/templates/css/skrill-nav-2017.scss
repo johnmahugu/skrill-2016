@@ -1018,7 +1018,7 @@ header .absolute nav li.sub ul {
 		}
 */
 
-		header nav li.sub:hover:before {
+		header nav li.sub:hover:before, header nav li.sub.open:before {
 			
 			content: '';
 			position: absolute;
