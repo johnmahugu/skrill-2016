@@ -2,8 +2,8 @@ $grey: #485161;
 $lightgrey: #8c90a0;
 $teal: rgb(76, 188, 195);
 $purple: #811e68;
-$breakpoint: 901px;
-// $breakpoint: 1280px;
+// $breakpoint: 901px;
+$breakpoint: 1280px;
 
 @font-face {
 
@@ -907,6 +907,7 @@ header .absolute nav li.sub ul {
 		
 		min-height: 7em;
 		transition: all .2s ease-in-out;
+	    margin-right: 1em;
 
 	}
 	
