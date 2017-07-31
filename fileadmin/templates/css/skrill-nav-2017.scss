@@ -2,6 +2,8 @@ $grey: #485161;
 $lightgrey: #8c90a0;
 $teal: rgb(76, 188, 195);
 $purple: #811e68;
+$breakpoint: 901px;
+// $breakpoint: 1280px;
 
 @font-face {
 
@@ -12,14 +14,12 @@ $purple: #811e68;
 
 }
 
-/*
 body {
 	
 	background: url(../images/desktop-nav-bg.jpg);
 	background-size: cover;
 
 }
-*/
 
 header {
 	
@@ -164,6 +164,12 @@ header nav li.sub {
 	
 	background: none;
 
+}
+
+header nav li.sub:hover {
+
+    z-index: 1;	
+	
 }
 
 header nav li.sub.open {
@@ -419,7 +425,7 @@ header .absolute nav li.sub ul {
 
 }
 
-@media (max-width: 901px) {
+@media (max-width: $breakpoint) {
 	
 	main {
 		
@@ -856,7 +862,7 @@ header .absolute nav li.sub ul {
 
 }
 
-@media (min-width: 901px) {
+@media (min-width: $breakpoint) {
 	
 	header {
 		
@@ -919,6 +925,12 @@ header .absolute nav li.sub ul {
 
 	}
 */
+
+	header .top-left, header .top-right {
+		
+		z-index: 2;
+	
+	}
 	
 	header .top-left li + li:before {
 		
