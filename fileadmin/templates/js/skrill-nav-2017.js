@@ -117,9 +117,6 @@ function setHeaderVariables() {
 
 }
 
-$(window).on('resize', setHeaderVariables);
-setHeaderVariables();
-
 // @media media_type { ... } -> @media new_media_type { ... }
 function setMediaQueryType (media_type, new_media_type) { 
 	// bug: messes up the Safari inspector, but not others
@@ -178,8 +175,11 @@ function setBreakpoint() {
 
 $(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 
 
-	setBreakpoint();
+//	setBreakpoint();
+	setHeaderVariables();
 
 });
 
-$(window).on('resize', setBreakpoint);
+//$(window).on('resize', setBreakpoint);
+$(window).on('resize', setHeaderVariables);
+
