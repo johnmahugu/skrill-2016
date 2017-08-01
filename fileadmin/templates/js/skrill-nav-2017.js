@@ -167,7 +167,7 @@ function setBreakpoint() {
 
 // 		setMediaQueryType('width: ' + breakpoint + 'px)', 'width: ' +  new_breakpoint + 'px)');
 		setMediaQueryType('(min-width: ' + breakpoint + 'px)', '(min-width: ' +  new_breakpoint + 'px)');
-		setMediaQueryType('(max-width: ' + breakpoint + 'px)', '(max-width: ' +  new_breakpoint + 'px)');
+		setMediaQueryType('(max-width: ' + (breakpoint - 1) + 'px)', '(max-width: ' +  (new_breakpoint - 1) + 'px)');
 
 	}
 

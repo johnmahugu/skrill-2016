@@ -32,7 +32,6 @@ header {
 	z-index: 3;
 	font-family: robotoregular, Helvetica Neue, Arial, sans-serif;
 	font-size: 9px;
-	transition: background-color .2s ease-in-out;
 	-webkit-font-smoothing: subpixel-antialiased;
     -webkit-font-smoothing: antialiased;
     
@@ -266,7 +265,6 @@ header .row {
 
 header .row > * {
 	
-	transition: background-color .2s ease-in-out;
 	box-sizing: border-box; // Breaks IE10 support
 
 }
@@ -342,7 +340,7 @@ header .right-mobile {
 	background: url(../images/burger-grey.svg) no-repeat center center;
 	background-size: auto 1.5em;
 /* 			background-position: calc(100% - 1.25em) 1.25em; */
-	background-position-x: calc(100% - 1em);
+	background-position-x: calc(100% - 1.75em);
 /* 	background-position-y: .75em; */
 	cursor: pointer;
 	display: none;
@@ -425,7 +423,7 @@ header .absolute nav li.sub ul {
 
 }
 
-@media (max-width: $breakpoint) {
+@media (max-width: #{$breakpoint - 1}) {
 	
 	main {
 		
@@ -437,6 +435,8 @@ header .absolute nav li.sub ul {
 		
 		overflow: hidden;
 		-webkit-overflow-scrolling: touch;
+		transition: background-color .2s ease-in-out;
+
 		
 	}
 	
@@ -444,6 +444,12 @@ header .absolute nav li.sub ul {
 	
 		width: 200%;
 
+	}
+
+	header .row > * {
+		
+		transition: background-color .2s ease-in-out;
+	
 	}
 	
 	header .row > .right.align-right {
@@ -474,6 +480,7 @@ header .absolute nav li.sub ul {
 	    border: .75em solid transparent;
 	    box-sizing: border-box;
 	    flex-basis: 16.667%;
+   		transition: all .2s ease-in-out;
 
 	}
 	
@@ -906,7 +913,6 @@ header .absolute nav li.sub ul {
 	header .left {
 		
 		min-height: 7em;
-		transition: all .2s ease-in-out;
 	    margin-right: 1em;
 
 	}
