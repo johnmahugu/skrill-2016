@@ -14,12 +14,14 @@ $breakpoint: 1280px;
 
 }
 
+/*
 body {
 	
 	background: url(../images/desktop-nav-bg.jpg);
 	background-size: cover;
 
 }
+*/
 
 header {
 	
@@ -423,7 +425,7 @@ header .absolute nav li.sub ul {
 
 }
 
-@media (max-width: #{$breakpoint - 1}) {
+@media (max-width: #{$breakpoint - .1px}) {
 	
 	main {
 		
@@ -436,6 +438,7 @@ header .absolute nav li.sub ul {
 		overflow: hidden;
 		-webkit-overflow-scrolling: touch;
 		transition: background-color .2s ease-in-out;
+		width: 100vw;
 
 		
 	}
