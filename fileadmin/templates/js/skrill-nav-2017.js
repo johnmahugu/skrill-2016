@@ -60,8 +60,17 @@ $('header nav li.sub, header nav li.sub *').on('touchend click', function (e) {
 	
 /* 	e.stopPropagation(); */
 	if (!e.target.getAttribute('href') && $(this).hasClass('sub')) {
-	
-		$(this).closest('.sub').toggleClass('open');
+		
+		if ($(this).closest('.sub').hasClass('open')) {
+			
+			$('header nav li.sub.open').removeClass('open');
+			
+		} else {
+
+			$('header nav li.sub.open').removeClass('open');
+			$(this).closest('.sub').addClass('open');
+		
+		}
 		return false;
 	
 	}
