@@ -176,7 +176,7 @@ function setBreakpoint() {
 
 // 		setMediaQueryType('width: ' + breakpoint + 'px)', 'width: ' +  new_breakpoint + 'px)');
 		setMediaQueryType('(min-width: ' + breakpoint + 'px)', '(min-width: ' +  new_breakpoint + 'px)');
-		setMediaQueryType('(max-width: ' + (breakpoint - 1) + 'px)', '(max-width: ' +  (new_breakpoint - 1) + 'px)');
+		setMediaQueryType('(max-width: ' + (breakpoint - .1) + 'px)', '(max-width: ' +  (new_breakpoint - .1) + 'px)');
 
 	}
 
@@ -184,11 +184,11 @@ function setBreakpoint() {
 
 $(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 
 
-//	setBreakpoint();
+	setBreakpoint();
 	setHeaderVariables();
 
 });
 
-//$(window).on('resize', setBreakpoint);
+$(window).on('resize', setBreakpoint);
 $(window).on('resize', setHeaderVariables);
 
