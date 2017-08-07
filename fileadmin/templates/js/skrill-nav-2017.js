@@ -184,6 +184,20 @@ function setBreakpoint() {
 
 $(window).load(function() { // Executes when complete page is fully loaded, including all frames, objects and images. 
 
+	$('.scroll-button').off('click tap'); // Don't overscroll by hero bottom arrow
+	
+	$('.scroll-button').on('click tap', function() {
+	
+		var a = $(".csc-default").children().eq(1).hasClass("trustmark-bar") ? $("#content > .csc-default:nth-child(3)").offset().top : $("#content > .csc-default:nth-child(2)").offset().top;
+		TweenMax.to(window, 1, {
+		    scrollTo: {
+		      y: a - $("header").height()
+		    },
+		    ease: Strong.easeOut
+		});
+	
+	});
+
 	setBreakpoint();
 	setHeaderVariables();
 
