@@ -14,14 +14,12 @@ $breakpoint: 901px;
 
 }
 
-/*
 body {
 	
 	background: url(../images/desktop-nav-bg.jpg);
 	background-size: cover;
 
 }
-*/
 
 header {
 	
@@ -170,16 +168,17 @@ header nav li.sub {
 header nav li.sub:hover {
 
     z-index: 1;	
+	background-color: #fff;
 	
 }
 
-header nav li.sub.open {
+.can-touch header nav li.sub.open {
 	
 	background: #fff;
 
 }
 
-header nav li.sub.open ul, header nav li.sub > :checked ~ ul {
+.can-touch header nav li.sub.open ul, .can-touch header nav li.sub > :checked ~ ul {
 	
 	visibility: visible;
 
@@ -704,6 +703,12 @@ header .absolute nav li.sub ul {
 		
 	}
 
+	header nav li.sub.open.language, header nav li.sub.language > :checked {
+		
+		background-position-y: 1.25em;
+
+	}
+	
 	header nav li.sub {
 		
 		background-image: url(../images/nav-arrow-black.svg);
@@ -747,6 +752,7 @@ header .absolute nav li.sub ul {
 		transform: translateX(0);
 	    height: 100%;
 	    height: var(--viewport-height);
+	    visibility: visible;
 
 	}
 	
@@ -970,6 +976,7 @@ header .absolute nav li.sub ul {
 	    padding: 1.5em 0 1.5em 0;
 		top: 4.5em;
 		top: 4.25em;
+		top: 3.4em;
 	
 	}
 
@@ -1067,11 +1074,18 @@ header .absolute nav li.sub ul {
 			bottom: -2em;
 			z-index: -1;
 // 			min-width: 10em;
+			display: none;
 	
 		}
 
-	}
+		header nav li.sub:hover:before {
+			
+			display: block;
+			
+		}
 
+	}
+	
 	header .middle li li a[href], header .middle li li a {
 		
 		font-size: .9em;
